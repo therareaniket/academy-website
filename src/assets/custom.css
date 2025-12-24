@@ -43,8 +43,9 @@
 .mega-menu-content { display: none; transition: all 0.3s ease-in-out; }
 .header-megamenu.active .mega-menu-content { display: block; position: relative; z-index: 5; height: 640px; width: 350px; position: absolute; right: 0; top: 120px; }
 .mega-menu-content li { display: block; padding: 20px 40px; }
-.mega-menu-content a { transition: var(--transition); font-family: "poppins-md"; }
-.mega-menu-content a:hover { color: var(--secondary-blue-purple); font-family: "poppins-sb"; }
+.mega-menu-content a { transition: var(--transition); font-family: poppins-md; }
+.header-megamenu, .header-megamenu * { font-family: poppins-rg; }
+.mega-menu-content a:hover { color: var(--secondary-blue-purple); font-family: poppins-sb; }
 
 /* HEADER HIDE AND SHOW CSS */
 .header-logo-link { display: inline-block; transition: var(--transition) }
