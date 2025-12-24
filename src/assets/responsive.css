@@ -25,6 +25,10 @@
     .home-hero-player { left: 210px; bottom: 90px; }
     .get-started-btn { right: 230px; }
 
+    .cta-female { width: 600px; }
+    .cta-wrapper { height: 500px; }
+
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -50,9 +54,12 @@
     .home-hero-cap { width: 200px; right: 30px; }
     .home-hero-bulb { width: 270px; }
     .home-hero-player { width: 220px; left: 150px; bottom: 120px; }
-    .arrow-link { padding: 20px 30px; }
+    .arrow-link { padding: 20px 30px; display: flex; align-items: center; justify-content: center; }
     .arrow-link img { width: 80px; }
-    .get-started-btn { gap: 20px; }
+    .get-started-btn, .get-started-cta { gap: 20px; }
+
+    .cta-wrapper { padding: 80px; }
+    .cta-female { left: 60px; }
 
 }
 
@@ -88,10 +95,9 @@
 
     .home-hero-player { display: none; }
     .hero-details h1 { width: 90%; margin-bottom: 60px; }
-    .get-started-btn {  right: 100px; }
+    .get-started-btn { bottom: 140px; right: 100px; }
     .home-hero { height: 700px; }
     .site-hero-cube { width: 680px; }
-    .get-started-btn { bottom: 140px; }
     .arrow-link img { width: 60px; }
     .home-hero-bulb { width: 200px; }
     .home-hero-cap { width: 140px; top: 120px; right: 20px; }
