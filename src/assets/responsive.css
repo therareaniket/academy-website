@@ -190,7 +190,7 @@
     .header-megamenu.active .menu-line-1 { transform: rotate(45deg) translate(7px, 7px); width: 30px; }
     .header-megamenu.active .menu-line-3 { transform: rotate(-45deg) translate(8px, -8px); width: 30px; }
     .home-hero-cap { width: 130px; }
-    .home-hero { max-height: 65vh; }
+    .home-hero { max-height: 560px; }
 }
 
 @media screen and (max-width: 374px) {}
