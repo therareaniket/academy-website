@@ -1,3 +1,4 @@
+import CTA from "@/components/CTA";
 import Header from "@/components/Header";
 import HomeHero from "@/components/Homepage/HomeHero";
 import HomeStats from "@/components/Homepage/HomeStats";
@@ -11,7 +12,9 @@ export default function Home() {
 
 				<HomeHero />
 
-				<HomeStats />
+				{/* <HomeStats /> */}
+
+				<CTA />
 			</main>
 		</>
 	);

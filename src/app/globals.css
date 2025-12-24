@@ -197,18 +197,17 @@ html, body {
 /* Hide scrollbar for WebKit-based browsers (global) */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar,
-*::-webkit-scrollbar {
-    width: 0 !important;
-    height: 0 !important;
-    background: transparent !important;
-}
+*::-webkit-scrollbar { width: 0 !important; height: 0 !important; background: transparent !important; }
 
 /* Ensure any scrollbar thumbs/tracks are hidden */
 html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb,
-*::-webkit-scrollbar-thumb {
-    background: transparent !important;
-}
+*::-webkit-scrollbar-thumb { background: transparent !important; }
 
 .container { margin: 0 auto !important; padding: 0 18px !important; }
 .section { padding: 150px 0; }
+
+.site-radius-10 { border-radius: 10px; }
+.site-radius-20 { border-radius: 20px; }
+.site-radius-30 { border-radius: 30px; } 
+.site-radius-40 { border-radius: 40px; }

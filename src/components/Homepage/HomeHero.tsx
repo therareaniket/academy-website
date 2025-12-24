@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeHero() {
     return (
@@ -14,13 +15,13 @@ export default function HomeHero() {
                 
                 <Image src="/images/homepage/home-hero-player.webp" alt="home-hero-player" width={242} height={171} className="home-hero-player"></Image>
 
-                <div className="get-started-btn">
+                <Link href="/ComingSoon" title="Get Started" className="get-started-btn">
                     <div className="arrow-link">
                         <Image src="/images/homepage/hero-home-btn-arrow.svg" alt="hero-home-btn-arrow" width={100} height={35}></Image>
                     </div>
                     
                     <span className="h5">Get Started</span>
-                </div>
+                </Link>
 
                 <div className="container">
                     <div className="hero-details">
