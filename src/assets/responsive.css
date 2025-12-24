@@ -159,7 +159,7 @@
 }
 
 @media screen and (max-width: 575px) {
-    .home-hero { display: block; }
+    .home-hero { display: block; max-height: 70vh; }
     .hero-details h1 { padding-top: 50px; }
     h5, .h5 { font-size: 20px; }
     .arrow-link img { width: 50px; }
@@ -189,7 +189,8 @@
     .header-megamenu.active .menu-grdnt-bg { height: 450px; }
     .header-megamenu.active .menu-line-1 { transform: rotate(45deg) translate(7px, 7px); width: 30px; }
     .header-megamenu.active .menu-line-3 { transform: rotate(-45deg) translate(8px, -8px); width: 30px; }
-    .home-hero-cap { width: 140px; }
+    .home-hero-cap { width: 130px; }
+    .home-hero { max-height: 65vh; }
 }
 
 @media screen and (max-width: 374px) {}
