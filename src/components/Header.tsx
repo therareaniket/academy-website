@@ -20,7 +20,8 @@ export default function Header() {
 			if (isMenuOpen) { setHideHeader(false); return; }
 
 			const navbarHeight = headerRef.current?.offsetHeight || 0;
-			const triggerPoint = window.innerHeight - navbarHeight;
+			// const triggerPoint = window.innerHeight - navbarHeight;
+			const triggerPoint = 50;
 
 			if (currentScroll <= triggerPoint) { setHideHeader(false); setLastScrollY(currentScroll); return;}
 			if (currentScroll > lastScrollY) { setHideHeader(true); } else { setHideHeader(false); }

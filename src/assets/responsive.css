@@ -155,7 +155,6 @@
     .site-hero-cube { width: 90%; }
     .home-hero-cap { top: 45%; }
 
-
 }
 
 @media screen and (max-width: 575px) {
@@ -175,6 +174,11 @@
     .get-started-btn { bottom: 170px; }
     .site-hero-cube { bottom: 20%; }
 
+    .header-megamenu.active .menu-grdnt-bg { opacity: 90%; }
+    .site-header.header-hide .header-logo-link { transform: translateX(-100px); }
+    .site-header.header-hide .header-megamenu { transform: translateX(100px); }
+    .header-logo-link, .header-megamenu { transition: all 0.5s ease-in-out }
+     
 }
 
 @media screen and (max-width: 400px) {
