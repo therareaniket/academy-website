@@ -68,4 +68,4 @@
 .get-started-btn { position: absolute; bottom: 145px; right: 340px; gap: 25px; z-index: 3; }
 .get-started-btn .h5 { margin-bottom: 0; }
 
-.home-statistics { height: 100vh; background-color: var(--white); }
+.home-statistics { height: 300vh; background-color: var(--white); }

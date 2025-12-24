@@ -32,8 +32,8 @@ export default function Header() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [lastScrollY, isMenuOpen]);
 
-		return (
-			<>
+	return (
+		<>
 			<header className={`site-header ${hideHeader ? 'header-hide' : ''}`} ref={headerRef}>
         		<div className="container">
             		<div className="header-wrapper">
@@ -43,7 +43,7 @@ export default function Header() {
 
 						<div className={`header-megamenu ${isMenuOpen ? 'active' : ''}`}>
 							<span className="menu-grdnt-bg"></span>
-				
+
 							<div className="hamburger">
 								<div className="mega-menu-trigger" onClick={toggleMenu} role="button">
 									<span className="menu-lines menu-line-1"></span>
