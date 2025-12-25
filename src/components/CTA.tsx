@@ -14,7 +14,7 @@ export default function CTA() {
                             
                             <Link href="/ComingSoon" title="Get Started" className="get-started-cta">
                                 <div className="arrow-link">
-                                    <Image src="/images/homepage/hero-home-btn-arrow.svg" alt="hero-home-btn-arrow" width={100} height={35}></Image>
+                                    <Image src="/images/homepage/hero-home-btn-arrow.svg" alt="hero-home-btn-arrow" width={100} height={35} priority={false}></Image>
                                 </div>
 
                                 <span className="h5">Get Started</span>
