@@ -167,7 +167,7 @@
 
 /* Typography */
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'poppins-md'; font-weight: normal; font-style: normal; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'poppins-sb'; font-weight: normal; font-style: normal; }
 
 h1, .h1 { font-size: 80px; line-height: 90px; }
 h2, .h2 { font-size: 48px; line-height: 58px; margin-bottom: 20px; }
