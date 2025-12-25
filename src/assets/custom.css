@@ -96,13 +96,15 @@
 .stats-step3 .blue-box { width: 993px;  background-color: var(--light-blue); position: relative; }
 .stats-step3 .blue-box-2 { width: 207px; background-color: var(--light-blue); position: relative; }
 .stats-step1, .stats-step2 { margin-bottom: 20px; }
-
 .stats-step1 .blue-box img { position: absolute; bottom: 0; right: 0; }
 .yellow-box .h2 { margin-bottom: 10px; }
-
 .stats-step2 .blue-box img { position: absolute; top: 0; right: 0; }
 .stats-step2 .blue-box img:nth-child(2) { top: auto; bottom: 0; }
 .stats-step2 .blue-box-2 img { position: absolute; left: 14px; bottom: 30px; }
-
 .stats-step3 .blue-box img { position: absolute; bottom: 0; right: 0; }
 .stats-step3 .blue-box-2 img { position: absolute; bottom: 35px; }
+
+.training-steps { background-color: var(--black); color: var(--white); }
+.steps-headings { display: flex; justify-content: space-between; }
+.steps-headings h2 { width: 752px; }
+.steps-headings .h6 { width: 705px; margin-bottom: 0; }
