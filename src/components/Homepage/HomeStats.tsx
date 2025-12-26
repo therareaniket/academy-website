@@ -61,6 +61,8 @@ export default function HomeStats() {
                         </div>
 
                         <Image src="/images/homepage/stats-female.webp" alt="stats-female" width={751} height={746}></Image>
+                        
+						{/* <Image src="/images/homepage/stats-section-elements/three-lines.png" alt="stats-female" width={331} height={264} className="three-lines"></Image> */}
                     </div>
                 </div>
             </section>

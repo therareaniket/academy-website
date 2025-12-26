@@ -1,9 +1,12 @@
 :root {  
     --primary-yellow: #FEC956;
     --primary-blue: #7D9BFF;
+    --light-blue-tint: #F5F7FF;
     --hero-bg: #FFFAF6;
     --off-white: #FAFAFA;
     --secondary-blue-purple: #561FF9;
+
+    --dark-blue: #481AD1;
 
     --light-gray: #F2F2F2;
     --mid-gray: #B8B8B8;
@@ -89,7 +92,7 @@
 .stats-headings h2 { width: 670px; }
 .stats-headings .h6 { width: 620px; }
 
-.stats-wrapper { margin-top: 60px; position: relative; }
+.stats-wrapper { margin-top: 60px; position: relative;  }
 .stats-wrapper > img { position: absolute; left: 50px; bottom: 0; }
 .stats-step1, .stats-step2, .stats-step3 { display: flex; gap: 20px; }
 .stats-step1 .blue-box { width: 700px;  background-color: var(--primary-blue); position: relative; }
@@ -112,8 +115,20 @@
 .steps-headings h2, .step-img { width: 752px; }
 .steps-headings .h6, .step-list { width: 705px; margin-bottom: 0; }
 .steps-listings { display: flex; align-items: start; justify-content: space-between; margin-top: 60px; }
-
 .step-list { padding: 30px 0; border-top: 1px solid var(--gray); }
 .step-list span { color: var(--mid-gray); }
 .step-list p { color: var(--gray); }
 .step-list.active-step .h4 { color: var(--primary-blue); }
+
+.usp-lists { margin-top: 60px; display: flex; gap: 40px; }
+.usp-list { width: 150px; height: 570px; background-color: var( --light-blue-tint); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 30px; position: relative; transition: var(--transition); }
+.usp-list .list-num { width: 80px; height: 80px; background-color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.vertical-text { writing-mode: vertical-rl; transform: rotate(180deg); }
+.usp-list.active-usp { background-color: var(--primary-blue); width: 650px; align-items: start; }
+.usp-list.active-usp .vertical-text { transform: rotate(0deg); writing-mode: initial; }
+.usp-list.active-usp p { color: var(--white); }
+.usp-list.active-usp p.h4 { margin-bottom: 20px; }
+.usp-list p + p { display: none; }
+.usp-list.active-usp p + p { display: block; }
+.usp-link { display: none; position: absolute; bottom: 0; right: 0; background-color: var(--dark-blue); color: var(--white); padding: 18px 55px; border-radius: 20px 0 20px 0; }
+.usp-list.active-usp .usp-link { display: inline-block; }
