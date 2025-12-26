@@ -48,8 +48,8 @@
     .stats-step3 .blue-box { width: 820px; }
     .stats-step3 .blue-box-2 { width: 170px; }
 
-    .steps-headings h2 { width: 650px; }
-    .steps-headings .h6 { width: 600px; }
+    .steps-headings h2, .step-img { width: 650px; }
+    .steps-headings .h6, .step-list { width: 600px; }
 
 
 }
@@ -58,8 +58,10 @@
     .container { max-width: calc(1200px + 36px); }
     h1, .h1 { font-size: 50px; line-height: 60px; }
     h2, .h2 { font-size: 38px; line-height: 48px; }
+    h4, .h4 { font-size: 26px; line-height: 36px; }
     h5, .h5 { font-size: 20px; line-height: 30px; }
     h6, .h6 { font-size: 18px; line-height: 28px; }
+    .text-18 { font-size: 16px; line-height: 24px; }
     .section { padding: 100px 0; }
     
     .header-megamenu.active .mega-menu-content { top: 100px; }
@@ -104,13 +106,17 @@
     .stats-step3 .blue-box-2 { width: 160px; }
     .stats-step3 .blue-box-2 img { width: 80px; bottom: 20px; }
     
-    .steps-headings h2 { width: 600px; }
-    .steps-headings .h6 { width: 520px; }
+    .steps-headings h2, .step-img { width: 600px; }
+    .steps-headings .h6, .step-list { width: 520px; }
+    .step-list { padding: 20px 0; }
+
 }
 
 @media screen and (max-width: 1439px) {
     .container { max-width: calc(1060px + 36px); }
     h5, .h5 { font-size: 18px; line-height: 28px; }
+    h6, .h6 { font-size: 16px; line-height: 24px; }
+    .text-18 { font-size: 14px; line-height: 20px; }
     
     .section { padding: 120px 0; }
 
@@ -144,13 +150,16 @@
     .stats-step3 .blue-box-2 { width: 100px; }
     .stats-step3 .blue-box-2 img { width: 70px; }
 
-    .steps-headings h2 { width: 550px; }
-    .steps-headings .h6 { width: 450px; }
+    .steps-headings h2, .step-img { width: 550px; }
+    .steps-headings .h6, .step-list { width: 450px; }
+    .step-list { padding: 15px 0; }
+    .steps-listings { margin-top: 40px; }
 }
 
 @media screen and (max-width: 1359px) {
     .section { padding: 100px 0; }
     .container { max-width: calc(960px  + 36px); }
+    h4, .h4 { font-size: 24px; line-height: 32px; }
     h6, .h6 { font-size: 16px; line-height: 26px; }
     
     .header-megamenu.active .menu-grdnt-bg { width: 410px; height: 570px; }
@@ -181,8 +190,9 @@
     .stats-step3 .blue-box-2 { width: 110px; }
     .stats-step3 .blue-box img { width: 60px; }
     
-    .steps-headings h2 { width: 480px; }
-    .steps-headings .h6 { width: 400px; }
+    .steps-headings h2, .step-img  { width: 480px; }
+    .steps-headings .h6, .step-list { width: 400px; }
+    .step-list { padding: 12px 0; }
 
 }
 
@@ -222,6 +232,11 @@
     .steps-headings h2 { width: 70%; margin: 0 auto; margin-bottom: 20px; }
     .steps-headings .h6 { width: 70%; margin: 0 auto; }
 
+    .steps-listings { flex-direction: column; align-items: center; gap: 40px; }
+    .step-lists { display: flex; justify-content: space-between; }
+    .step-img { width: 60%; }
+    .step-list { width: 30%; }
+
 }
 
 @media screen and (max-width: 1023px) {}
@@ -229,6 +244,7 @@
 @media screen and (max-width: 991px) {
     h1, .h1 { font-size: 36px; line-height: 46px; }
     h2, .h2 { font-size: 26px; line-height: 36px; }
+    h4, .h4 { font-size: 18px; line-height: 26px; }
     h5, .h5 { font-size: 16px; line-height: 26px; }
     h6, .h6 { font-size: 14px; line-height: 22px; }
 
@@ -272,11 +288,13 @@
     .stats-step2 .blue-box { width: 440px; }
     .stats-step3 .blue-box { width: 485px; }
 
+    
 
 }
 
 @media screen and (max-width: 839px) {
     .container { max-width: calc(640px + 36px); }
+    .text-18 { font-size: 12px; line-height: 20px; }
     .section { padding: 70px 0; }
 
     .menu-link.h3 { font-size: 30px; line-height: 38px; }
@@ -294,6 +312,9 @@
     .stats-step3 .blue-box img { width: 50px; }
 
     .steps-headings .h6 { width: 80%; }
+    .step-img { width: 70%; }
+    .step-img img { height: 280px; object-fit: cover; }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -353,11 +374,16 @@
 
     .yellow-box .h2 { font-size: 30px; line-height: 38px; }
     
+    .step-img { width: 80%; }
+    .step-img img { height: 250px; }
+    
 }
 
 @media screen and (max-width: 575px) {
     h1, .h1 { font-size: 28px; line-height: 38px; }
     h2, .h2 { font-size: 20px; line-height: 28px; }
+    h4, .h4 { font-size: 16px; line-height: 24px; margin-bottom: 6px; }
+    
     .hero-details h1 { margin-bottom: 46px; }
     .arrow-link img { width: 50px; }
     .home-hero-player { width: 60px; left: 40px; bottom: 150px; }
@@ -370,6 +396,10 @@
     .site-hero-cube { bottom: 120px; width: 370px; }
     .cta-details { width: 90%; }
     .stats-headings .h6 { width: 95%; }
+
+    .step-img { width: 100%; }
+    .step-lists { flex-wrap: wrap; }
+    .step-list { width: 100%; }
 }
 
 @media screen and (max-width: 480px) {}

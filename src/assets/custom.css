@@ -3,9 +3,12 @@
     --primary-blue: #7D9BFF;
     --hero-bg: #FFFAF6;
     --off-white: #FAFAFA;
-
     --secondary-blue-purple: #561FF9;
-    --light-blue: #7D9BFF;
+
+    --light-gray: #F2F2F2;
+    --mid-gray: #B8B8B8;
+    --gray: #7E7E7E;
+    
     --black: #000000;
     --white: #FFFFFF;
 
@@ -89,12 +92,12 @@
 .stats-wrapper { margin-top: 60px; position: relative; }
 .stats-wrapper > img { position: absolute; left: 50px; bottom: 0; }
 .stats-step1, .stats-step2, .stats-step3 { display: flex; gap: 20px; }
-.stats-step1 .blue-box { width: 700px;  background-color: var(--light-blue); position: relative; }
+.stats-step1 .blue-box { width: 700px;  background-color: var(--primary-blue); position: relative; }
 .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { width: 360px; height: 240px; background-color: var(--primary-yellow); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center; }
-.stats-step2 .blue-box { width: 861px; background-color: var(--light-blue);  position: relative;  }
-.stats-step2 .blue-box-2 { width: 339px; background-color: var(--light-blue); position: relative; }
-.stats-step3 .blue-box { width: 993px;  background-color: var(--light-blue); position: relative; }
-.stats-step3 .blue-box-2 { width: 207px; background-color: var(--light-blue); position: relative; }
+.stats-step2 .blue-box { width: 861px; background-color: var(--primary-blue);  position: relative;  }
+.stats-step2 .blue-box-2 { width: 339px; background-color: var(--primary-blue); position: relative; }
+.stats-step3 .blue-box { width: 993px;  background-color: var(--primary-blue); position: relative; }
+.stats-step3 .blue-box-2 { width: 207px; background-color: var(--primary-blue); position: relative; }
 .stats-step1, .stats-step2 { margin-bottom: 20px; }
 .stats-step1 .blue-box img { position: absolute; bottom: 0; right: 0; }
 .yellow-box .h2 { margin-bottom: 10px; }
@@ -106,5 +109,11 @@
 
 .training-steps { background-color: var(--black); color: var(--white); }
 .steps-headings { display: flex; justify-content: space-between; }
-.steps-headings h2 { width: 752px; }
-.steps-headings .h6 { width: 705px; margin-bottom: 0; }
+.steps-headings h2, .step-img { width: 752px; }
+.steps-headings .h6, .step-list { width: 705px; margin-bottom: 0; }
+.steps-listings { display: flex; align-items: start; justify-content: space-between; margin-top: 60px; }
+
+.step-list { padding: 30px 0; border-top: 1px solid var(--gray); }
+.step-list span { color: var(--mid-gray); }
+.step-list p { color: var(--gray); }
+.step-list.active-step .h4 { color: var(--primary-blue); }
