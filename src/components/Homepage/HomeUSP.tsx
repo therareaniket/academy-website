@@ -14,6 +14,18 @@ export default function USPs(){
                     </div>
 
                     <div className="usp-lists">
+                        <div className="usp-list site-radius-20 active-usp">
+                            <div className="">
+                                <p className="h4 text-md vertical-text">Real World Projects</p>
+        
+                                <p className="text-18">Put skills into action with hands on simulations mirroring clinical trials standards. Tackle authentic challenges across our product platforms. Build practical expertise through live scenarios for pros trainers and learners.</p>
+                            </div>
+
+                            <span className="h4 text-md list-num">6</span>
+
+                            <Link href="/About" title="Discover Now" className="usp-link text-18">Discover Now</Link>
+                        </div>
+
                         <div className="usp-list site-radius-20">
                             <p className="h4 text-md vertical-text">Pro Guided Trials Courses</p>
 
@@ -44,17 +56,7 @@ export default function USPs(){
                             <span className="h4 text-md list-num">5</span>
                         </div>
 
-                        <div className="usp-list site-radius-20 active-usp">
-                            <div className="">
-                                <p className="h4 text-md vertical-text">Real World Projects</p>
-        
-                                <p className="text-18">Put skills into action with hands on simulations mirroring clinical trials standards. Tackle authentic challenges across our product platforms. Build practical expertise through live scenarios for pros trainers and learners.</p>
-                            </div>
-
-                            <span className="h4 text-md list-num">6</span>
-
-                            <Link href="/About" title="Discover Now" className="usp-link text-18">Discover Now</Link>
-                        </div>
+                        
                     </div>
                 </div>
             </section>

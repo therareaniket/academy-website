@@ -204,6 +204,8 @@
     .steps-headings h2, .step-img  { width: 480px; }
     .steps-headings .h6, .step-list { width: 400px; }
     .step-list { padding: 12px 0; }
+    .usp-list { padding: 24px 18px; }
+    .usp-list .list-num { width: 50px; height: 50px; margin-bottom: 0; }
 
 }
 
@@ -475,4 +477,4 @@
 
 @media screen and (max-width: 374px) {}
 
-@media screen and (max-width: 359px) {}         
+@media screen and (max-width: 359px) {}
