@@ -141,3 +141,42 @@ body { background-color: var(--off-white); }
 .trial-grwth-details { width: 730px; }
 .certification-links { margin-top: 60px; display: flex; align-items: center; gap: 20px; }
 .trial-grwth-wrapper { display: flex; align-items: flex-start; justify-content: space-between; }
+.certificate-usp { margin-top: 100px; display: flex; align-items: center; justify-content: space-between; }
+.certifi-usp { width: 300px; display: flex; align-items: center; gap: 20px; }
+.certifi-usp .h5 { margin-bottom: 0; }
+
+.blog-showcase-wrapper { display: flex; justify-content: flex-end; }
+.blog-showcase { width: 1250px; margin-top: 60px; }
+.blog-row { display: flex; align-items: flex-start; gap: 30px; }
+.blog-list-lg { width: 705px; }
+.blog-row .h4 { width: 500px; margin-bottom: 0; margin-top: 20px; }
+.blog-list-sm { width: 513px; }
+.blog-row + .blog-row { margin-top: 60px; flex-direction: row-reverse; }
+
+.home-testimonials { background-color: var(--primary-yellow); }
+.testimonial-headings { text-align: center; }
+.testimonial-wrapper { margin-top: 100px; display: flex; align-items: center; justify-content: space-between; position: relative; }
+.testi-list { width: 646px; height: 147px; background-color: var(--off-white); padding: 10px; }
+.testi-list:not(:last-child) { margin-bottom: 50px; }
+.testi-list-inner-box { width: 100%; height: 100%; background-color: var(--primary-blue); color: var(--white); border-radius: 16px; padding: 30px; display: flex; align-items: flex-start; justify-content: space-between; }
+.name-initial { width: 30px; height: 30px; border-radius: 50%; background-color: #557CFF; display: flex; align-items: center; justify-content: center; }
+.name-desig { display: flex; gap: 14px; }
+.name-desig .name { margin-bottom: 5px; }
+.ratings { display: flex; align-items: center; gap: 8px;  }
+.ratings SVG { width: 18px; height: 18px;  }
+.tilt-up { transform: rotate(-5deg); }
+.tilt-down { transform: rotate(5deg); }
+
+.active-testimonial-list { width: 700px; }
+.active-testi-user .name .h5 { margin-bottom: 0; }
+.active-testimonial-list > .h5 { margin-top: 14px; }
+.active-testi-user { display: flex; align-items: start; justify-content: space-between; }
+.quotation-bg { position: absolute; top: 0%; left: 52%; }
+
+.faq-headings { text-align: center; }
+.faq-row { width: calc(50% - 20px); }
+.faq-lists { margin-top: 60px; display: flex;  justify-content: space-between; }
+.faq-accord-item {  border: 1px solid var(--gray); padding: 0 20px; }
+.faq-accord-item h3 { margin-bottom: 0; }
+.faq-accord-item .h6 { margin-bottom: 0; }
+.faq-accordians .faq-accord-item:not(:last-child) { margin-bottom: 20px; }
