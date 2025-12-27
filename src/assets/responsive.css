@@ -110,7 +110,7 @@
     .steps-headings .h6, .step-list { width: 520px; }
     .step-list { padding: 20px 0; }
     
-    .usp-list { width: 110px; height: 500px; }
+    .usp-list { width: 110px; height: 460px; }
     .usp-link { padding: 16px 42px; }
     .usp-list .list-num { width: 60px; height: 60px; }
     .usp-list.active-usp { width: 500px; padding: 24px; }
@@ -161,10 +161,8 @@
     .steps-listings { margin-top: 40px; }
     
     .usp-lists { gap: 25px; }
-    .usp-list { width: 100px; height: 440px; }
+    .usp-list { width: 96px; height: 410px; }
     .usp-link { padding: 16px 36px; }
-
-
 }
 
 @media screen and (max-width: 1359px) {
@@ -204,14 +202,16 @@
     .steps-headings h2, .step-img  { width: 480px; }
     .steps-headings .h6, .step-list { width: 400px; }
     .step-list { padding: 12px 0; }
-    .usp-list { padding: 24px 18px; }
-    .usp-list .list-num { width: 50px; height: 50px; margin-bottom: 0; }
-
+    .usp-list { width: 80px; height: 400px; padding: 24px 18px;  }
+    .usp-list .list-num { width: 45px; height: 45px; margin-bottom: 0; }
+    .usp-list.active-usp { width: 435px; }
+    .usp-lists { margin-top: 40px; }
 }
 
 @media screen and (max-width: 1199px) {
     h1, .h1 { font-size: 42px; line-height: 50px; }
     h2, .h2 { font-size: 32px; line-height: 40px; }
+    h4, .h4 { font-size: 22px; line-height: 30px; }
     .container { max-width: calc(800px  + 36px); }
     .section { padding: 80px 0; }
 
@@ -250,6 +250,11 @@
     .step-img { width: 60%; }
     .step-list { width: 30%; }
 
+    .usp-lists { gap: 20px; }
+    .usp-list { width: 70px; height: 360px; padding: 20px 16px; }
+    .site-radius-20 { border-radius: 14px; }
+    .usp-link { border-radius: 14px 0 14px 0; padding: 14px 30px; }
+    .usp-list.active-usp { width: 350px; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -289,7 +294,7 @@
     .cta-female { width: 350px; }
 
     .stats-headings { gap: 16px; }
-    .stats-headings h2 { width: 65%; }
+    .stats-headings h2, .steps-headings h2 { width: 90%; }
     
     .stats-wrapper { margin-top: 40px; }
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { width: 200px; }
@@ -301,8 +306,11 @@
     .stats-step2 .blue-box { width: 440px; }
     .stats-step3 .blue-box { width: 485px; }
 
-    
-
+    .usp-lists { flex-direction: column; align-items: center; }
+    .usp-list, .usp-list.active-usp { width: 70%; }
+    .usp-list { flex-direction: row; height: 70px; }
+    .usp-list.active-usp { flex-direction: column; height: 300px; }
+    .vertical-text { transform: rotate(0deg); writing-mode: initial; margin-bottom: 0; }
 }
 
 @media screen and (max-width: 839px) {
@@ -327,6 +335,13 @@
     .steps-headings .h6 { width: 80%; }
     .step-img { width: 70%; }
     .step-img img { height: 280px; object-fit: cover; }
+    
+    .usp-lists { gap: 15px; }
+    .usp-list { height: 60px; }
+    .usp-list .list-num { width: 40px; height: 40px; }
+    .usp-list.active-usp { height: 260px; }
+
+
 
 }
 
@@ -349,6 +364,10 @@
     
     .stats-step2 .blue-box img:nth-child(2) { display: none; }
     .stats-step2 .blue-box img { width: 30px; }
+
+    .usp-list { height: 70px; }
+    .usp-list, .usp-list.active-usp { width: 80%; }
+    .usp-list.active-usp { height: 270px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -389,6 +408,7 @@
     
     .step-img { width: 80%; }
     .step-img img { height: 250px; }
+    .usp-list.active-usp { padding: 20px; }
     
 }
 
@@ -413,6 +433,10 @@
     .step-img { width: 100%; }
     .step-lists { flex-wrap: wrap; }
     .step-list { width: 100%; }
+    .usp-list, .usp-list.active-usp { width: 100%; }
+    /* .vertical-text { margin-bottom: 0 !important; } */
+    .usp-list { height: 60px; }
+    
 }
 
 @media screen and (max-width: 480px) {}
@@ -440,6 +464,10 @@
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { width: 100%; height: 100px; }
     
     .steps-headings h2, .steps-headings .h6 { width: 95%; text-align: left; }
+    .usp-list.active-usp { height: 300px; }
+    .usp-link { padding: 12px 22px; }
+     .usp-list p.h4 { margin-bottom: 0px; }
+    .usp-list.active-usp p.h4 { margin-bottom: 10px; }
 
 }
 

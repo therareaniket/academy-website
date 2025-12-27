@@ -121,10 +121,10 @@
 .step-list.active-step .h4 { color: var(--primary-blue); }
 
 .usp-lists { margin-top: 60px; display: flex; gap: 40px; }
-.usp-list { width: 150px; height: 570px; background-color: var( --light-blue-tint); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 30px; position: relative; transition: var(--transition); }
+.usp-list { width: 150px; height: 570px; background-color: var( --light-blue-tint); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 30px; position: relative; transition: var(--transition); cursor: pointer; }
 .usp-list .list-num { width: 80px; height: 80px; background-color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 .vertical-text { writing-mode: vertical-rl; transform: rotate(180deg); }
-.usp-list.active-usp { background-color: var(--primary-blue); width: 650px; align-items: start; }
+.usp-list.active-usp { background-color: var(--primary-blue); width: 650px; align-items: start; cursor: default; }
 .usp-list.active-usp .vertical-text { transform: rotate(0deg); writing-mode: initial; }
 .usp-list.active-usp p { color: var(--white); }
 .usp-list.active-usp p.h4 { margin-bottom: 20px; }
