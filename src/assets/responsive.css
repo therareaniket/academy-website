@@ -1,10 +1,4 @@
-@media screen and (min-width: 640px) {}
-@media screen and (min-width: 768px) {}
-@media screen and (min-width: 992px) {}
-@media screen and (min-width: 1024px) {}
-@media screen and (min-width: 1360px) {}
-@media screen and (min-width: 1440px) {}
-@media screen and (min-width: 1600px) {}
+
 @media screen and (min-width: 1800px) { .container { max-width: calc(1600px + 36px); }}
 
 /* ======= MIN-WIDTH COMPLETED ======= */
@@ -75,7 +69,10 @@
     .solu-hero-4 { width: 110px; right: 250px; }
 
     .compliance-list-headings .h6 { width: 550px; }
-
+    .compliance-list { width: 420px; height: 160px; }
+    
+    img.dhatu-vault { width: 155px; }
+    img.dhatu-control { width: 180px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -160,6 +157,15 @@
     .solu-hero-4 { width: 100px; right: 230px; }
     
     .compliance-list-headings h2 { width: 520px; }
+    .compliance-list { width: 370px; }
+
+    .pricing-main-box { width: 100%; }
+    .card-details { width: 570px; }
+    .card-swipe { width: 530px; }
+    .slide-card-title img { width: 150px; top: 20px; }
+    .sliding-card { height: 310px; }
+    .planing-link { padding: 14px 120px; }
+    
 }
 
 @media screen and (max-width: 1439px) {
@@ -228,7 +234,27 @@
     .solu-hero-4 { width: 90px; bottom: 90px; right: 250px; }
 
     .compliance-list-headings .h6 { width: 480px; }
+    .compliance-row { gap: 34px; }
+    .compliance-list { width: 330px; height: 140px; padding: 18px; }
+    .compliance-link-arrow { width: 30px; height: 30px; }
+    .compliance-link-arrow img { width: 13px; height: 13px; }
+    .compli-name img { width: 140px; }
 
+    img.dhatu-pay { width: 120px; }
+    img.dhatu-match { width: 150px; }
+    img.dhatu-comply { width: 160px; }
+    img.dhatu-mind { width: 135px; }
+    img.dhatu-safety { width: 160px; }
+    img.dhatu-vault { width: 145px; }
+    img.dhatu-control { width: 170px; }
+
+    .card-details, .card-swipe { height: 430px; }
+    .slide-card-title img { width: 120px; top: 10px; }
+    .sliding-card { height: 270px; transform: translateY(calc(-45px - 20px)); }
+    .active-pricing-card { transform: translateY(10px); }
+    .planing-link { padding: 14px 100px; }
+    .extra-benefe-title { width: 40%; }
+    .extra-benefe-title p { width: 100%; }
 
 }
 
@@ -294,7 +320,22 @@
     .solu-hero-4 { width: 75px; right: 220px; }
     
     .compliance-list-headings .h6 { width: 380px; }
+    .compliance-row { gap: 25px; }
+    .compliance-list { height: 130px; padding: 15px; }
+    .compliance-row + .compliance-row { margin-top: 25px; }
+
+    img.dhatu-safety { width: 150px; }
+    img.dhatu-vault { width: 135px; }
+    img.dhatu-control { width: 160px; }
+
+    .pricing-main-box { padding: 20px; }
+    .plan-card-detail-wrapper { gap: 20px; }
+    .card-swipe { width: 450px; }
+    .card-details { width: 450px; padding: 10px 25px 25px 25px; }
     
+    .sliding-card { transform: translateY(-60px); }
+    .active-pricing-card { transform: translateY(20px); }
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -372,7 +413,26 @@
 
     .compliance-list-headings { flex-direction: column; align-items: center; text-align: center; }
     .compliance-list-headings h2, .compliance-list-headings .h6 { width: 70%; }
-    
+    .compliance-row { flex-wrap: wrap; justify-content: center; }
+    .compliance-list { width: 370px;  height: 110px; }
+
+    .plan-price .h2 { margin-bottom: 6px; }
+    .plan-include-list { margin-top: 20px; }
+    .planing-link { margin-top: 40px; padding: 14px 70px; }
+    .card-swipe { width: 340px; }
+    .card-details { width: 400px; }
+    .slide-card-title img { width: 90px; top: 10px; }
+    .sliding-card { height: 230px; padding: 20px; transform: translateY(-45px); }
+    .active-pricing-card { transform: translateY(10px); }
+    .card-details, .card-swipe { height: 390px; }
+    .extra-benefits { gap: 30px; }
+    .benefe-list { gap: 20px; }
+    .benefe-list li { gap: 10px; }
+
+    .compliance-lists { display: flex; flex-direction: column; }
+    .compliance-row:nth-child(1) { order: 1; }
+    .compliance-row:nth-child(2) { order: 3; }
+    .compliance-row:nth-child(3) { order: 2; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -438,14 +498,14 @@
     .blog-row .h4 { width: 100%; font-size: 18px; line-height: 26px; }
     .blog-row + .blog-row { margin-top: 40px; }
 
-    .testimonial-wrapper { width: 100%; flex-direction: column-reverse; margin-top: 50px; }
+    .testimonial-wrapper { width: 100%; flex-direction: column; gap: 40px; margin-top: 50px; }
     .testimonial-lists { display: flex; gap: 15px; }
     .tilt-up, .tilt-down { transform: rotate(0deg); }
     .testi-list:not(:last-child) { margin-bottom: 0; }
     .name-desig span { display: none; }
     .ratings { display: none; }
-    .testi-list { width: 220px; }
-    .testi-list-inner-box { padding: 14px; }
+    .testi-list { width: 220px; height: 84px; }
+    .testi-list-inner-box { padding: 10px; }
     .active-testimonial-list { width: 80%; margin-top: 0px; margin-bottom: 30px; }
     .quotation-bg { display: none; }
 
@@ -459,6 +519,17 @@
     .solu-hero-4 { width: 60px; bottom: 100px; right: 150px; }
     
     .compliance-list-headings h2, .compliance-list-headings .h6 { width: 90%; }
+    .compli-name img { width: 120px; }
+    .compliance-list { width: 330px; height: 124px; }
+    .compliance-link-arrow { width: 25px; height: 25px; }
+    .compliance-link-arrow img { width: 12px; height: 12px; }
+
+    img.dhatu-pay { width: 100px; }
+    img.dhatu-safety { width: 134px; }
+    img.dhatu-vault { width: 122px; }
+    img.dhatu-control { width: 150px; }
+    img.dhatu-comply { width: 150px; }
+
 }
 
 @media screen and (max-width: 839px) {
@@ -500,7 +571,10 @@
     .solu-hero-3 { right: 90px; }
     .solu-hero-4 { right: 130px; }    
     
+    .compliance-list { width: 305px; height: 105px; }
 
+    .compliance-row { gap: 20px; }
+    .compliance-row + .compliance-row { margin-top: 20px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -538,6 +612,11 @@
     .solu-hero-2 { left: 80px; }
     .solu-hero-3 { right: 60px; }
     .solu-hero-4 { right: 100px; }
+
+    .compliance-list { width: 280px; height: 125px; }
+    .compliance-lists { margin-top: 40px; }
+    
+
 
 }
 
@@ -600,7 +679,20 @@
     .solu-hero-2 { width: 70px; left: 13%; bottom: 95px; z-index: 2; }
     .solu-hero-3 { top: 80px; }
     .solu-hero-4 { bottom: 110px; }
+    
+    .compliance-row { gap: 20px; }
+    .compliance-list { width: 240px; }
+    .compliance-link-arrow { width: 20px; height: 20px; }
+    .compliance-link-arrow img { width: 10px; height: 12px; }
+    .compli-name img { width: 120px; }
+    img.dhatu-pay { width: 100px; }
+    img.dhatu-match { width: 120px; } 
+    img.dhatu-safety { width: 125px; } 
+    img.dhatu-vault { width: 120px; } 
+    img.dhatu-control { width: 140px; } 
+    img.dhatu-comply { width: 145px; } 
 
+    
 }
 
 @media screen and (max-width: 575px) {
@@ -624,10 +716,13 @@
     .step-img { width: 100%; }
     .step-lists { flex-wrap: wrap; }
     .step-list { width: 100%; }
+    .steps-listings { display: none; }
+    .steps-listings.steps-listing-mobile { display: block; }
+    .steps-listings.steps-listing-mobile img { margin-top: 30px; }
     .usp-list, .usp-list.active-usp { width: 100%; }
     /* .vertical-text { margin-bottom: 0 !important; } */
     .usp-list { height: 60px; }
-    .testi-list { width: 100px; }
+    .testi-list { width: 105px; }
     .active-testimonial-list { width: 100%; }
     .active-testi-user .ratings { display: flex; }
     
@@ -637,11 +732,22 @@
     .solu-hero-3 { width: 70px; z-index: 3; right: 10%; top: 70px; }
     .solu-hero-4 { right: 12%; }
 
+    .certification-links .link-padding { padding: 6px 15px; }
+    .compliance-list { width: 90%; height: 105px; }
+    .compliance-link-arrow { width: 25px; height: 25px; }
+    .compliance-link-arrow img { width: 12px; height: 12px; }
+
 }
 
 @media screen and (max-width: 480px) {}
 
 @media screen and (max-width: 459px) {
+
+    @keyframes hm-blog-slides {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-100% + 310px)); }
+    }
+
     /* .home-hero-cap { top: 72%; } */
     .site-hero-cube { bottom: 20%; }
 
@@ -671,9 +777,12 @@
 
     .trial-grwth-details { text-align: left; }
     .certification-links { justify-content: flex-start; }
-    .certificate-usp { gap: 20px; margin-top: 30px; }
+    .certificate-usp { gap: 12px; margin-top: 30px; }
     .certifi-usp { justify-content: start; }
     .name-desig > div { width: 100%; display: flex; align-items: center; justify-content: center; }
+    .trial-grwth-wrapper { gap: 20px; }
+    .certification-links { display: none; }
+    .certi-link-mobile { display: flex; margin-top: 30px; }
 
     .testimonial-headings, .faq-headings { text-align: left; }
     .faq-accord-item .h6 { font-size: 14px; }
@@ -681,6 +790,16 @@
 
     .hero-content { width: 100%; }
     .compliance-list-headings h2, .compliance-list-headings .h6 { width: 100%; text-align: left; }
+    .certifi-usp .h5 { font-size: 14px; line-height: 22px; }
+    .certifi-usp img { width: 24px; }
+    .certifi-usp svg { width: 22px; }
+
+    .blog-showcase { display: none; }
+    .blog-list-lg, .blog-list-sm { width: 310px; }
+    .blog-showcase.blog-mobile { width: max-content; display: flex; overflow-x: scroll; }
+    .blog-showcase.blog-mobile .blog-row { flex-direction: row; animation: hm-blog-slides 15s linear infinite; }
+    .blog-row .h4 { width: 90%; }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -714,17 +833,20 @@
     
     .stats-wrapper > img { width: 100%; }
     .certifications-banner { height: 200px; }
-    .certification-links { margin-top: 20px; }
-    .certification-links .link-padding { padding: 12px 20px; }
-    .blog-row .h4 { width: 90%; }
+    .certification-links { gap: 15px; }
+    
     .name-desig .h5 { font-size: 15px; }
+    .blog-showcase { margin-top: 40px; }
 
     .solu-hero-3 { width: 60px; }
     .solu-hero-4 { width: 50px; }
-
+    .compliance-list { width: 100%; }
+    .compliance-lists { margin-top: 20px; }
 
 }
 
-@media screen and (max-width: 374px) {}
+@media screen and (max-width: 374px) {
+    .testi-list { width: 100px; }
+}
 
 @media screen and (max-width: 359px) {}

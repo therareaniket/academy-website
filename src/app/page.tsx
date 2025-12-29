@@ -2,6 +2,7 @@ import CTA from "@/components/CTA";
 import HomeBlogs from "@/components/Homepage/HomeBlogs";
 import FAQs from "@/components/Homepage/HomeFAQ";
 import HomeHero from "@/components/Homepage/HomeHero";
+import HomePricing from "@/components/Homepage/HomePricing";
 import HomeStats from "@/components/Homepage/HomeStats";
 import HomeTestimonials from "@/components/Homepage/HomeTestimonials";
 import HomeTraningSteps from "@/components/Homepage/HomeTraningSteps";
@@ -22,6 +23,8 @@ export default function Home() {
 				<HomeTraningSteps />
 
 				<USPs />
+
+				{/* <HomePricing /> */}
 
 				<TrialGrowth />
 

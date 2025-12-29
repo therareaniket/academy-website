@@ -53,6 +53,12 @@ export default function TrialGrowth(){
                             <p className="h5 text-md">Flexible Anytime Learning Access</p>
                         </div>
                     </div>
+
+                    <div className="certification-links certi-link-mobile">
+                        <Link href="/Courses" className="link-padding line-white site-radius-10 text-18 text-md">Explore Courses</Link>
+
+                        <Link href="/ComingSoon" className="link-padding link-blue site-radius-10 text-18 text-md">Get Certified</Link>
+                    </div>
                 </div>
             </section>
         </>
