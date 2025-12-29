@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "@/assets/rajvi/custom.css"
+import "@/assets/rajvi/responsive.css"
 import "../assets/custom.css";
 import "../assets/responsive.css";
 import Header from "@/components/Header";
