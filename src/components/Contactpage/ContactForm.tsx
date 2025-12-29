@@ -36,7 +36,7 @@ export default function ContactForm() {
 
                         <div className="contact-form-right">
                             <div className="contact-form-image site-radius-40">
-                                <Image src="/images/contactpage/form-men-image.png" alt="solu-hero-chart" width={568} height={582} className="form-men-image"></Image>
+                                <Image src="/images/contactpage/form-men-image.webp" alt="solu-hero-chart" width={568} height={582} className="form-men-image"></Image>
                             </div>
 
                             <div className="form-cards-main">
