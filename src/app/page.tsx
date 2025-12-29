@@ -1,5 +1,4 @@
 import CTA from "@/components/CTA";
-import Header from "@/components/Header";
 import HomeBlogs from "@/components/Homepage/HomeBlogs";
 import FAQs from "@/components/Homepage/HomeFAQ";
 import HomeHero from "@/components/Homepage/HomeHero";
@@ -14,7 +13,7 @@ export default function Home() {
     return (
 		<>
 			<main>
-				<Header />
+				{/* <Header /> */}
 
 				<HomeHero />
 

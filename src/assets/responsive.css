@@ -67,6 +67,14 @@
     .active-testimonial-list { width: 600px; }
     .quotation-bg { width: 380px; top: 20px; }
 
+    .solutions-hero { height: 600px; }
+    .hero-content { width: 800px; }
+    .inner-hero-cube { width: 550px; }
+    .solu-hero-2 { width: 130px; left: 230px; }
+    .solu-hero-3 { width: 130px; right: 200px; }
+    .solu-hero-4 { width: 110px; right: 250px; }
+
+    .compliance-list-headings .h6 { width: 550px; }
 
 }
 
@@ -131,8 +139,8 @@
     .usp-list .list-num { width: 60px; height: 60px; }
     .usp-list.active-usp { width: 500px; padding: 24px; }
     
-    .trial-grwth-details { width: 550px; }
-    .certifications-banner { width: 560px; height: 500px; object-fit: cover; }
+    .trial-grwth-details { width: 600px; }
+    .certifications-banner { width: 520px; height: 400px; object-fit: cover; }
     
     .blog-showcase { width: 1025px; }
     .blog-row { gap: 25px; }
@@ -142,7 +150,16 @@
     .active-testimonial-list { width: 520px; }
 
     .faq-content { font-size: 15px; }
+    .solutions-hero { height: 500px; }
+    .hero-content { width: 700px; }
+    .inner-hero-cube { width: 450px; bottom: 50px; }
+
+    .solu-hero-1 { width: 90px; top: 150px; left: 140px; }
+    .solu-hero-2 { width: 110px; left: 200px; bottom: 60px; }
+    .solu-hero-3 { width: 110px; top: 100px; right: 180px; }
+    .solu-hero-4 { width: 100px; right: 230px; }
     
+    .compliance-list-headings h2 { width: 520px; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -205,6 +222,13 @@
     .testi-list-inner-box {  padding: 20px; }
     .testi-list { width: 450px; height: 110px; }
     .quotation-bg { width: 300px; left: 50%; }
+    
+    .solu-hero-1 { top: 120px; left: 170px; }
+    .solu-hero-3 { width: 100px; right: 200px; }
+    .solu-hero-4 { width: 90px; bottom: 90px; right: 250px; }
+
+    .compliance-list-headings .h6 { width: 480px; }
+
 
 }
 
@@ -262,7 +286,15 @@
 
     .faq-accord-item .h6 { font-size: 15px; line-height: 23px; }
     .faq-content { font-size: 14px; line-height: 22px; }
-
+    
+    .inner-hero-cube { width: 430px; bottom: 70px; }
+    .solu-hero-1 { left: 130px; }
+    .solu-hero-2 { width: 100px; left: 170px; bottom: 70px; }
+    .solu-hero-3 { top: 90px; right: 160px; }
+    .solu-hero-4 { width: 75px; right: 220px; }
+    
+    .compliance-list-headings .h6 { width: 380px; }
+    
 }
 
 @media screen and (max-width: 1199px) {
@@ -329,6 +361,17 @@
     .quotation-bg { width: 270px; left: 46%; }
 
     .faq-row { width: calc(50% - 10px); }
+
+    .solutions-hero { height: 450px; }
+    .hero-content { width: 580px; }
+    .inner-hero-cube { width: 380px; bottom: 50px; }
+    .solu-hero-1 { width: 80px; left: 100px; }
+    .solu-hero-2 { width: 90px; left: 140px; }
+    .solu-hero-3 { width: 90px; right: 130px; } 
+    .solu-hero-4 { width: 70px; right: 180px; }
+
+    .compliance-list-headings { flex-direction: column; align-items: center; text-align: center; }
+    .compliance-list-headings h2, .compliance-list-headings .h6 { width: 70%; }
     
 }
 
@@ -408,7 +451,14 @@
 
     .faq-lists { margin-top: 40px; flex-direction: column; align-items: center; gap: 20px; }
     .faq-row { width: 80%; }
-
+    
+    .hero-content { width: 500px; }
+    .solu-hero-1 { top: 100px; }
+    .solu-hero-2 { left: 130px; bottom: 80px; }
+    .solu-hero-3 { width: 80px; right: 110px; }
+    .solu-hero-4 { width: 60px; bottom: 100px; right: 150px; }
+    
+    .compliance-list-headings h2, .compliance-list-headings .h6 { width: 90%; }
 }
 
 @media screen and (max-width: 839px) {
@@ -444,7 +494,12 @@
     .blog-row + .blog-row { margin-top: 30px; }
     
     .testi-list { width: 200px; }
- 
+    .inner-hero-cube { bottom: 80px; }
+    .solu-hero-1 { left: 80px; }
+    .solu-hero-2 { width: 80px; left: 110px; }
+    .solu-hero-3 { right: 90px; }
+    .solu-hero-4 { right: 130px; }    
+    
 
 }
 
@@ -477,6 +532,12 @@
     .active-testimonial-list { width: 90%; }
     .testi-list-inner-box { padding: 10px; }
     .testi-list { width: 188px; height: 85px; }
+
+    .hero-content { width: 440px; }
+    .solu-hero-1 { z-index: 2; left: 40px; }
+    .solu-hero-2 { left: 80px; }
+    .solu-hero-3 { right: 60px; }
+    .solu-hero-4 { right: 100px; }
 
 }
 
@@ -533,7 +594,13 @@
     .testi-list { width: 150px; height: 55px; padding: 4px; }
     .name-desig .h5 { margin-bottom: 0; }
     
-    
+    .inner-hero-cube { width: 340px; }
+    .hero-content { width: 420px; }
+    .solu-hero-1 { top: 80px; left: 10%; width: 70px; }
+    .solu-hero-2 { width: 70px; left: 13%; bottom: 95px; z-index: 2; }
+    .solu-hero-3 { top: 80px; }
+    .solu-hero-4 { bottom: 110px; }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -564,6 +631,12 @@
     .active-testimonial-list { width: 100%; }
     .active-testi-user .ratings { display: flex; }
     
+    .hero-content { width: 390px; }
+    .inner-hero-cube { width: 320px; }
+    .solu-hero-2 { left: 16%; }
+    .solu-hero-3 { width: 70px; z-index: 3; right: 10%; top: 70px; }
+    .solu-hero-4 { right: 12%; }
+
 }
 
 @media screen and (max-width: 480px) {}
@@ -605,6 +678,9 @@
     .testimonial-headings, .faq-headings { text-align: left; }
     .faq-accord-item .h6 { font-size: 14px; }
     .faq-row { width: 100%; }
+
+    .hero-content { width: 100%; }
+    .compliance-list-headings h2, .compliance-list-headings .h6 { width: 100%; text-align: left; }
 }
 
 @media screen and (max-width: 400px) {
@@ -642,6 +718,11 @@
     .certification-links .link-padding { padding: 12px 20px; }
     .blog-row .h4 { width: 90%; }
     .name-desig .h5 { font-size: 15px; }
+
+    .solu-hero-3 { width: 60px; }
+    .solu-hero-4 { width: 50px; }
+
+
 }
 
 @media screen and (max-width: 374px) {}

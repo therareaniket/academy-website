@@ -3,12 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [hideHeader, setHideHeader] = useState(false);
 	const [lastScrollY, setLastScrollY] = useState(0);
 	const headerRef = useRef<HTMLDivElement | null>(null);
+	const pathname = usePathname();
 
 	const toggleMenu = () => { setIsMenuOpen(!isMenuOpen); };
 
@@ -33,7 +35,12 @@ export default function Header() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [lastScrollY, isMenuOpen]);
 
+	useEffect(() => {
+  		setIsMenuOpen(false);
+	}, [pathname]);
+
 	return (
+		
 		<>
 			<header className={`site-header ${hideHeader ? 'header-hide' : ''}`} ref={headerRef}>
         		<div className="container">
@@ -55,22 +62,22 @@ export default function Header() {
 								<div className="mega-menu-content">
 									<ul>
 										<li>
-											<Link href="#" className="menu-link h3">Home</Link>
+											<Link href="/" className={`menu-link h3 ${pathname === '/' ? 'active-header-link' : ''}`}>Home</Link>
 										</li>
 										<li>
-											<Link href="#" className="menu-link h3">About</Link>
+											<Link href="/About" className={`menu-link h3 ${pathname === '/About' ? 'active-header-link' : ''}`}>About</Link>
 										</li>
 										<li>
-											<Link href="#" className="menu-link h3">Solutions</Link>
+											<Link href="/Solutions" className={`menu-link h3 ${pathname === '/Solutions' ? 'active-header-link' : ''}`}>Solutions</Link>
 										</li>
 										<li>
-											<Link href="#" className="menu-link h3">Courses</Link>
+											<Link href="/Courses" className={`menu-link h3 ${pathname === '/Courses' ? 'active-header-link' : ''}`}>Courses</Link>
 										</li>
 										<li>
-											<Link href="#" className="menu-link h3">Resources</Link>
+											<Link href="/Resources" className={`menu-link h3 ${pathname === '/Resources' ? 'active-header-link' : ''}`}>Resources</Link>
 										</li>
 										<li>
-											<Link href="#" className="menu-link h3">Contact</Link>
+											<Link href="/Contact" className={`menu-link h3 ${pathname === '/Contact' ? 'active-header-link' : ''}`}>Contact</Link>
 										</li>
 									</ul>
 								</div>
