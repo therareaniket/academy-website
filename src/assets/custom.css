@@ -44,7 +44,7 @@ body { background-color: var(--off-white); }
     backdrop-filter: blur(10px);
 }
 .header-logo-link img { width: 250px; }
-.header-megamenu.active .menu-grdnt-bg { width: 700px; height: 900px; border-radius: 20px; }
+.header-megamenu.active .menu-grdnt-bg { width: 400px; height: 600px; border-radius: 20px; }
 .mega-menu-trigger { width: 100%; height: 70px; position: absolute; z-index: 3; padding: 0 10px; background-color: transparent; display: flex; flex-direction: column; align-items: end; justify-content: center; gap: 6px; cursor: pointer; transition: all 0.3s ease; }
 .menu-lines { display: block; width: 30px; height: 4px; background-color: black; border-radius: 20px; transition: all 0.3s ease; }
 .menu-line-2 { width: 40px; }
@@ -57,9 +57,9 @@ body { background-color: var(--off-white); }
 
 .menu-link { display: block; text-align: right; }
 .mega-menu-content { display: none; transition: all 0.3s ease-in-out; }
-.header-megamenu.active .mega-menu-content { display: block; position: relative; z-index: 5; height: 640px; width: 350px; position: absolute; right: 0; top: 120px; }
-.mega-menu-content li { display: block; padding: 20px 40px; }
-.mega-menu-content a { transition: var(--transition); font-family: poppins-md; }
+.header-megamenu.active .mega-menu-content { display: block; position: relative; z-index: 5; height: 640px; width: 350px; position: absolute; right: 0; top: 90px; }
+.mega-menu-content li { display: block; padding: 16px 40px; }
+.mega-menu-content a { transition: var(--transition); font-family: poppins-md; margin-bottom: 0; }
 .header-megamenu, .header-megamenu * { font-family: poppins-rg; }
 .mega-menu-content a:hover { color: var(--secondary-blue-purple); font-family: poppins-sb; }
 .active-header-link { color: var(--secondary-blue-purple); font-family: poppins-sb; }
@@ -155,13 +155,13 @@ body { background-color: var(--off-white); }
 .benefe-list li:last-child { margin-bottom: 0px; }
 .card-details { padding: 10px 30px 30px 30px; }
 .plan-price { display: flex; align-items: center; gap: 20px; }
-.plan-price .h2 { color: #FEAF06; }
+/* .plan-price .h2 { color: #FEAF06; } */
 .plan-include-list { margin-top: 30px; }
 .plan-include-list li { display: flex; gap: 20px; }
 .plan-include-list li:not(:last-child) { margin-bottom: 14px; }
 .planing-link { display: inline-block; padding: 14px 140px; margin-top: 60px; background-color: var(--dark-blue); color: var(--white); }
 
-.sliding-card { width: 100%; height: 330px; position: absolute; top: 0; left: 0; z-index: 2;  transform: translateY(calc(-45px - 30px)); padding: 30px; }
+.sliding-card { width: 100%; height: 330px; position: absolute; top: 0; left: 0; z-index: 2;  transform: translateY(calc(-45px - 30px)); padding: 30px; transition: all 0.5s ease-in-out; }
 .standard-card { background-color: var(--primary-yellow); color: var(--black); }
 .enterprise-card { background-color: var(--dark-blue); color: var(--white); }
 .pricing-cards-swipes { position: relative; }

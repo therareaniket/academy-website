@@ -10,8 +10,9 @@
     h5, .h5 { font-size: 22px; line-height: 32px; }
 
     .header-logo-link img { width: 220px; }
-    .header-megamenu.active .menu-grdnt-bg { width: 600px; height: 780px; }
-    .menu-link.h3 { margin-bottom: 0px; }
+    .header-megamenu.active .menu-grdnt-bg { width: 350px; height: 550px; }
+    .menu-link.h3 { margin-bottom: 0px; font-size: 34px; line-height: 42px; }
+    .mega-menu-content li { padding: 12px 35px; }
     .mega-menu-trigger, .menu-grdnt-bg, .header-megamenu { width: 60px; height: 60px; }
     .menu-line-1 { width: 20px; }
     .menu-line-2 { width: 30px; }
@@ -85,9 +86,11 @@
     .text-18 { font-size: 16px; line-height: 24px; }
     .section { padding: 100px 0; }
     
-    .header-megamenu.active .mega-menu-content { top: 100px; }
-    .header-megamenu.active .menu-grdnt-bg { width: 500px; height: 720px; }
-    .mega-menu-content li { padding: 15px 60px; }
+    .header-megamenu.active .mega-menu-content { top: 80px; }
+    .header-megamenu.active .menu-grdnt-bg { width: 320px; height: 500px; }
+    .menu-link.h3 { font-size: 32px; line-height: 40px; }
+    .header-megamenu.active .mega-menu-trigger { padding-top: 20px; }
+    .mega-menu-content li { padding: 12px 36px; }
     .mega-menu-trigger, .menu-grdnt-bg, .header-megamenu { width: 45px; height: 45px; }
     .mega-menu-trigger { gap: 4px; padding: 0 8px; }
     .menu-lines { height: 3px; }
@@ -177,8 +180,9 @@
     
     .section { padding: 120px 0; }
 
-    .menu-link.h3 { margin-bottom: 10px; }
-    .header-megamenu.active .menu-grdnt-bg { width: 450px; height: 650px; }
+    .menu-link.h3 { margin-bottom: 0px; font-size: 30px; line-height: 38px; }
+    .header-megamenu.active .menu-grdnt-bg { width: 300px; }
+    
     .home-hero { height: 620px; }
     .site-hero-cube { width: 600px; bottom: 70px; }
     .home-hero-cap { width: 130px; right: 140px; }
@@ -264,14 +268,20 @@
     h4, .h4 { font-size: 24px; line-height: 32px; }
     h6, .h6 { font-size: 16px; line-height: 26px; }
     
-    .header-megamenu.active .menu-grdnt-bg { width: 410px; height: 570px; }
+    .header-megamenu.active .menu-grdnt-bg { height: 450px; }
     .header-megamenu.active .mega-menu-content { height: 460px; }
-    .menu-link.h3 { margin-bottom: 0; }
-    .mega-menu-content li { padding: 10px 50px; }
+    .mega-menu-content li { padding: 10px 36px; }
     .mega-menu-trigger { height: 40px; }  
     .hero-details h1 { width: 80%; margin-bottom: 20px; }
     .home-hero-cap { width: 120px; right: 120px; }
     .home-hero-bulb { left: 40px; }
+    .menu-link.h3 { font-size: 28px; line-height: 36px; }
+    .mega-menu-content li { padding: 8px 30px; }
+    .header-megamenu.active .menu-grdnt-bg { width: 250px; height: 420px; }
+    .header-megamenu.active .mega-menu-content { top: 70px; }
+
+
+    
     
     .cta-wrapper { padding: 30px; height: 350px; }
     .cta-female { width: 450px; }
@@ -421,10 +431,10 @@
     .planing-link { margin-top: 40px; padding: 14px 70px; }
     .card-swipe { width: 340px; }
     .card-details { width: 400px; }
-    .slide-card-title img { width: 90px; top: 10px; }
-    .sliding-card { height: 230px; padding: 20px; transform: translateY(-45px); }
+    .slide-card-title img { width: 75px; top: 0px; }
+    .sliding-card { height: 200px; padding: 20px; transform: translateY(-45px); }
     .active-pricing-card { transform: translateY(10px); }
-    .card-details, .card-swipe { height: 390px; }
+    .card-details, .card-swipe { height: 360px; }
     .extra-benefits { gap: 30px; }
     .benefe-list { gap: 20px; }
     .benefe-list li { gap: 10px; }
@@ -433,6 +443,10 @@
     .compliance-row:nth-child(1) { order: 1; }
     .compliance-row:nth-child(2) { order: 3; }
     .compliance-row:nth-child(3) { order: 2; }
+
+    .pricing-detailed-wrapper { margin-top: 100px; }
+    .plan-include-list li:not(:last-child) { margin-bottom: 10px; }
+    .planing-link { padding: 12px 40px; margin-top: 30px; }                                                                                                                                                                                        certificate-usp { margin-top: 60px; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -448,9 +462,6 @@
     .header-wrapper { padding: 16px 0; }
     .header-logo-link img { width: 150px; }
     .header-megamenu.active .mega-menu-content { top: 70px; }
-    .header-megamenu.active .menu-grdnt-bg { width: 350px; height: 500px; }
-    .mega-menu-content li { padding: 10px 30px; }
-    .menu-link.h3 { font-size: 32px; line-height: 42px; }
     .header-megamenu.active .mega-menu-content { height: 400px; }
 
     .mega-menu-trigger, .menu-grdnt-bg, .header-megamenu { width: 40px; height: 40px; }
@@ -492,11 +503,15 @@
     
     .trial-grwth-details { width: 90%; }    
     .certifications-banner { width: 90%; }
+    .certificate-usp { margin-top: 60px; }
     .certification-links { margin-top: 30px; }
+    .certification-links { display: none; }
+    .certi-link-mobile { display: flex; margin-top: 30px; }
     .certifi-usp { width: 215px; gap: 15px; }
     .blog-list-lg, .blog-list-sm { width: calc(50% - 10px); }
     .blog-row .h4 { width: 100%; font-size: 18px; line-height: 26px; }
     .blog-row + .blog-row { margin-top: 40px; }
+    .certi-link-mobile { margin-top: 40px; }
 
     .testimonial-wrapper { width: 100%; flex-direction: column; gap: 40px; margin-top: 50px; }
     .testimonial-lists { display: flex; gap: 15px; }
@@ -530,6 +545,15 @@
     img.dhatu-control { width: 150px; }
     img.dhatu-comply { width: 150px; }
 
+    .plan-card-detail-wrapper { flex-direction: column; }
+    .card-swipe { width: 100%;  height: 230px; }
+    .card-details { width: 100%; height: 330px; padding: 20px; }
+    .sliding-card { width: 50%; }
+    .card-swipe-text { width: 200px; top: 30%; left: auto; right: 30px; }
+    .plans-link-wrap { justify-content: flex-start; }
+    .extra-benefits { align-items: flex-start; justify-content: space-between; }
+    .extra-benefe-title { width: 50%; }
+    .benefe-list { flex-direction: column; gap: 10px; }
 }
 
 @media screen and (max-width: 839px) {
@@ -537,8 +561,9 @@
     .text-18 { font-size: 12px; line-height: 20px; }
     .section { padding: 70px 0; }
 
-    .menu-link.h3 { font-size: 30px; line-height: 38px; }
+    .menu-link.h3 { font-size: 26px; line-height: 32px; }
     .header-megamenu.active .mega-menu-content { top: 80px; }
+    .mega-menu-content li { padding: 8px 25px; }
     .hero-details h1 { width: 85%; margin-bottom: 30px; }
     .home-hero-cap { width: 90px; right: 60px; }
     .home-hero-player { width: 110px; bottom: 60px;  }
@@ -575,6 +600,15 @@
 
     .compliance-row { gap: 20px; }
     .compliance-row + .compliance-row { margin-top: 20px; }
+
+    .sliding-card { width: 55%; height: 180px; padding: 16px; }
+    .slide-card-title img { width: 70px; }
+    .card-swipe { height: 210px; }
+    .planing-link { margin-top: 20px; }
+    .card-details { height: 310px; }
+    .benefe-list { width: 180px; }
+
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -625,11 +659,11 @@
     h2, .h2 { font-size: 22px; line-height: 32px; }
     .container { max-width: calc(500px + 36px); }
 
-    .header-megamenu.active .menu-grdnt-bg { width: 250px; }
+    .header-megamenu.active .menu-grdnt-bg { width: 250px; height: 400px; }
     .header-megamenu.active .mega-menu-content { width: max-content; height: 350px; }
     .mega-menu-content li { padding: 8px 25px;   }
     .menu-link.h3 { font-size: 24px; line-height: 32px; }
-    .header-megamenu.active .mega-menu-content { top: 90px; }
+    .header-megamenu.active .mega-menu-content { top: 76px; }
     
     .mega-menu-trigger, .menu-grdnt-bg, .header-megamenu { width: 35px; height: 35px; }
     .menu-line-1 { width: 8px; }
@@ -691,7 +725,15 @@
     img.dhatu-vault { width: 120px; } 
     img.dhatu-control { width: 140px; } 
     img.dhatu-comply { width: 145px; } 
-
+    
+    .card-swipe { margin: 0 auto; }
+    .sliding-card { width: 70%; left: 15%; }
+    .card-swipe-text { display: none; }
+    .plan-include-list img, .benefe-list img { width: 12px; }
+    .plan-include-list li { gap: 12px; }
+    .planing-link { padding: 8px 20px; }
+    .plan-price { gap: 10px; }
+    .extra-benefits { padding: 18px; }
     
 }
 
@@ -736,6 +778,14 @@
     .compliance-list { width: 90%; height: 105px; }
     .compliance-link-arrow { width: 25px; height: 25px; }
     .compliance-link-arrow img { width: 12px; height: 12px; }
+    
+    .sliding-card { width: 80%; left: 10%; }
+    .extra-benefits { flex-direction: column; }
+    .extra-benefe-title { width: 100%; }
+    .benefe-list { width: 100%; }
+    .extra-benefits { gap: 10px; }
+    .card-details { height: 300px; }
+    .extra-benefits { padding: 20px; }
 
 }
 
@@ -781,8 +831,6 @@
     .certifi-usp { justify-content: start; }
     .name-desig > div { width: 100%; display: flex; align-items: center; justify-content: center; }
     .trial-grwth-wrapper { gap: 20px; }
-    .certification-links { display: none; }
-    .certi-link-mobile { display: flex; margin-top: 30px; }
 
     .testimonial-headings, .faq-headings { text-align: left; }
     .faq-accord-item .h6 { font-size: 14px; }
@@ -799,6 +847,11 @@
     .blog-showcase.blog-mobile { width: max-content; display: flex; overflow-x: scroll; }
     .blog-showcase.blog-mobile .blog-row { flex-direction: row; animation: hm-blog-slides 15s linear infinite; }
     .blog-row .h4 { width: 90%; }
+    .sliding-card { width: 90%; height: 165px; left: 5%; }
+    .slide-card-title img { width: 65px; }
+    .card-swipe { height: 195px; }
+    .card-details { height: 330px; }
+
 
 }
 
@@ -815,7 +868,8 @@
     .header-megamenu.active .menu-line-1 { transform: rotate(45deg) translate(7px, 7px); width: 30px; background: black; }
     .header-megamenu.active .menu-line-3 { transform: rotate(-45deg) translate(8px, -8px); width: 30px; background: black; }
     
-    .header-megamenu.active .menu-grdnt-bg { height: 450px; }
+    .header-megamenu.active .menu-grdnt-bg { width: 200px; height: 400px; }
+    .header-megamenu.active .mega-menu-trigger { padding-top: 10px; }    
     .header-megamenu:not(.active) .menu-grdnt-bg { background: transparent; }
     .mega-menu-trigger, .menu-grdnt-bg, .header-megamenu { width: 30px; height: 30px; }
     .mega-menu-trigger { padding: 0; }
@@ -842,6 +896,14 @@
     .solu-hero-4 { width: 50px; }
     .compliance-list { width: 100%; }
     .compliance-lists { margin-top: 20px; }
+
+    .sliding-card { width: 100%; left: 0; padding: 14px; }
+    .slide-card-title img { width: 55px; }
+    .card-swipe { height: 175px; }
+    .card-details { height: max-content; }
+    .pricing-main-box { padding: 12px; }
+    .planing-link { padding: 6px 15px; }
+
 
 }
 

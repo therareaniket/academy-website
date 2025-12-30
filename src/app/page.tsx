@@ -24,7 +24,7 @@ export default function Home() {
 
 				<USPs />
 
-				{/* <HomePricing /> */}
+				<HomePricing />
 
 				<TrialGrowth />
 
