@@ -74,6 +74,7 @@
     
     img.dhatu-vault { width: 155px; }
     img.dhatu-control { width: 180px; }
+    .three-lines { width: 270px; top: 140px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -168,6 +169,8 @@
     .slide-card-title img { width: 150px; top: 20px; }
     .sliding-card { height: 310px; }
     .planing-link { padding: 14px 120px; }
+
+    .three-lines { width: 240px; top: 140px; }
     
 }
 
@@ -260,6 +263,8 @@
     .extra-benefe-title { width: 40%; }
     .extra-benefe-title p { width: 100%; }
 
+    .three-lines { width: 220px; top: 140px; right: 60px; }
+
 }
 
 @media screen and (max-width: 1359px) {
@@ -345,6 +350,8 @@
     
     .sliding-card { transform: translateY(-60px); }
     .active-pricing-card { transform: translateY(20px); }
+
+    .three-lines { width: 200px; top: 130px; right: 50px; }
 
 }
 
@@ -446,7 +453,10 @@
 
     .pricing-detailed-wrapper { margin-top: 100px; }
     .plan-include-list li:not(:last-child) { margin-bottom: 10px; }
-    .planing-link { padding: 12px 40px; margin-top: 30px; }                                                                                                                                                                                        certificate-usp { margin-top: 60px; }
+    .planing-link { padding: 12px 40px; margin-top: 30px; }    
+    .certificate-usp { margin-top: 60px; }
+
+    .three-lines { width: 170px; top: 230px; right: 16px; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -554,6 +564,9 @@
     .extra-benefits { align-items: flex-start; justify-content: space-between; }
     .extra-benefe-title { width: 50%; }
     .benefe-list { flex-direction: column; gap: 10px; }
+
+    .three-lines { display: none; }
+
 }
 
 @media screen and (max-width: 839px) {

@@ -93,12 +93,14 @@ body { background-color: var(--off-white); }
 .get-started-btn { position: absolute; bottom: 145px; right: 340px; gap: 25px; z-index: 3; }
 .get-started-btn .h5 { margin-bottom: 0; }
 
-.home-statistics { background-color: var(--off-white); }
+.home-statistics { background-color: var(--off-white); position: relative; }
+.home-statistics .container { position: relative; }
+.three-lines { position: absolute; top: 120px; right: 100px; }
 .stats-headings { display: flex; justify-content: space-between; }
 .stats-headings h2 { width: 670px; }
 .stats-headings .h6 { width: 620px; }
 
-.stats-wrapper { margin-top: 60px; position: relative;  }
+.stats-wrapper { margin-top: 60px; position: relative; }
 .stats-wrapper > img { position: absolute; left: 50px; bottom: 0; }
 .stats-step1, .stats-step2, .stats-step3 { display: flex; gap: 20px; }
 .stats-step1 .blue-box { width: 700px;  background-color: var(--primary-blue); position: relative; }
