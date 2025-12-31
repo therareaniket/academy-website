@@ -10,7 +10,7 @@ export default function ContactHero() {
 
                 <div className="container">
                     <div className="hero-content">
-                        <h1>Focused Training for Real World Success</h1>
+                        <h1>Talk Clinical Trials Training</h1>
                     </div>
                 </div>
 

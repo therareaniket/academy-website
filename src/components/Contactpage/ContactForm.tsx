@@ -9,9 +9,9 @@ export default function ContactForm() {
                     <div className="contact-form-wrapper">
                         <div className="contact-form-left">
                             <div className="contact-heading">
-                                <h2>Your Learning Journey Starts with a Conversation</h2>
+                                <h2>Your Clinical Trials Path Begins Here</h2>
 
-                                <p className="h6 text-rg">Submit your request and our experts will connect with you shortly to provide secure payment solutions and seamless portal integration.</p>
+                                <p className="h6 text-rg">DhatuAcademy experts connect fast for seamless enrollment across products.</p>
                             </div>
 
                             <div className="contact-form-fields">
@@ -40,23 +40,23 @@ export default function ContactForm() {
                             </div>
 
                             <div className="form-cards-main">
-                            <div className="form-cards email-card site-radius-20">
-                                <span className="icon-contact-mail"></span>
-                                <p className="text-18 text-rg">Email</p>
-                                <p className="h5 text-rg text-grey">enquiry@dhatuacademy.com</p>
-                            </div>
+                                <div className="form-cards email-card site-radius-20">
+                                    <Image src="/images/contactpage/contact-card-mail.svg" alt="solu-hero-chart" width={33} height={26} className="contact-form-mail"></Image>
+                                    <p className="text-18 text-rg">Email</p>
+                                    <p className="h5 text-rg text-grey">enquiry@dhatuacademy.com</p>
+                                </div>
 
-                            <div className="form-cards phone-card site-radius-20">
-                                <span className="icon-contact-call"></span>
-                                <p className="text-18 text-rg">Phone Number</p>
-                                <p className="h5 text-rg text-grey">+1 512 843 2002</p>
+                                <div className="form-cards phone-card site-radius-20">
+                                    <Image src="/images/contactpage/contact-card-call.svg" alt="solu-hero-chart" width={28} height={28} className="contact-form-call"></Image>
+                                    <p className="text-18 text-rg">Phone Number</p>
+                                    <p className="h5 text-rg text-grey">+1 512 843 2002</p>
 
-                            </div>
-                            <div className="form-cards location-card site-radius-20">
-                                <span className="icon-contact-location"></span>
-                                <p className="text-18 text-rg">Location</p>
-                                <p className="h5 text-rg text-grey">240, Newark, DE 19702, USA</p>
-                            </div>
+                                </div>
+                                <div className="form-cards location-card site-radius-20">
+                                    <Image src="/images/contactpage/contact-card-location.svg" alt="solu-hero-chart" width={23} height={33} className="contact-form-location"></Image>
+                                    <p className="text-18 text-rg">Location</p>
+                                    <p className="h5 text-rg text-grey">240, Newark, DE 19702, USA</p>
+                                </div>
                             </div>
                         </div>
                     </div>
