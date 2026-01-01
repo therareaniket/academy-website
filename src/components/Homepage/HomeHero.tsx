@@ -25,7 +25,7 @@ export default function HomeHero() {
 
                 <div className="container">
                     <div className="hero-details">
-                        <h1>Master All Clinical Trials Products with <span>AI-Powered</span> DhatuAcademy</h1>
+                        <h1>Master All Clinical Trials with <span>Agentic Powered</span> DhatuAcademy</h1>
                     </div>
                 </div>
             </section>

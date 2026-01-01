@@ -26,7 +26,6 @@
     .home-hero-player { width: 200px; left: 260px; bottom: 90px; }
     .get-started-btn { right: 230px; gap: 20px; }
 
-
     .cta-female { width: 600px; }
     .cta-wrapper { height: 500px; }
     .arrow-link { width: 120px; height: 60px; padding: 0; display: flex; align-items: center; justify-content: center; }
@@ -75,6 +74,29 @@
     img.dhatu-vault { width: 155px; }
     img.dhatu-control { width: 180px; }
     .three-lines { width: 270px; top: 140px; }
+
+    .why-academy-headings h2 { width: 680px; }
+    .why-academy-headings p { width: 520px; }
+    .why-us-list-item { width: 280px; height: 500px; }
+    .active-why-us-list { width: 420px; height: 700px; }
+
+    .cmtmnt-content { height: 530px; }
+    .mission { width: 400px; }
+    .small-stats { width: 450px; }
+    .mission-details p { width: 90%; }
+    .vision { width: 420px; }
+    .vision-details p { width: 90%; }
+    .modules-list img { width: 60px; height: 60px; }
+    .proff-trained { padding: 50px; }
+
+    .timeline-steps-container { width: 1100px; }
+    .tl-step { width: 500px; }
+    .step-details { width: 320px; }
+    .timeline-arrow-right, .timeline-arrow-left { width: 400px; }
+    .timeline-even-steps { margin-top: 180px; }
+    .step-count { height: 220px; }
+
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -139,13 +161,13 @@
     .usp-link { padding: 16px 42px; }
     .usp-list .list-num { width: 60px; height: 60px; }
     .usp-list.active-usp { width: 500px; padding: 24px; }
-    
+
     .trial-grwth-details { width: 600px; }
     .certifications-banner { width: 520px; height: 400px; object-fit: cover; }
-    
+
     .blog-showcase { width: 1025px; }
     .blog-row { gap: 25px; }
-  
+
     .testi-list { width: 500px; }
     .testi-list-inner-box { padding: 25px; }
     .active-testimonial-list { width: 520px; }
@@ -159,7 +181,7 @@
     .solu-hero-2 { width: 110px; left: 200px; bottom: 60px; }
     .solu-hero-3 { width: 110px; top: 100px; right: 180px; }
     .solu-hero-4 { width: 100px; right: 230px; }
-    
+
     .compliance-list-headings h2 { width: 520px; }
     .compliance-list { width: 370px; }
 
@@ -171,7 +193,27 @@
     .planing-link { padding: 14px 120px; }
 
     .three-lines { width: 240px; top: 140px; }
+
+    .why-us-list-item { width: 250px; height: 400px; padding: 20px; }
+    .why-academy-headings h2 { width: 520px; }
+    .why-academy-headings p { width: 480px; }
+    .why-us-list-item .h4 { font-size: 22px; line-height: 32px; }
+    .active-why-us-list { width: 380px; height: 550px; }
+    .active-why-us-list .h4 { font-size: 24px; line-height: 34px; }
+
+    .learner-satisfaction { padding: 35px; }
+    .proff-trained { padding: 40px 35px; }
+    .small-stats { width: 400px;  }
+    .vision { width: 360px; padding: 30px; }
+    .cmtmnt-content { height: 490px; }
     
+    .timeline-steps-container { width: 1000px; }
+    .tl-step { width: 450px; padding: 25px; }
+    .step-count { width: 55px; height: 200px; }
+    .step-details { width: 300px; }
+    .timeline-arrow-right, .timeline-arrow-left { width: 350px; }    
+
+
 }
 
 @media screen and (max-width: 1439px) {
@@ -264,6 +306,18 @@
     .extra-benefe-title p { width: 100%; }
 
     .three-lines { width: 220px; top: 140px; right: 60px; }
+    
+    .why-academy-headings p { width: 420px; }
+    .why-us-list-item { width: 220px; height: 380px; }    
+    .active-why-us-list { width: 360px; height: 540px; }
+
+    .mission, .learner-satisfaction, .proff-trained { padding: 30px; }
+    .cmtmnt-content, .small-stats, .stats-vision, .number-vision { gap: 25px; }
+    .small-stats { width: 320px; }
+    .vision { width: 340px; }
+    .cmtmnt-content { height: 450px; }
+    .modules-list img { width: 55px; height: 55px; }
+    
 
 }
 
@@ -284,9 +338,6 @@
     .mega-menu-content li { padding: 8px 30px; }
     .header-megamenu.active .menu-grdnt-bg { width: 250px; height: 420px; }
     .header-megamenu.active .mega-menu-content { top: 70px; }
-
-
-    
     
     .cta-wrapper { padding: 30px; height: 350px; }
     .cta-female { width: 450px; }
@@ -352,6 +403,28 @@
     .active-pricing-card { transform: translateY(20px); }
 
     .three-lines { width: 200px; top: 130px; right: 50px; }
+    
+    .why-us-lists { margin-top: 40px; }
+    .why-us-list-item { padding: 18px; width: 200px; height: 360px; }
+    .why-us-list-item .h4 { font-size: 18px; line-height: 26px; }
+    .active-why-us-list { width: 330px; height: 520px; background-position: top right; background-size: contain; }
+    
+    .why-academy-headings p { width: 340px; }
+    .proff-trained .h1 { font-size: 40px; line-height: 50px; }
+    .abt-bulb { width: 90px; }
+    .mission-laptop { width: 90px; }
+    .mission-line { left: 30px; }
+    .small-stats { width: 300px; }
+    .vision { width: 300px; }
+    .mission-details, .vision-details{ margin-top: 30px; }
+    .cmtmnt-content { height: 440px; }
+
+    .timeline-steps-container { width: 850px; }
+    .tl-step { width: 390px; }
+    .step-details { width: 260px; }
+    .step-count { width: 45px; height: 160px; }
+    .timeline-arrow-right, .timeline-arrow-left { width: 270px; }
+    .timeline-even-steps { margin-top: 160px; } 
 
 }
 
@@ -457,6 +530,42 @@
     .certificate-usp { margin-top: 60px; }
 
     .three-lines { width: 170px; top: 230px; right: 16px; }
+    
+    .why-us-lists { flex-direction: column; gap: 20px; }
+    .why-academy-headings h2 { width: 100%; }
+    .why-academy-headings p { width: 100%; }
+    .why-us-list-item { width: 80%; height: 120px; flex-direction: row-reverse; }
+    .active-why-us-list { height: 350px; width: 100%; background-position: center center; background-size: cover; }
+    .item-list-details { justify-content: end; gap: 12px; }
+    .why-academy-headings { width: 70%; flex-direction: column; margin: 0 auto; text-align: center; }
+
+    .cmtmnt-content { flex-direction: column; align-items: center; height: auto; }
+    .mission-line { display: none; }
+    .mission, .vision { width: 80%; height: 200px; }
+    .stats-vision { flex-direction: column-reverse; align-items: center; }
+    .mission-details, .vision-details { margin-top: 10px; }
+    .mission, .vision, .learner-satisfaction, .proff-trained { padding: 20px; }
+    .mission-laptop { bottom: auto; top: 10px; }
+    .small-stats { flex-direction: row; width: 80%; }
+    .learner-satisfaction .h3 { flex-direction: column; align-items: start; }
+    .learner-satisfaction, .proff-trained { width: 50%; }
+    .proff-trained .h1 { font-size: 30px; line-height: 40px; margin-bottom: 0; }
+    .full-stats { width: 80%; }
+    .number-vision { align-items: center; }
+    .proff-trained span { margin-bottom: 0; }
+
+    .academy-roles .steps-listings{ display: none; }
+    .academy-roles .steps-listing-mobile { display: flex; }
+    
+    .academy-roles .steps-listing-mobile .step-img { width: 100%; }
+    .academy-roles .steps-listing-mobile .step-img img { width: 60%; margin: 0 auto; margin-top: 30px; }
+
+    .timeline-steps-container { width: 100%; }
+    .tl-step { width: 370px; padding: 20px; }
+    .timeline-arrow-right  { left: 130px; }
+    .timeline-arrow-left { right: 130px; }
+    .timeline-odd-steps, .timeline-even-steps { gap: 100px; }
+
 }
 
 @media screen and (max-width: 1023px) {}
@@ -566,6 +675,24 @@
     .benefe-list { flex-direction: column; gap: 10px; }
 
     .three-lines { display: none; }
+    .why-academy-headings { width: 90%; }
+
+    .learner-satisfaction .h3 { gap: 10px; }
+    .proff-trained .h1 { font-size: 24px; line-height: 32px; }
+    .proff-trained span { margin-top: 10px; }
+    .mission-laptop { width: 70px; }
+    .full-stats { padding: 30px; height: 100px; }
+    .small-stats { height: 100px; }
+    .cmtmnt-content { margin-top: 40px; }
+    
+    .timeline-steps-container { margin-top: 40px; }
+    .step-count .vertical-text { writing-mode: vertical-rl; transform: rotate(180deg); } 
+    .tl-step { width: 320px; }
+    .step-details { width: 200px; }
+    .timeline-arrow-right { left: 100px; }
+    .timeline-arrow-left { right: 100px; }
+    
+
 
 }
 
@@ -621,6 +748,19 @@
     .card-details { height: 310px; }
     .benefe-list { width: 180px; }
 
+    .why-us-list-item { height: 110px; }
+    .item-list-details img { width: 30px; }
+    .active-why-us-list { height: 300px; }
+
+    .cmtmnt-content, .small-stats, .stats-vision, .number-vision { gap: 20px; }
+    
+    .tl-step { width: 300px; }
+    .step-count { width: 40px; height: 140px; }
+    .timeline-arrow-right, .timeline-arrow-left { width: 250px; }
+    .timeline-arrow-right { left: 70px; }
+    .timeline-arrow-left { right: 70px; }
+    .timeline-odd-steps, .timeline-even-steps { gap: 90px; }
+    .timeline-even-steps { margin-top: 130px; }
     
 }
 
@@ -662,8 +802,20 @@
 
     .compliance-list { width: 280px; height: 125px; }
     .compliance-lists { margin-top: 40px; }
-    
 
+    .proff-trained .h1 { font-size: 22px; line-height: 28px; }
+    .proff-trained span { margin-top: 4px; }
+    .mission-icon { width: 35px; height: 35px; }
+    .vision-icon { width: 35px; }
+    .full-stats { padding: 20px; }
+    .mission, .vision, .small-stats, .full-stats { width: 90%; }
+    
+    .tl-step { width: 280px; }
+    .step-count { width: 32px; height: 120px; }
+    .step-details { width: 180px; }
+    .timeline-arrow-right { left: 60px; }
+    .timeline-arrow-left { right: 60px; }
+    
 
 }
 
@@ -747,10 +899,23 @@
     .planing-link { padding: 8px 20px; }
     .plan-price { gap: 10px; }
     .extra-benefits { padding: 18px; }
+
+    .modules-list img { width: 50px; height: 50px; }
+    .training-modules-info .h6 { width: 150px; }
+    .small-stats { height: 120px; }
+    .proff-trained .h1 { font-size: 20px; line-height: 28px; }
     
+    .tl-step { width: 230px; padding: 16px; }
+    .step-details { width: 150px; }
+    .timeline-arrow-right, .timeline-arrow-left { width: 200px; }
+    .timeline-odd-steps, .timeline-even-steps { gap: 74px; }
+    .timeline-even-steps { margin-top: 100px; }
+        
+    
+
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
     h1, .h1 { font-size: 28px; line-height: 38px; }
     h2, .h2 { font-size: 20px; line-height: 28px; }
     h4, .h4 { font-size: 16px; line-height: 24px; margin-bottom: 6px; }
@@ -800,6 +965,31 @@
     .card-details { height: 300px; }
     .extra-benefits { padding: 20px; }
 
+    .why-us-list-item .h4 { font-size: 16px; line-height: 26px; }
+    .item-list-details { gap: 8px; }
+    .active-why-us-list { height: 250px; background-position: top top; }
+
+    .small-stats { flex-direction: column; height: auto; }
+    .learner-satisfaction, .proff-trained { width: 100%; }
+    .full-stats { flex-direction: column; height: auto; align-items: start; gap: 10px; }
+    .modules-list img:nth-child(1) { transform: translateX(0); }
+    .modules-list img:nth-child(2) { transform: translateX(0); }
+    .modules-list img:nth-child(3) { transform: translateX(0); }
+    .modules-list { gap: 10px; }
+    .proff-trained .h1, .learner-satisfaction .h3, .training-modules-info .h3 { font-size: 22px; line-height: 30px; }
+    .learner-satisfaction .h3 { gap: 4px; }
+    
+    .timeline-steps-container { display: none; }
+    .timeline-steps-container.mobile-timeline-steps { display: flex; flex-direction: column; gap: 20px; }
+    .tl-step { width: 300px; }
+    .step-count { height: 100px; }
+    .step-details { width: 210px; }
+    .timeline-odd-steps, .timeline-even-steps { gap: 212px; }
+    .timeline-even-steps { margin-top: 172px; }
+    .timeline-arrow-right, .timeline-arrow-left { display: none; }
+    .step-2, .step-4, .step-6 { flex-direction: row-reverse; }
+    .timeline-steps-container.mobile-timeline-steps { align-items: center; }
+    
 }
 
 @media screen and (max-width: 480px) {}
@@ -865,7 +1055,23 @@
     .card-swipe { height: 195px; }
     .card-details { height: 330px; }
 
+    .why-academy-headings { width: 100%; text-align: left; }
+    .item-list-details img { width: 24px; }
 
+    .why-us-lists { margin-top: 30px; }
+    .why-us-list-item { width: 85%; }
+    .active-why-us-list { width: 100%; }
+    .cmtmnt-headings { text-align: left; }
+    .mission, .vision, .small-stats, .full-stats { width: 100%; }
+    .mission, .vision { height: 220px; }
+    .mission-laptop { width: 60px; }
+    .abt-bulb { width: 80px; }
+    .abt-pencil { width: 40px; }
+    .full-stats { gap: 20px; }
+
+    .timeline-headings { text-align: left; }
+    .academy-roles .steps-listing-mobile .step-img img { width: 100%; margin: 0 auto; margin-top: 30px; }
+    .compli-slider-headings { text-align: left; }
 }
 
 @media screen and (max-width: 400px) {
@@ -916,6 +1122,9 @@
     .card-details { height: max-content; }
     .pricing-main-box { padding: 12px; }
     .planing-link { padding: 6px 15px; }
+    
+    .why-us-list-item { width: 95%; height: 100px; }
+    .active-why-us-list { width: 100%; height: 250px; }
 
 
 }
