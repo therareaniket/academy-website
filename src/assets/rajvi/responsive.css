@@ -62,8 +62,8 @@
     .detail-card-btn{ padding-top: 90px; } 
     .contact-form-image{ height: 440px; } .form-men-image{ width: 470px;} .contact-form-fields{ padding-top: 50px; }
     .social-media-wrapper{ width: 440px; } .footer-logo-wrapper{ padding-top: 150px; } .footer-copyright-links{ padding-top: 110px; } .social-media-wrapper{ padding-bottom: 20px; }
-    .contact-form-left{ width: 50%; } .contact-form-fields input{ height: 60px; } .contact-form-fields textarea{ height: 150px; } .form-cards{ height: 150px; }
-    .contact-form-image{ height: 420px; }
+    .contact-form-left{ width: 50%; } .contact-form-fields input{ height: 60px; } .contact-form-fields textarea{ height: 135px; } .form-cards{ height: 136px; }
+    .contact-form-image{ height: 420px; } 
 }
 
 @media screen and (max-width: 1439px) {
@@ -80,7 +80,7 @@
     .resources-detail-img-1{ padding-top: 50px; padding-bottom: 30px; }
     .form-men-image{ width: 440px; } .contact-form-wrapper{ padding-top: 50px; }
     .social-media-wrapper{ width: 410px; } .social-media-wrapper img{ width: 28px; height: auto; } .footer-cnct-links{ padding-top: 15px; }
-    .contact-form-fields input{ height: 50px; } .form-cards{ height: 145px; } .contact-form-fields input{ margin-bottom: 20px; } .contact-form-image{ height: 390px; }
+    .contact-form-fields input{ height: 50px; } .form-cards{ height: 130px; } .contact-form-fields input{ margin-bottom: 20px; } .contact-form-image{ height: 350px; }
     .contact-form-mail{ width: 24px; } .contact-form-call{ width: 22px; }
 
 }
@@ -93,8 +93,8 @@
     .resources-tab-trigger button{ padding: 8px 0; } .resources-tab-trigger button[data-state="active"]{ padding: 8px 0; }
     .resources-tab-trigger{ width: 240px !important; min-width: 240px !important; max-width: auto;   padding: 15px 15px 0px; } .resources-cards{ width: 335px; } .resources-card-wrapper{ gap: 20px; } .resources-tab-trigger button{ font-size: 16px; line-height: 24px; }
     .detail-card-btn{ padding-top: 70px; } .resources-deatil-head{ padding-top: 40px; } .resources-deatil-sub-para{ padding-bottom: 10px; } .detail-card-btn{ padding-bottom: 30px; }
-    .contact-form-fields input{ height: 60px; } .contact-form-fields textarea{ height: 130px; } .contact-form-image{ height: 385px; } .contact-form-fields{ padding-top: 20px; }
-    .form-cards{ height: 159px; } .contact-form-wrapper{ gap: 40px; } 
+    .contact-form-fields input{ height: 60px; } .contact-form-fields textarea{ height: 130px; } .contact-form-image{ height: 313px; } .contact-form-fields{ padding-top: 20px; }
+    .form-cards{ height: 130px; } .contact-form-wrapper{ gap: 40px; } .form-men-image{ width: 371px; }
     .footer-text-quote{ width: 400px; } .form-cards{ height: 145px; }
 }
 
@@ -131,8 +131,8 @@
     .resources-cards{ width: 390px; }
     .resources-detail-wrapper{ flex-direction: column; gap: 0; } .resources-detail-tabs{ display: none; } .resources-detail-left{ width: 100%; } .resources-detail-img-1{ padding: 20px 0; }
     .detail-card-btn{ padding-top: 50px; } .btn-link-padding{ padding: 6px 15px; }
-    .contact-form-image{ height: 305px; } .contact-form-fields input{ height: 45px ; } .contact-form-fields textarea{ height: 105px; }
-    .footer-logo-wrapper img{ width: 200px; } .footer-links-wrapper{ padding-top: 50px; }
+    .contact-form-image{ height: 260px; } .contact-form-fields input{ height: 45px ; } .contact-form-fields textarea{ height: 105px; }
+    .footer-logo-wrapper img{ width: 200px; } .footer-links-wrapper{ padding-top: 50px; } .form-cards{ height: max-content; } .form-men-image{ width: 310px; }
 
 }
 
@@ -152,7 +152,7 @@
     .resources-cards{ width: 337px; } .resources-tab-trigger button{ padding: 6px 12px; font-size: 14px; line-height: 20px;}
     .resources-card-wrapper{ gap: 25px; } .resources-tab-trigger button[data-state="active"]{ padding: 6px 12px; }
     .sharedby-name { padding-bottom: 30px; }
-    .contact-form-image{ height: 250px; } .contact-form-fields input{ height: 50px; margin-bottom: 15px; } .form-cards{ height: 150px; } .cnct-submit-btn{ margin-top: 40px; }
+    .contact-form-image{ height: 243px; } .form-men-image{ width: 285px; } .contact-form-fields input{ height: 50px; margin-bottom: 15px; } .form-cards{ height: 150px; } .cnct-submit-btn{ margin-top: 40px; }
     .footer-links-main{ gap: 50px; } .footer-text-quote{ width: 340px; } .social-media-wrapper{ width: 330px; padding-left: 90px; gap: 20px; justify-content: end; }
     .footer-logo-wrapper{ padding-top: 100px; } .footer-text-quote h2{ margin-bottom: 10px; } .form-cards{ height: 130px; } .form-cards{ gap: 5px; }
     .contact-form-call{ width: 20px; } .contact-form-location{ width: 18px; }
@@ -168,8 +168,8 @@
     .detail-card-btn{ align-items: flex-start; padding-top: 30px; }
     .detail-card-btn h3 { margin-bottom: 0; }
     .footer-text-quote{ width: 290px; }
+    .form-cards{ height: 129px; }
 }
-
 
 @media screen and (max-width: 767px) {
     h1, .h1 { font-size: 34px; line-height: 44px; }
@@ -181,7 +181,7 @@
     .footer-links-wrapper{ flex-direction: column; gap: 20px; } .footer-newsletter{ margin-top: 20px; } .footer-text-quote{ width: 100%; }
     .footer-copyright-links{ padding-top: 80px; } .footer-newsletter-field input{ width: 290px; } .footer-newsletter-field button{ padding: 10px 20px; }
     .footer-right-links{ gap: 20px; }
-    .contact-form-fields input{ height: 40px; } .contact-form-fields textarea{ height: 90px; } .form-cards{ height: 120px; }
+    .contact-form-fields input{ height: 40px; } .contact-form-fields textarea{ height: 90px; } .form-cards{ height: 117px; }
     .contact-form-mail{ width: 22px; } .contact-form-call{ width: 18px; } .contact-form-location{ width: 16px; }
 }
 
