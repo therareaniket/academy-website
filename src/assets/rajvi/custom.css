@@ -129,20 +129,10 @@
 .cnct-submit-btn { background-color: var(--dark-blue); color: var(--white); margin-top: 57px; }
 .solu-hero-4 { z-index: 2; }
 
-.footer-main {
-  background-color: var(--black);
-  width: 100%;
-  /* position: relative; */
-  
-  /* The SVG path creates the rounded corners that polygon() cannot do */
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 500" preserveAspectRatio="none"><path d="M0,0 L1409,0 Q1429,0 1429,20 L1429,61 Q1429,60 1449,60 L1920,81 L1920,500 L0,500 Z" fill="black"/></svg>');
-  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 500" preserveAspectRatio="none"><path d="M0,0 L1409,0 Q1429,0 1429,20 L1429,61 Q1429,81 1449,81 L1920,81 L1920,500 L0,500 Z" fill="black"/></svg>');
-  
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
+
+
+/*  FOOTER MADE BY RAJVI  */
+.footer-main { background-color: var(--black); width: 100%; position: relative; }
 .footer-text-quote { color: var(--white); }
 .footer-links-wrapper { display: flex; justify-content: space-between; padding-top: 60px; }
 .footer-links-main { display: flex; gap: 90px; }
@@ -217,19 +207,16 @@
 .input-glass:focus-within::after { opacity: 0.4; transform: translateX(30%); }
 .footer-copyright-links { display: flex; justify-content: space-between; align-items: center; padding-top: 120px; padding-bottom: 33px; }
 .footer-right-links { display: flex; align-items: center; gap: 30px;}
-.footer-logo-wrapper { padding-top: 177px; }
+.footer-logo-wrapper { padding-top: 0px !important; }
 .social-media-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  width: 491px;
-  padding: 15px 60px 26px 131px;
-  background-color: var(--white);
-  border-radius: 20px;
-  z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 491px;
+    padding: 15px 60px 26px 131px;
+    background-color: var(--white);
+    border-radius: 20px;
 }
-
-.footer-main-wrapper-section{ position: relative; width: 100%; height: max-content; background-color: red; }

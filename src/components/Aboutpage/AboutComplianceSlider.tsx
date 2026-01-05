@@ -22,11 +22,6 @@ export default function ComplianceSlider() {
                             modules={[Autoplay, Pagination]}
                             spaceBetween={10}
                             slidesPerView={1}
-                            breakpoints={{
-                                600: { slidesPerView: 1 },
-                                800: { slidesPerView: 1 },
-                                1200: { slidesPerView: 1 }
-                            }}
                             autoplay={{ delay: 3000, disableOnInteraction: false }}
                             pagination={{ clickable: true }}
                             loop={true}

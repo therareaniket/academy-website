@@ -29,7 +29,7 @@ body { background-color: var(--off-white); }
 
 .site-header { width: 100%; position: fixed; top: 0; z-index: 99; }
 .header-wrapper { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
-.header-megamenu { height: 70px; width: 70px; border-radius: 10px; padding: 0; position: relative; border: none; transition: all 0.3s ease; }
+.header-megamenu { height: 60px; width: 70px; border-radius: 10px; padding: 0; position: relative; border: none; transition: all 0.3s ease; }
 .menu-grdnt-bg {
     display: block;
     width: calc(100%);
@@ -45,7 +45,7 @@ body { background-color: var(--off-white); }
 }
 .header-logo-link img { width: 250px; }
 .header-megamenu.active .menu-grdnt-bg { width: 400px; height: 600px; border-radius: 20px; }
-.mega-menu-trigger { width: 100%; height: 70px; position: absolute; z-index: 3; padding: 0 10px; background-color: transparent; display: flex; flex-direction: column; align-items: end; justify-content: center; gap: 6px; cursor: pointer; transition: all 0.3s ease; }
+.mega-menu-trigger { width: 100%; height: 60px; position: absolute; z-index: 3; padding: 0 10px; background-color: transparent; display: flex; flex-direction: column; align-items: end; justify-content: center; gap: 6px; cursor: pointer; transition: all 0.3s ease; }
 .menu-lines { display: block; width: 30px; height: 4px; background-color: black; border-radius: 20px; transition: all 0.3s ease; }
 .menu-line-2 { width: 40px; }
 .menu-line-3 { width: 50px; }
@@ -181,8 +181,7 @@ body { background-color: var(--off-white); }
 .certificate-usp { margin-top: 100px; display: flex; align-items: center; justify-content: space-between; }
 .certifi-usp { width: 300px; display: flex; align-items: center; gap: 20px; }
 .certifi-usp .h5 { margin-bottom: 0; }
-.certi-link-mobile { display: none; }
-
+.certificate-usp { margin-top: 60px; }
 .blog-showcase-wrapper { display: flex; justify-content: flex-end; }
 .hm-blog-headings .h6 { width: 330px; max-width: 100%; }
 .blog-showcase { width: 1250px; margin-top:20px; }
@@ -192,6 +191,8 @@ body { background-color: var(--off-white); }
 .blog-list-sm { width: 513px; }
 .blog-row + .blog-row { margin-top: 60px; flex-direction: row-reverse; }
 .blog-showcase.blog-mobile { display: none; }
+.certification-links { margin-top: 100px; }
+
 
 .home-testimonials { background-color: var(--primary-yellow); }
 .testimonial-headings { text-align: center; }
@@ -327,3 +328,5 @@ body { background-color: var(--off-white); }
 .abt-compliance-slider .swiper-pagination { position: relative; }
 .abt-swiper-slider { margin-top: 60px; }
 .slide-details { max-width: 100%; width: 700px; }
+
+.trial-grwth-wrapper img { height: 450px; object-fit: cover; }

@@ -4,6 +4,7 @@ import AboutHero from "@/components/Aboutpage/AboutHero";
 import AboutRole from "@/components/Aboutpage/AboutRole";
 import AboutTimeline from "@/components/Aboutpage/AboutTimeline";
 import WhyChoose from "@/components/Aboutpage/AboutWhyAcademy";
+import CTA from "@/components/CTA";
 
 export default function About (){
     return (
@@ -19,6 +20,8 @@ export default function About (){
             <AboutTimeline />
 
             <ComplianceSlider />
+
+            <CTA />
         </>
     );
 }

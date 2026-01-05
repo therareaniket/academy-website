@@ -5,14 +5,12 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <>
-            <section className="footer-main-wrapper-section  site-radius-20">
-                <div className="footer-main">
+            <footer>
+                <div className="section footer-wrapper" style={{ paddingBottom: 0 }}>
                     <div className="container">
-
                         <div className="footer-wrapper">
                             <div className="footer-logo-wrapper">
                                 <Image src="/images/footer/footer-logo.svg" alt="solu-hero-chart" width={272} height={34} className=""></Image>
-
                             </div>
 
                             <div className="footer-links-wrapper">
@@ -36,7 +34,7 @@ export default function Footer() {
                                     </div>
 
                                     <div className="footer-links further-links">
-                                        <p className="text-md text-18">Further Information</p>
+                                        <p className="text-md text-18">Informations</p>
 
                                         <ul>
                                             <li className="text-rg text-16 text-grey"><Link href="">Terms of Use</Link></li>
@@ -70,21 +68,46 @@ export default function Footer() {
                                     <p className="text-16 text-rg text-grey">DhatuAcademy 2025.1.1</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <div className="social-media-wrapper">
-                                <Image src="/images/footer/facebook.svg" alt="solu-hero-chart" width={40} height={40} className=""></Image>
+                    <div className="social-link-block">
+                        {/* <svg width="494" height="102" viewBox="0 0 494 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.0348856C0.831618 -0.00776148 1.81056 -0.0155135 2.8876 0.0348856H494V101.535C492.8 82.335 475.5 80.5096 466.5 81.035H44C28.8 81.835 23.6667 68.3684 23 61.535V16.5349C22.1279 3.42358 10.2288 0.37841 2.8876 0.0348856H0Z" fill="#FAFAFA"/>
+                        </svg> */}
 
-                                <Image src="/images/footer/instagram.svg" alt="solu-hero-chart" width={40} height={40} className=""></Image>
+                        <Image src="/images/footer/footer-top-rgt-notch.svg" alt="footer-top-rgt-notch" width={500} height={100} priority={false} className="footer-notch"></Image>
 
-                                <Image src="/images/footer/twitter.svg" alt="solu-hero-chart" width={40} height={40} className=""></Image>
+                        <div className="social-link-list">
+                            <ul>
+                                <li>
+                                    <Link href="#" title="linkedin" className="foot-icon icon-linkin">
+                                        <i className="icon-linkedin"></i>
+                                    </Link>
+                                </li>
 
-                                <Image src="/images/footer/linkedin.svg" alt="solu-hero-chart" width={40} height={40} className=""></Image>
-                            </div>
+                                <li>
+                                    <Link href="#" title="twitter" className="foot-icon icon-x">
+                                        <i className="icon-twitter"></i>
+                                    </Link>
+                                </li>
 
+                                <li>
+                                    <Link href="#" title="instagram" className="foot-icon icon-insta">
+                                        <i className="icon-instagram"></i>
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="#" title="facebook" className="foot-icon icon-fb">
+                                        <i className="icon-facebook"></i>
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </section>
+            </footer>
         </>
     )
 }

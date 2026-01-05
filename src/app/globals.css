@@ -215,8 +215,8 @@ body::-webkit-scrollbar-thumb,
 @font-face {
   font-family: 'icomoon';
   src:  
-    url('/public/fonts/icon/icomoon.ttf?wjbjjl') format('truetype'),
-    url('/public/fonts/icon/icomoon.woff?wjbjjl') format('woff');
+    url('../../public/fonts/icon/icomoon.ttf?wjbjjl') format('truetype'),
+    url('../../public/fonts/icon/icomoon.woff?wjbjjl') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -235,4 +235,23 @@ body::-webkit-scrollbar-thumb,
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-footerCall:before {
+  content: "\e932";
+}
+.icon-footerMail:before {
+  content: "\e933";
+}
+.icon-linkedin:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e934";
+}
+.icon-instagram:before {
+  content: "\e935";
+}
+.icon-facebook:before {
+  content: "\e936";
 }

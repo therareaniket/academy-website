@@ -16,11 +16,11 @@ export default function TrialGrowth(){
                             
                             <p className="h6"></p>
 
-                            <div className="certification-links">
+                            {/* <div className="certification-links">
                                 <Link href="/Courses" className="link-padding line-white site-radius-10 text-18 text-md">Explore Courses</Link>
 
                                 <Link href="/ComingSoon" className="link-padding link-blue site-radius-10 text-18 text-md">Get Certified</Link>
-                            </div>
+                            </div> */}
                         </div>
 
                         <Image src="/images/homepage/certifications-banner.webp" alt="certifications-banner" width={750} height={546} priority={false} className="certifications-banner site-radius-20"></Image>
