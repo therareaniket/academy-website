@@ -220,3 +220,14 @@
     background-color: var(--white);
     border-radius: 20px;
 }
+
+
+
+/* FOOTER MADE BY ANIKET */
+
+.footer-wrapper { background-color: var(--black); position: relative; }
+.footer-notch { position: absolute; top: 0; right: 0; }
+.social-link-list { position: absolute; top: 15px; right: 100px; }
+.social-link-list ul { display: flex; align-items: center; gap: 40px; }
+.foot-icon { color: var(--grey); font-size: 40px; }
+.foot-icon:hover { color: #6FB018; }

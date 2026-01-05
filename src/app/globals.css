@@ -215,6 +215,7 @@ body::-webkit-scrollbar-thumb,
 @font-face {
   font-family: 'icomoon';
   src:  
+    /* url('/fonts/icon/icomoon.ttf?wjbjjl') format('truetype'), */
     url('../../public/fonts/icon/icomoon.ttf?wjbjjl') format('truetype'),
     url('../../public/fonts/icon/icomoon.woff?wjbjjl') format('woff');
   font-weight: normal;
