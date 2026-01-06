@@ -63,10 +63,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Training portals provide real-time insight into: </p>
                                     
                                     <ul>
-                                        <li>Who is trained</li>
-                                        <li>On what system</li>
-                                        <li>For which version</li>
-                                        <li>At what time</li>
+                                        <li className="h6">Who is trained</li>
+                                        <li className="h6">On what system</li>
+                                        <li className="h6">For which version</li>
+                                        <li className="h6">At what time</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">This visibility eliminates last-minute audit scrambling.</p>
@@ -78,9 +78,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Modern portals support: </p>
                                     
                                     <ul>
-                                        <li>Electronic acknowledgments</li>
-                                        <li>Timestamped completions</li>
-                                        <li>Secure, traceable records</li>
+                                        <li className="h6">Electronic acknowledgments</li>
+                                        <li className="h6">Timestamped completions</li>
+                                        <li className="h6">Secure, traceable records</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">These features align directly with 21 CFR Part 11 expectations.</p>
@@ -92,9 +92,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">When systems or SOPs change, training portals maintain:: </p>
                                     
                                     <ul>
-                                        <li>Historical training records</li>
-                                        <li>Updated content assignments</li>
-                                        <li>Clear traceability</li>
+                                        <li className="h6">Historical training records</li>
+                                        <li className="h6">Updated content assignments</li>
+                                        <li className="h6">Clear traceability</li>
                                     </ul>
 
                                     <p className="h5 text-sb resources-deatil-sub-para">This ensures inspectors can verify that users were trained on the correct versions.</p>
@@ -107,9 +107,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Instead of manually compiling spreadsheets, teams can instantly: </p>
                                     
                                     <ul>
-                                        <li>Generate training reports</li>
-                                        <li>Filter by role or study</li>
-                                        <li>Export inspection-ready documentation</li>
+                                        <li className="h6">Generate training reports</li>
+                                        <li className="h6">Filter by role or study</li>
+                                        <li className="h6">Export inspection-ready documentation</li>
                                     </ul>
                                 </div>
 
@@ -119,9 +119,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Well-trained users make fewer mistakes, leading to: </p>
                                     
                                     <ul>
-                                        <li>Fewer deviations</li>
-                                        <li>Stronger data integrity</li>
-                                        <li>Improved inspection outcomes</li>
+                                        <li className="h6">Fewer deviations</li>
+                                        <li className="h6">Stronger data integrity</li>
+                                        <li className="h6">Improved inspection outcomes</li>
                                     </ul>
                                 </div>
 

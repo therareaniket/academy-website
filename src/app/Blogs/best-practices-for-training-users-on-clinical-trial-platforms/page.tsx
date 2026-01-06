@@ -65,11 +65,11 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Best practice is to createb <b>role-based learning paths,</b> such as:</p>
                                     
                                     <ul>
-                                        <li>Site users (CRF entry, query resolution, document uploads)</li>
-                                        <li>Monitors and CRAs (SDV, monitoring workflows, compliance checks)</li>
-                                        <li>Sponsors and CROs (oversight, reporting, risk indicators)</li>
-                                        <li>Finance teams (budget setup, milestone tracking, payments)</li>
-                                        <li>Administrators (user management, configuration, audit readiness)</li>
+                                        <li className="h6">Site users (CRF entry, query resolution, document uploads)</li>
+                                        <li className="h6">Monitors and CRAs (SDV, monitoring workflows, compliance checks)</li>
+                                        <li className="h6">Sponsors and CROs (oversight, reporting, risk indicators)</li>
+                                        <li className="h6">Finance teams (budget setup, milestone tracking, payments)</li>
+                                        <li className="h6">Administrators (user management, configuration, audit readiness)</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Role-based training reduces cognitive overload, shortens learning time, and ensures users focus only on workflows relevant to them.</p>
@@ -83,10 +83,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Examples include: </p>
                                     
                                     <ul>
-                                        <li>“How to create and submit a CRF”</li>
-                                        <li>“How to respond to data queries”</li>
-                                        <li>“How to approve a payment milestone”</li>
-                                        <li>“How to review compliance alerts”</li>
+                                        <li className="h6">“How to create and submit a CRF”</li>
+                                        <li className="h6">“How to respond to data queries”</li>
+                                        <li className="h6">“How to approve a payment milestone”</li>
+                                        <li className="h6">“How to review compliance alerts”</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Microlearning enables users to learn at their own pace and quickly revisit specific topics when needed. This approach is especially effective for platforms that are used intermittently or across multiple studies.</p>
@@ -100,10 +100,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Best practices include: </p>
                                     
                                     <ul>
-                                        <li>Demonstrating workflows using sample protocols and visits</li>
-                                        <li>Showing common mistakes and how to avoid them</li>
-                                        <li>Simulating audit or inspection scenarios</li>
-                                        <li>Using examples from actual clinical trial operations (without sensitive data)</li>
+                                        <li className="h6">Demonstrating workflows using sample protocols and visits</li>
+                                        <li className="h6">Showing common mistakes and how to avoid them</li>
+                                        <li className="h6">Simulating audit or inspection scenarios</li>
+                                        <li className="h6">Using examples from actual clinical trial operations (without sensitive data)</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Scenario-based learning improves confidence and prepares users to handle real-world challenges once the system goes live.</p>
@@ -117,10 +117,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Effective training includes: </p>
                                     
                                     <ul>
-                                        <li>Explanation of audit trails and electronic signatures</li>
-                                        <li>Importance of data integrity and ALCOA+ principles</li>
-                                        <li>SOP alignment and regulatory expectations</li>
-                                        <li>User accountability and access controls</li>
+                                        <li className="h6">Explanation of audit trails and electronic signatures</li>
+                                        <li className="h6">Importance of data integrity and ALCOA+ principles</li>
+                                        <li className="h6">SOP alignment and regulatory expectations</li>
+                                        <li className="h6">User accountability and access controls</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">By embedding compliance education into system training, organizations reduce the risk of deviations, inspection findings, and data credibility issues.</p>
@@ -134,10 +134,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Benefits of sandbox-based training include: </p>
                                     
                                     <ul>
-                                        <li>Safe experimentation without fear of errors</li>
-                                        <li>Faster onboarding for new users</li>
-                                        <li>Reduced dependency on support teams</li>
-                                        <li>Improved readiness before study go-live</li>
+                                        <li className="h6">Safe experimentation without fear of errors</li>
+                                        <li className="h6">Faster onboarding for new users</li>
+                                        <li className="h6">Reduced dependency on support teams</li>
+                                        <li className="h6">Improved readiness before study go-live</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Users who practice in a simulated environment perform significantly better when transitioning to production systems.</p>
@@ -149,10 +149,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">In regulated industries, training documentation is as important as training delivery. A robust training portal should provide:</p>
                                     
                                     <ul>
-                                        <li>Training assignment and tracking</li>
-                                        <li>Completion status and timestamps</li>
-                                        <li>Electronic acknowledgments or signatures </li>
-                                        <li>Version control for updated training materials </li>
+                                        <li className="h6">Training assignment and tracking</li>
+                                        <li className="h6">Completion status and timestamps</li>
+                                        <li className="h6">Electronic acknowledgments or signatures </li>
+                                        <li className="h6">Version control for updated training materials </li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">These records are critical during audits and inspections to demonstrate that users were adequately trained on the system and processes they are responsible for.</p>
@@ -166,10 +166,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Best practices include: </p>
                                     
                                     <ul>
-                                        <li>Refresher training before major study milestones</li>
-                                        <li>Update-specific training when new features are released</li>
-                                        <li>Mandatory re-training for compliance-critical changes</li>
-                                        <li>Notifications for overdue or upcoming training</li>
+                                        <li className="h6">Refresher training before major study milestones</li>
+                                        <li className="h6">Update-specific training when new features are released</li>
+                                        <li className="h6">Mandatory re-training for compliance-critical changes</li>
+                                        <li className="h6">Notifications for overdue or upcoming training</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Continuous training ensures consistent platform usage across studies and prevents knowledge gaps over time.</p>
@@ -183,10 +183,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Examples include: </p>
                                     
                                     <ul>
-                                        <li>Contextual help links</li>
-                                        <li>In-application tutorials</li>
-                                        <li>Quick reference guides</li>
-                                        <li>Searchable knowledge bases</li>
+                                        <li className="h6">Contextual help links</li>
+                                        <li className="h6">In-application tutorials</li>
+                                        <li className="h6">Quick reference guides</li>
+                                        <li className="h6">Searchable knowledge bases</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">This “learning-in-the-flow-of-work” approach reduces support tickets and empowers users to resolve issues independently.</p>
@@ -198,9 +198,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">User feedback is essential for refining training effectiveness. Training portals should allow users to: </p>
                                     
                                     <ul>
-                                        <li>Rate training modules</li>
-                                        <li>Submit feedback or questions</li>
-                                        <li>Request additional topics</li>
+                                        <li className="h6">Rate training modules</li>
+                                        <li className="h6">Submit feedback or questions</li>
+                                        <li className="h6">Request additional topics</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Analysing feedback helps identify unclear workflows, training gaps, and opportunities for improvement. Over time, this leads to a more intuitive platform and better user satisfaction.</p>

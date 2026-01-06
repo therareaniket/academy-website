@@ -63,10 +63,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Modern platforms release frequent updates:</p>
                                     
                                     <ul>
-                                        <li>New compliance checks</li>
-                                        <li>Enhanced reporting</li>
-                                        <li>Workflow optimizations</li>
-                                        <li>Security improvements</li>
+                                        <li className="h6">New compliance checks</li>
+                                        <li className="h6">Enhanced reporting</li>
+                                        <li className="h6">Workflow optimizations</li>
+                                        <li className="h6">Security improvements</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Without ongoing training, users may unknowingly misuse features or bypass controls.</p>
@@ -78,10 +78,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Untrained users are one of the biggest sources of: </p>
                                     
                                     <ul>
-                                        <li>Data entry errors</li>
-                                        <li>Protocol deviations</li>
-                                        <li>Audit findings</li>
-                                        <li>Payment discrepancies</li>
+                                        <li className="h6">Data entry errors</li>
+                                        <li className="h6">Protocol deviations</li>
+                                        <li className="h6">Audit findings</li>
+                                        <li className="h6">Payment discrepancies</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Regular training ensures users apply the latest best practices consistently.</p>
@@ -93,9 +93,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Many users work across multiple studies with different configurations. Continuous training helps: </p>
                                     
                                     <ul>
-                                        <li>Reinforce study-specific workflows</li>
-                                        <li>Reduce confusion between protocols</li>
-                                        <li>Maintain consistency across trials</li>
+                                        <li className="h6">Reinforce study-specific workflows</li>
+                                        <li className="h6">Reduce confusion between protocols</li>
+                                        <li className="h6">Maintain consistency across trials</li>
                                     </ul>
 
                                 </div>
@@ -106,9 +106,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Organizations often underutilize platform capabilities due to lack of awareness. Training portals help drive adoption through:  </p>
                                     
                                     <ul>
-                                        <li>Feature update modules</li>
-                                        <li>Release-based learning paths</li>
-                                        <li>Targeted role-specific updates</li>
+                                        <li className="h6">Feature update modules</li>
+                                        <li className="h6">Release-based learning paths</li>
+                                        <li className="h6">Targeted role-specific updates</li>
                                     </ul>
                                 </div>
 
@@ -118,9 +118,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Auditors expect proof that users are trained on current systems. Continuous training provides: </p>
                                     
                                     <ul>
-                                        <li>Up-to-date training records</li>
-                                        <li>Evidence of regulatory awareness</li>
-                                        <li>Reduced inspection stress</li>
+                                        <li className="h6">Up-to-date training records</li>
+                                        <li className="h6">Evidence of regulatory awareness</li>
+                                        <li className="h6">Reduced inspection stress</li>
                                     </ul>
                                 </div>
 

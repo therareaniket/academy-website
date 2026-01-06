@@ -63,10 +63,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Effective training explains: </p>
                                     
                                     <ul>
-                                        <li>Audit trails and traceability requirements</li>
-                                        <li>Electronic signatures and user accountability</li>
-                                        <li>Data integrity principles (ALCOA+) </li>
-                                        <li>Access control and segregation of duties</li>
+                                        <li className="h6">Audit trails and traceability requirements</li>
+                                        <li className="h6">Electronic signatures and user accountability</li>
+                                        <li className="h6">Data integrity principles (ALCOA+) </li>
+                                        <li className="h6">Access control and segregation of duties</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">When users understand regulatory intent, compliance becomes a shared responsibility rather than an enforced rule.</p>
@@ -80,9 +80,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Examples include: </p>
                                     
                                     <ul>
-                                        <li>SOP-linked walkthroughs</li>
-                                        <li>Embedded policy references during workflows</li>
-                                        <li>Knowledge checks tied to SOP scenarios</li>
+                                        <li className="h6">SOP-linked walkthroughs</li>
+                                        <li className="h6">Embedded policy references during workflows</li>
+                                        <li className="h6">Knowledge checks tied to SOP scenarios</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">This approach ensures SOPs are not just read but practically applied.</p>
@@ -96,10 +96,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Examples: </p>
                                     
                                     <ul>
-                                        <li>Handling protocol deviations in the system</li>
-                                        <li>Responding to audit queries</li>
-                                        <li>Managing access during staff turnover</li>
-                                        <li>Correcting data without violating audit trails</li>
+                                        <li className="h6">Handling protocol deviations in the system</li>
+                                        <li className="h6">Responding to audit queries</li>
+                                        <li className="h6">Managing access during staff turnover</li>
+                                        <li className="h6">Correcting data without violating audit trails</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Scenarios help users recognize compliance risks before they occur in real studies.</p>
@@ -111,10 +111,10 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Training systems must maintain:  </p>
 
                                     <ul>
-                                        <li>Training assignments</li>
-                                        <li>Completion logs</li>
-                                        <li>Electronic acknowledgments</li>
-                                        <li>Version history of training materials</li>
+                                        <li className="h6">Training assignments</li>
+                                        <li className="h6">Completion logs</li>
+                                        <li className="h6">Electronic acknowledgments</li>
+                                        <li className="h6">Version history of training materials</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">These records are critical during inspections to demonstrate compliance readiness and due diligence.</p>
@@ -126,9 +126,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                                     <p className="h6 text-rg">Regulations evolve, systems change, and processes improve. Best practice includes: </p>
 
                                     <ul>
-                                        <li>Mandatory re-training after SOP updates</li>
-                                        <li>Refresher courses before inspections</li>
-                                        <li>Automated alerts for overdue training</li>
+                                        <li className="h6">Mandatory re-training after SOP updates</li>
+                                        <li className="h6">Refresher courses before inspections</li>
+                                        <li className="h6">Automated alerts for overdue training</li>
                                     </ul>
 
                                     <p className="h6 text-rg resources-deatil-sub-para">Continuous training prevents knowledge decay and compliance drift.</p>
