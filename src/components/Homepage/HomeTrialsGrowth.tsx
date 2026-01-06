@@ -55,7 +55,7 @@ export default function TrialGrowth(){
                     </div>
 
                     <div className="certification-links certi-link-mobile">
-                        <Link href="/Courses" className="link-padding line-white site-radius-10 text-18 text-md">Explore Courses</Link>
+                        {/* <Link href="/Courses" className="link-padding line-white site-radius-10 text-18 text-md">Explore Courses</Link> */}
 
                         <Link href="/ComingSoon" className="link-padding link-blue site-radius-10 text-18 text-md">Get Certified</Link>
                     </div>

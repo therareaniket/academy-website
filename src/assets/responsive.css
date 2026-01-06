@@ -100,6 +100,8 @@
 
     .footer-notch { width: 450px; }
     .foot-icon { font-size: 36px; }
+
+    .coming-soon-wrapper > img { width: 850px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -221,6 +223,11 @@
     .social-link-list { top: 17px; right: 80px; }
     .footer-notch { width: 420px; }
     .foot-icon { font-size: 34px; }
+    .footer-call-link, .footer-mail-link { gap: 8px; }
+    .footer-call-link span, .footer-mail-link span { font-size: 15px; }
+
+    .coming-soon { height: 90vh; }
+    .coming-soon-wrapper > img { width: 800px; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -324,6 +331,10 @@
     .cmtmnt-content { height: 450px; }
     .modules-list img { width: 55px; height: 55px; }
     .certificate-usp { margin-top: 30px; }
+
+    .coming-soon-wrapper > img { width: 780px; }
+    
+    .footer-call-link span, .footer-mail-link span { font-size: 14px; }
 
 }
 
@@ -437,7 +448,10 @@
     .foot-icon { font-size: 30px; }
     .social-link-list ul { gap: 30px; }
     .social-link-list { top: 12px; right: 70px; }
+    .coming-soon-wrapper > img { width: 750px; }
 
+    .footer-cnct-links { padding-top: 35px; }
+    
 }
 
 @media screen and (max-width: 1199px) {
@@ -578,6 +592,9 @@
     .timeline-arrow-left { right: 130px; }
     .timeline-odd-steps, .timeline-even-steps { gap: 100px; }
 
+    .coming-soon { height: 80vh; }
+    .coming-soon-wrapper > img { width: 700px; }
+
 }
 
 @media screen and (max-width: 1023px) {}
@@ -708,6 +725,7 @@
     .foot-icon { font-size: 28px; }
     .social-link-list { top: 8px; right: 46px; }
 
+    .coming-soon-wrapper > img { width: 630px; }
 
 }
 
@@ -1011,6 +1029,8 @@
     .social-link-list { right: 32px; }
     .social-link-list ul { gap: 20px; }
     
+    .coming-soon { height: 70vh; }
+    
 }
 
 @media screen and (max-width: 480px) {}
@@ -1099,6 +1119,7 @@
     .social-link-list ul { gap: 18px; }
     .foot-icon { font-size: 22px; }
     .site-radius-40 { border-radius: 20px; }
+    .coming-soon { height: 60vh; }
 }
 
 @media screen and (max-width: 400px) {
@@ -1157,10 +1178,12 @@
     .footer-links-wrapper { padding-top: 30px; }
     .footer-notch { width: 220px; }
     .social-link-list { right: 40px; }
+    .footer-links-main { flex-wrap: wrap; gap: 40px; }
 }
 
 @media screen and (max-width: 374px) {
     .testi-list { width: 100px; }
+    .footer-links-main { flex-direction: column; gap: 20px; }
 }
 
 @media screen and (max-width: 359px) {}

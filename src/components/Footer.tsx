@@ -1,17 +1,25 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
-
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+    const pathname = usePathname();
+
     return (
         <>
             <footer>
                 <div className="section footer-wrapper" style={{ paddingBottom: 0 }}>
                     <div className="container">
                         <div className="footer-wrapper">
-                            <div className="footer-logo-wrapper">
+                            {/* <div className="footer-logo-wrapper">
                                 <Image src="/images/footer/footer-logo.svg" alt="solu-hero-chart" width={272} height={34} className=""></Image>
-                            </div>
+                            </div> */}
+                            
+                            <Link href="/" className="header-logo-link">
+							    <Image src="/images/header/DhatuAcademy-logo.svg" alt="header-logo" width={272} height={34}></Image>
+						    </Link>
 
                             <div className="footer-links-wrapper">
                                 <div className="footer-text-quote">
@@ -25,26 +33,28 @@ export default function Footer() {
                                         <p className="text-md text-18">Quick Links</p>
 
                                         <ul>
-                                            <li className="text-rg text-16 text-grey"><Link href="/About">About</Link></li>
-                                            <li className="text-rg text-16 text-grey"><Link href="/Solutions">Solutions</Link></li>
-                                            <li className="text-rg text-16 text-grey"><Link href="/">Courses</Link></li>
-                                            <li className="text-rg text-16 text-grey"><Link href="/Resources">Resources</Link></li>
-                                            <li className="text-rg text-16 text-grey"><Link href="/Contact">Contact</Link></li>
+                                            <li className="text-rg text-16 text-grey"><Link href="/About" className={`${pathname === '/About' ? 'footer-active-link' : ''}`}>About</Link></li>
+                                            <li className="text-rg text-16 text-grey"><Link href="/Solutions" className={`${pathname === '/Solutions' ? 'footer-active-link' : ''}`}>Solutions</Link></li>
+                                            {/* <li className="text-rg text-16 text-grey"><Link href="/" >Courses</Link></li> */}
+                                            <li className="text-rg text-16 text-grey"><Link href="/Resources" className={`${pathname === '/Resources' ? 'footer-active-link' : ''}`}>Resources</Link></li>
+                                            <li className="text-rg text-16 text-grey"><Link href="/Contact" className={`${pathname === '/Contact' ? 'footer-active-link' : ''}`}>Contact</Link></li>
                                         </ul>
                                     </div>
 
                                     <div className="footer-links further-links">
                                         <p className="text-md text-18">Informations</p>
 
-                                        <ul>
-                                            <li className="text-rg text-16 text-grey"><Link href="">Terms of Use</Link></li>
-                                            <li className="text-rg text-16 text-grey"><Link href="">Privacy Policy</Link></li>
-                                        </ul>
+                                        <div>
+                                            <div className="footer-call-link text-grey"><span className="icon-footerCall"></span><Link href="tel:+15128432002" className="text-rg text-16">+1 512 843 2002</Link></div>
+
+                                            <div className="footer-mail-link text-grey"><span className="icon-footerMail"></span><Link href="mailto:enquiry@dhatuacademy.com" className="text-rg text-16" >enquiry@dhatuacademy.com</Link></div>
+                                        </div>
 
                                         <div className="footer-cnct-links">
-                                            <div className="footer-call-link text-grey"><span></span><Link href="tel:+15128432002" className="text-rg text-16">+1 512 843 2002</Link></div>
-
-                                            <div className="footer-mail-link text-grey"><span></span><Link href="mailto:enquiry@dhatuacademy.com" className="text-rg text-16" >enquiry@dhatuacademy.com</Link></div>
+                                            <ul>
+                                                <li className="text-rg text-16 text-grey"><Link href="">Terms of Use</Link></li>
+                                                <li className="text-rg text-16 text-grey"><Link href="">Privacy Policy</Link></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>

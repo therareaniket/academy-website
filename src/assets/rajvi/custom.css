@@ -231,3 +231,9 @@
 .social-link-list ul { display: flex; align-items: center; gap: 40px; }
 .foot-icon { color: var(--grey); font-size: 40px; }
 .foot-icon:hover { color: #6FB018; }
+/* .footer-cnct-links li:last-child { padding-bottom: 0; } */
+.further-links > div { display: flex; flex-direction: column; justify-content: space-between; }
+.footer-call-link, .footer-mail-link { display: flex; align-items: center; gap: 10px; }
+.footer-call-link span, .footer-mail-link span { font-size: 16px; }
+.footer-call-link:hover, .footer-mail-link:hover { color: var(--primary-yellow); }
+.footer-active-link { color: var(--primary-yellow); }

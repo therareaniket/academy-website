@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ContactForm() {
     return (
         <>
-            <section className="section ">
+            <section className="section" id="academy-form">
                 <div className="container">
                     <div className="contact-form-wrapper">
                         <div className="contact-form-left">

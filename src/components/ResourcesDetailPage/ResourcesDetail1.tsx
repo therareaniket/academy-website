@@ -106,7 +106,6 @@ export default function ResourcesDetail() {
                     </div>
                 </div>
             </section>
-
         </>
     );
 }

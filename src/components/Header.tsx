@@ -71,7 +71,7 @@ export default function Header() {
 											<Link href="/Solutions" className={`menu-link h3 ${pathname === '/Solutions' ? 'active-header-link' : ''}`}>Solutions</Link>
 										</li>
 										<li>
-											<Link href="/Courses" className={`menu-link h3 ${pathname === '/Courses' ? 'active-header-link' : ''}`}>Courses</Link>
+											{/* <Link href="/Courses" className={`menu-link h3 ${pathname === '/Courses' ? 'active-header-link' : ''}`}>Courses</Link> */}
 										</li>
 										<li>
 											<Link href="/Resources" className={`menu-link h3 ${pathname === '/Resources' ? 'active-header-link' : ''}`}>Resources</Link>

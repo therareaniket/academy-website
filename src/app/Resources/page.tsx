@@ -8,8 +8,6 @@ export default function Resources() {
             <ResourceHero />
 
             <ResourcesCards />
-
-            <Footer />
         </>
     );
 }

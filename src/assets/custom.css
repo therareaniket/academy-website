@@ -330,3 +330,10 @@ body { background-color: var(--off-white); }
 .slide-details { max-width: 100%; width: 700px; }
 
 .trial-grwth-wrapper img { height: 450px; object-fit: cover; }
+
+.coming-soon { width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center; } 
+.coming-soon-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.footer-call-link { margin-bottom: 6px; }
+.blog-details-paragraph .h5 { margin-bottom: 0px; }
+.blog-details-paragraph ul { padding-bottom: 20px; }
+.blog-details-paragraph li { list-style-type: disc; list-style-position: inside; padding-bottom: 10px; }

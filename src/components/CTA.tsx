@@ -21,7 +21,7 @@ export default function CTA() {
                             </Link>
                         </div>
 
-                        <Image src="/images/footer/cta-female-update.webp" alt="" width={759} height={748} priority={false} className="cta-female"></Image>
+                        <Image src="/images/footer/cta-female-update.webp" alt="cta-female" width={759} height={748} priority={false} className="cta-female"></Image>
                     </div>
                 </div>
             </section>
