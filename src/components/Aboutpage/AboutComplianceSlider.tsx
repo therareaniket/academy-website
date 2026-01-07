@@ -26,27 +26,75 @@ export default function ComplianceSlider() {
                             pagination={{ clickable: true }}
                             loop={true}
                             className="abt-compliance-slider">
-                                <SwiperSlide  className="abt-slider-item">
-                                    <div className="slide-details">
-                                        <h3 className="h4 text-md">Compliance Embedded in Every Module</h3>
+                                <SwiperSlide className="abt-slider-item">
+                                    <div className="abt-slide-item-wrapper">
+                                        <div className="slide-details">
+                                            <h3 className="h4 text-md">Compliance Embedded in Every Module</h3>
 
-                                        <p className="text-18 text-rg">DhatuAcademy drives regulatory excellence with GxP-compliant training, SOP mastery, and worldwide standards for seamless operations.</p>
+                                            <p className="text-18 text-rg">DhatuAcademy drives regulatory excellence with GxP-compliant training, SOP mastery, and worldwide standards for seamless operations.</p>
+                                        </div>
+
+                                        <div className="masked-images">
+                                            <div className="img-col img-col-1">
+                                                <Image src="/images/aboutpage/slider-maskings/mask-1-img-1.webp" alt="mask-1-img-1" width={240} height={159} priority={false} className="slider-mask-img-small"></Image>
+
+                                                <Image src="/images/aboutpage/slider-maskings/mask-1-img-2.webp" alt="mask-1-img-2" width={300} height={233} priority={false} className="slider-mask-img-big"></Image>
+                                            </div>
+
+                                            <div className="img-col img-col-2">
+                                                <Image src="/images/aboutpage/slider-maskings/mask-1-img-3.webp" alt="mask-1-img-3" width={300} height={233} priority={false} className="slider-mask-img-big"></Image>
+
+                                                <Image src="/images/aboutpage/slider-maskings/mask-1-img-4.webp" alt="mask-1-img-4" width={240} height={159} priority={false} className="slider-mask-img-small"></Image>
+                                            </div>
+                                        </div>
                                     </div>
                                 </SwiperSlide>
 
-                                <SwiperSlide  className="abt-slider-item">
-                                    <div className="slide-details">
-                                        <h3 className="h4 text-md">Inspection-Proof Documentation</h3>
+                                <SwiperSlide className="abt-slider-item">
+                                    <div className="abt-slide-item-wrapper">
+                                        <div className="slide-details">
+                                            <h3 className="h4 text-md">Inspection-Proof Documentation</h3>
 
-                                        <p className="text-18 text-rg">Automated certificates, digital badges, and immutable logs accelerate audits with zero compliance gaps.</p>
+                                            <p className="text-18 text-rg">Automated certificates, digital badges, and immutable logs accelerate audits with zero compliance gaps.</p>
+                                        </div>
+
+                                        <div className="masked-images">
+                                            <div className="img-col img-col-1">
+                                                <Image src="/images/aboutpage/slider-maskings/mask-2-img-1.webp" alt="mask-1-img-1" width={240} height={159} priority={false} className="slider-mask-img-small"></Image>
+
+                                                <Image src="/images/aboutpage/slider-maskings/mask-2-img-2.webp" alt="mask-1-img-2" width={300} height={233} priority={false} className="slider-mask-img-big"></Image>
+                                            </div>
+
+                                            <div className="img-col img-col-2">
+                                                <Image src="/images/aboutpage/slider-maskings/mask-2-img-3.webp" alt="mask-1-img-3" width={300} height={233} priority={false} className="slider-mask-img-big"></Image>
+
+                                                <Image src="/images/aboutpage/slider-maskings/mask-2-img-4.webp" alt="mask-1-img-4" width={240} height={159} priority={false} className="slider-mask-img-small"></Image>
+                                            </div>
+                                        </div>
                                     </div>
                                 </SwiperSlide>
                                 
-                                <SwiperSlide  className="abt-slider-item">
-                                    <div className="slide-details">
-                                        <h3 className="h4 text-md">Risk-Free Practice Labs</h3>
+                                <SwiperSlide className="abt-slider-item">
+                                    <div className="abt-slide-item-wrapper">
+                                        <div className="slide-details">
+                                            <h3 className="h4 text-md">Risk-Free Practice Labs</h3>
 
-                                        <p className="text-18 text-rg">Isolated sandboxes replicate production environments for safe, compliant hands-on training without live data risks.</p>
+                                            <p className="text-18 text-rg">Isolated sandboxes replicate production environments for safe, compliant hands-on training without live data risks.</p>
+                                        </div>
+
+                                        <div className="masked-images">
+                                            <div className="img-col img-col-1">
+                                                <Image src="/images/aboutpage/slider-maskings/mask-3-img-1.webp" alt="mask-3-img-1" width={240} height={159} priority={false} className="slider-mask-img-small"></Image>
+
+                                                <Image src="/images/aboutpage/slider-maskings/mask-3-img-2.webp" alt="mask-3-img-2" width={300} height={233} priority={false} className="slider-mask-img-big"></Image>
+                                            </div>
+
+                                            <div className="img-col img-col-2">
+                                                <Image src="/images/aboutpage/slider-maskings/mask-3-img-3.webp" alt="mask-3-img-3" width={300} height={233} priority={false} className="slider-mask-img-big"></Image>
+
+                                                <Image src="/images/aboutpage/slider-maskings/mask-3-img-4.webp" alt="mask-3-img-4" width={240} height={159} priority={false} className="slider-mask-img-small"></Image>
+                                            </div>
+                                        </div>
                                     </div>
                                 </SwiperSlide>
                         </Swiper>
