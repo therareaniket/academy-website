@@ -17,7 +17,7 @@
     h1, .h1 { font-size: 58px; line-height: 68px; }
     /* h5, .h5 { font-size: 22px; line-height: 32px; } */
 
-    .resources-cards{ width: 490px; }
+    .resources-cards{ width: calc(50% - 15px); }
     .resources-card-left span{ margin-bottom: 20px; }
     .resources-cards p{
         display: -webkit-box;
@@ -25,7 +25,7 @@
         -webkit-line-clamp: 4;
         overflow: hidden;
     }
-    .resources-tab-trigger{ min-width: 300px !important; }
+    .resources-tab-trigger{ width: 300px !important; min-width: auto !important; max-width: auto !important; }
     .resources-tab-trigger button[data-state="active"]{ min-width: 250px !important; }
     .resources-detail-cards{ width: calc(50% - 15px) !important; }
     .detail-card-btn{ padding-top: 100px; }
@@ -47,7 +47,7 @@
     .text-18 { font-size: 16px; line-height: 24px; }
     .text-16 { font-size: 14px; line-height: 22px; }
     
-    .resources-cards{ width: 420px; }  .date-cate-span{ padding: 15px 0 10px 0; } .resources-cards h3{ margin-bottom: 10px; } .date-cate-span span{ font-size: 14px; }
+    .date-cate-span{ padding: 15px 0 10px 0; } .resources-cards h3{ margin-bottom: 10px; } .date-cate-span span{ font-size: 14px; }
     .resources-card-left span{ margin-bottom: 5px; }
     .resources-tab-trigger{ padding-top: 15px; padding-bottom: 0; }
     .resources-tab-trigger button[data-state="active"]{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;}
@@ -58,6 +58,7 @@
         overflow: hidden;
     }
 
+    .resources-tab-trigger{ min-width: 260px !important; }
     .resources-detail-tabs{ width: 260px !important; min-width: auto; max-width: auto; }
     .detail-card-btn{ padding-top: 90px; } 
     .contact-form-image{ height: 440px; } .form-men-image{ width: 470px;} .contact-form-fields{ padding-top: 50px; }
