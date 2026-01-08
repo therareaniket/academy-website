@@ -102,6 +102,7 @@ export default function ComplianceSlider() {
                 </div>
 
                 <Image src="/images/aboutpage/slider-uparrow.png" alt="slider-uparrow" width={200} height={118} className="slider-uparrow"></Image>
+                
                 <Image src="/images/aboutpage/slider-notes.png" alt="slider-notes" width={188} height={203} className="slider-notes"></Image>
             </section>
         </>

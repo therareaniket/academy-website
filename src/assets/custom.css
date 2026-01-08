@@ -304,10 +304,10 @@ body { background-color: var(--off-white); }
 .active-why-us-list { color: var(--white); }
 .active-why-us-list { width: 510px; height: 800px; }
 .why-us-list-item.active-why-us-list span { opacity: 0; } 
-.why-list-1.active-why-us-list { background-image: url("/images/aboutpage/why-hands-on-traing.png"); background-repeat: no-repeat; object-fit: cover; }
-.why-list-2.active-why-us-list { background-image: url("/images/aboutpage/why-expert-led-modules.png"); background-repeat: no-repeat; object-fit: cover; }
-.why-list-3.active-why-us-list { background-image: url("/images/aboutpage/why-real-world-projects.png"); background-repeat: no-repeat; object-fit: cover; }
-.why-list-4.active-why-us-list { background-image: url("/images/aboutpage/why-career-support.png"); background-repeat: no-repeat; object-fit: cover; }
+.why-list-1.active-why-us-list { background-image: url("/images/aboutpage/why-hands-on-traing-new.webp"); background-repeat: no-repeat; object-fit: cover; }
+.why-list-2.active-why-us-list { background-image: url("/images/aboutpage/why-expert-led-modules-new.webp"); background-repeat: no-repeat; object-fit: cover; }
+.why-list-3.active-why-us-list { background-image: url("/images/aboutpage/why-real-world-projects-new.webp"); background-repeat: no-repeat; object-fit: cover; }
+.why-list-4.active-why-us-list { background-image: url("/images/aboutpage/why-career-support-new.webp"); background-repeat: no-repeat; object-fit: cover; }
 .why-us-list-item .h4 { margin-bottom: 0; }
 
 .timeline-steps-container.mobile-timeline-steps { display: none; }

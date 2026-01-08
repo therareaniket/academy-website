@@ -40,7 +40,7 @@ export default function TrainingUsersOnClinicalPlatform() {
 
                             <p className="h6 text-rg resources-deatil-para">Audits and inspections are inevitable in clinical research. One of the first areas inspectors examine is training documentation. Organizations with fragmented or manual training processes often struggle to demonstrate compliance.</p>
 
-                            <Image src="/images/resourcesdetail/whyPortalImg.webp" alt="portaltraining" width="1200" height="640" className="resources-detail-img-1 site-radius-20"></Image>
+                            <Image src="/images/resourcesdetail/updates-and-insights-blog-2.webp" alt="portaltraining" width="1200" height="640" className="resources-detail-img-1 site-radius-20"></Image>
 
                             <div className="sharedby-name">
                                 <div className="sharedby-date">
@@ -137,18 +137,18 @@ export default function TrainingUsersOnClinicalPlatform() {
                             </div>
 
                             <div className="detail-cards-wrapper">
-                                <Link href="/Blogs/best-practices-for-compliance-training-in-regulated-clinical-systems" className="resources-cards card-2">
-                                    <Image src="/images/resources/resources-card-2-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
-
+                                <Link href="/Blogs/why-continuous-training-is-essential-for-modern-clinical-trial" className="resources-cards card-1">                                       
+                                    <Image src="/images/resourcesdetail/updates-and-insights-blog-1.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
+                                    
                                     <div className="date-cate-span">
                                         <span className="text-16 text-rg text-grey">Smit Shah</span>
 
-                                        <span className="text-16 text-rg text-grey">January 01, 2026</span>
+                                        <span className="text-16 text-rg text-grey">December 25, 2025</span>
                                     </div>
 
-                                    <h3 className="h5 text-md">Best Practices for Compliance Training in Regulated Clinical Systems</h3>
+                                    <h3 className="h5 text-md">Why Continuous Training Is Essential for Modern Clinical Trial Platforms</h3>
 
-                                    <p className="h6 text-rg text-grey">Regulations such as ICH-GCP, 21 CFR Part 11, GDPR that every user interacting with clinical systems is adequately trained and accountable.</p>
+                                    <p className="h6 text-rg text-grey">Clinical trial platforms evolve continuously due to regulatory changes, technology upgrades, and operational improvements.</p>
                                 </Link>
                             </div>
                         </div>

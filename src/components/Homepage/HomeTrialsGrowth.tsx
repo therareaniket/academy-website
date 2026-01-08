@@ -23,7 +23,7 @@ export default function TrialGrowth(){
                             </div> */}
                         </div>
 
-                        <Image src="/images/homepage/certifications-banner.webp" alt="certifications-banner" width={750} height={546} priority={false} className="certifications-banner site-radius-20"></Image>
+                        <Image src="/images/homepage/certifications-banner-new.webp" alt="certifications-banner" width={750} height={546} priority={false} className="certifications-banner site-radius-20"></Image>
                     </div>
 
                     <div className="certificate-usp">

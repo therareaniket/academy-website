@@ -1174,7 +1174,7 @@
     .home-hero { height: 500px; }
     .home-hero-cap { top: 80px; }
     .home-hero-player { display: none; }
-    .get-started-btn { bottom: 90px; }
+    .get-started-btn { flex-direction: column; gap: 6px; bottom: 90px; right: 50%; transform: translateX(50%); }
     .home-hero-bulb { top: 80px; }
     .site-hero-cube { bottom: 14%; }
     .stats-headings h2, .stats-headings .h6 { width: 100%; }

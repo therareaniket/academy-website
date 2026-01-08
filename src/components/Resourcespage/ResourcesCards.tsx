@@ -25,9 +25,9 @@ export default function ResourcesCards() {
                                         <Link href="/ResourcesDetail" className="resources-cards card-1">
                                             <Image src="/images/resources/resources-card-1-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
                                             <div className="date-cate-span">
-                                                <span className="text-16 text-rg text-grey">Siddharth Shah</span>
+                                                <span className="text-16 text-rg text-grey">Smit Shah</span>
 
-                                                <span className="text-16 text-rg text-grey">September 10, 2025</span>
+                                                <span className="text-16 text-rg text-grey">December 10, 2025</span>
                                             </div>
 
                                             <h3 className="h5 text-md">Why Portal-Specific Training is the Future of Clinical Trials</h3>
@@ -36,11 +36,11 @@ export default function ResourcesCards() {
                                         </Link>
 
                                         <Link href="" className="resources-cards card-4">
-                                            <Image src="/images/resources/resources-card-4-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
+                                            <Image src="/images/resources/learning-guides-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
                                             <div className="date-cate-span">
-                                                <span className="text-16 text-rg text-grey">Arjun Malhotra</span>
+                                                <span className="text-16 text-rg text-grey">Smit Shah</span>
 
-                                                <span className="text-16 text-rg text-grey">September 10, 2025 </span>
+                                                <span className="text-16 text-rg text-grey">December 12, 2025</span>
                                             </div>
 
                                             <h3 className="h5 text-md">The Role of Certifications in Clinical Research Careers</h3>
@@ -53,7 +53,7 @@ export default function ResourcesCards() {
                                 <TabsContent value="portaltraining">
                                     <div className="resources-card-wrapper">
                                         <Link href="/Blogs/best-practices-for-training-users-on-clinical-trial-platforms" className="resources-cards card-1">
-                                            <Image src="/images/resources/resources-card-1-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
+                                            <Image src="/images/resourcesdetail/best-practices-blog-1.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
 
                                             <div className="date-cate-span">
                                                 <span className="text-16 text-rg text-grey">Smit Shah</span>
@@ -67,7 +67,7 @@ export default function ResourcesCards() {
                                         </Link>
 
                                         <Link href="/Blogs/best-practices-for-compliance-training-in-regulated-clinical-systems" className="resources-cards card-2">
-                                            <Image src="/images/resources/resources-card-2-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
+                                            <Image src="/images/resourcesdetail/best-practices-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-2 site-radius-20"></Image>
 
                                             <div className="date-cate-span">
                                                 <span className="text-16 text-rg text-grey">Smit Shah</span>
@@ -85,7 +85,7 @@ export default function ResourcesCards() {
                                 <TabsContent value="handsonlearning">
                                     <div className="resources-card-wrapper">
                                         <Link href="/Blogs/why-continuous-training-is-essential-for-modern-clinical-trial" className="resources-cards card-1">                                       
-                                            <Image src="/images/resources/resources-card-1-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
+                                            <Image src="/images/resourcesdetail/updates-and-insights-blog-1.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
                                             
                                             <div className="date-cate-span">
                                                 <span className="text-16 text-rg text-grey">Smit Shah</span>
@@ -99,7 +99,7 @@ export default function ResourcesCards() {
                                         </Link>
 
                                         <Link href="/Blogs/how-training-portal-improve-compliance-readiness-during-audits-introduction" className="resources-cards card-2">
-                                            <Image src="/images/resources/resources-card-2-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
+                                            <Image src="/images/resourcesdetail/updates-and-insights-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
                                             
                                             <div className="date-cate-span">
                                                 <span className="text-16 text-rg text-grey">Smit Shah</span>

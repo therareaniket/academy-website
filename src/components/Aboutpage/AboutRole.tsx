@@ -7,8 +7,8 @@ export default function AboutRole() {
     const images = [
         "/images/aboutpage/CRA.webp",
         "/images/aboutpage/investigator.webp",
-        "/images/aboutpage/site-efficiency.webp",
-        "/images/aboutpage/sponsor-tools.webp",
+        "/images/aboutpage/site-efficiency-new.webp",
+        "/images/aboutpage/sponsor-tools-new.webp",
         "/images/aboutpage/universal-access.webp",
     ];
 

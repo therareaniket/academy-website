@@ -40,7 +40,7 @@ export default function TrainingUsersOnClinicalPlatform() {
 
                             <p className="h6 text-rg resources-deatil-para">Compliance training is a critical pillar of clinical research operations. Regulations such as ICH-GCP, 21 CFR Part 11, GDPR, and global data privacy laws demand that every user interacting with clinical systems is adequately trained and accountable. However, compliance training often becomes a checkbox activity rather than a meaningful learning experience.</p>
 
-                            <Image src="/images/resourcesdetail/whyPortalImg.webp" alt="portaltraining" width="1200" height="640" className="resources-detail-img-1 site-radius-20"></Image>
+                            <Image src="/images/resourcesdetail/best-practices-blog-2.webp" alt="portaltraining" width="1200" height="640" className="resources-detail-img-1 site-radius-20"></Image>
 
                             <div className="sharedby-name">
                                 <div className="sharedby-date">
@@ -147,7 +147,7 @@ export default function TrainingUsersOnClinicalPlatform() {
 
                             <div className="detail-cards-wrapper">
                                 <Link href="/Blogs/best-practices-for-training-users-on-clinical-trial-platforms" className="resources-cards card-1">
-                                    <Image src="/images/resources/resources-card-1-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
+                                    <Image src="/images/resourcesdetail/best-practices-blog-1.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
 
                                     <div className="date-cate-span">
                                         <span className="text-16 text-rg text-grey">Smit Shah</span>

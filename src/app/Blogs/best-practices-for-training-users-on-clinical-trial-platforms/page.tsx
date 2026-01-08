@@ -40,7 +40,7 @@ export default function TrainingUsersOnClinicalPlatform() {
 
                             <p className="h6 text-rg resources-deatil-para">Clinical trial platforms have become the backbone of modern research operations. From data capture and compliance validation to payments and reporting, these systems are used daily by sponsors, CROs, sites, labs, and finance teams. However, even the most advanced platform can fail to deliver value if users are not trained effectively. </p>
 
-                            <Image src="/images/resourcesdetail/whyPortalImg.webp" alt="portaltraining" width="1200" height="640" className="resources-detail-img-1 site-radius-20"></Image>
+                            <Image src="/images/resourcesdetail/best-practices-blog-1.webp" alt="portaltraining" width="1200" height="640" className="resources-detail-img-1 site-radius-20"></Image>
 
                             <div className="sharedby-name">
                                 <div className="sharedby-date">
@@ -222,7 +222,7 @@ export default function TrainingUsersOnClinicalPlatform() {
 
                             <div className="detail-cards-wrapper">
                                 <Link href="/Blogs/best-practices-for-compliance-training-in-regulated-clinical-systems" className="resources-cards card-2">
-                                    <Image src="/images/resources/resources-card-2-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
+                                    <Image src="/images/resourcesdetail/best-practices-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-2 site-radius-20"></Image>
 
                                     <div className="date-cate-span">
                                         <span className="text-16 text-rg text-grey">Smit Shah</span>
