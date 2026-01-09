@@ -2,8 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { delay, motion, scale } from "framer-motion";
 
 export default function HomeHero() {
+
+    const homeHeroAnimations = {
+        spanAnimationInitial: { opacity: 0, scale: 1.3 },
+        spanAnimationAnimate: { opacity: 1, scale: 1 },
+    }
+
     return (
         <>
             <section className="section home-hero">
@@ -25,7 +32,15 @@ export default function HomeHero() {
 
                 <div className="container">
                     <div className="hero-details">
-                        <h1>Master All Clinical Trials with <span>Agentic Powered</span> DhatuAcademy</h1>
+                        <h1>
+                            <p className="inline">Master All Clinical Trials with </p>
+                            {/* Master All Clinical Trials with  */}
+                            <span>
+                                <motion.span initial={homeHeroAnimations.spanAnimationInitial} animate={homeHeroAnimations.spanAnimationAnimate} transition={{delay: 0.5}}>Agentic </motion.span> <motion.span initial={homeHeroAnimations.spanAnimationInitial} animate={homeHeroAnimations.spanAnimationAnimate} transition={{delay: 1}}>Powered</motion.span>
+                            </span>
+                            DhatuAcademy</h1>
+                        
+                        {/* <h1>Master All Clinical Trials with <span>Agentic Powered</span> DhatuAcademy</h1> */}
                     </div>
                 </div>
             </section>
