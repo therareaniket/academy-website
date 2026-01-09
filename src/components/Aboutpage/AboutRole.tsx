@@ -114,7 +114,7 @@ export default function AboutRole() {
                                 <AccordionContent className="step-img">
                                     <p className="text-18 text-[gray]">SOP workflows, real-time skill checks.</p>
 
-                                    <Image src="/images/aboutpage/site-efficiency.webp" alt="site-efficiency" width={752} height={620} priority={false} className="site-radius-20" />
+                                    <Image src="/images/aboutpage/site-efficiency-new.webp" alt="site-efficiency" width={752} height={620} priority={false} className="site-radius-20" />
                                 </AccordionContent>
                             </AccordionItem>
 
@@ -126,7 +126,7 @@ export default function AboutRole() {
                                 <AccordionContent className="step-img">
                                     <p className="text-18 text-[gray]">Bulk deployment, analytics dashboards.</p>
 
-                                    <Image src="/images/aboutpage/sponsor-tools.webp" alt="sponsor-tools" width={752} height={620} priority={false} className="site-radius-20" />
+                                    <Image src="/images/aboutpage/sponsor-tools-new.webp" alt="sponsor-tools" width={752} height={620} priority={false} className="site-radius-20" />
                                 </AccordionContent>
                             </AccordionItem>
 
