@@ -2,18 +2,27 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function USPs(){
     const [activeUsp, setActiveUsp] = useState(0);
+
+    const homeUspAnimations = {
+		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 1 } },
+
+		subTitle_ltr_initial: { x: "50px", opacity: 0, },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 1 } },
+	}
 
     return (
         <>
             <section className="section">
                 <div className="container">
                     <div className="stats-headings">
-                        <h2>Key Features Drive Clinical Trials Impact</h2>
+                        <motion.h2 initial={homeUspAnimations.title_ltr_initial} whileInView={homeUspAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Key Features Drive Clinical Trials Impact</motion.h2>
 
-                        <p className="h6">Targeted modules interactive tools and full product suite integration deliver practical skills for clinical trials pros trainers and learners to excel on leading platforms.</p>
+                        <motion.p initial={homeUspAnimations.subTitle_ltr_initial} whileInView={homeUspAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: 0.8 }} className="h6">Targeted modules interactive tools and full product suite integration deliver practical skills for clinical trials pros trainers and learners to excel on leading platforms.</motion.p>
                     </div>
 
                     <div className="usp-lists">

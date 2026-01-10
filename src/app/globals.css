@@ -206,7 +206,7 @@ body::-webkit-scrollbar-thumb,
 
 .container { margin: 0 auto !important; padding: 0 18px !important; }
 .section { padding: 150px 0; }
-
+section, .section { overflow: hidden; }
 .site-radius-10 { border-radius: 10px; }
 .site-radius-20 { border-radius: 20px; }
 .site-radius-30 { border-radius: 30px; } 

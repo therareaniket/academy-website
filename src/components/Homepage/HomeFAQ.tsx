@@ -1,15 +1,26 @@
 "use client"
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion"
+import { motion } from "framer-motion"
 
 export default function FAQs() {
+
+    const homeFAQAnimations = {
+		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 1, } },
+
+		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 1 } },
+    }
+
     return (
         <>
             <section className="section">
                 <div className="container">
                     <div className="faq-headings">
-                        <h2>DhatuAcademy Queries? Clarity Awaits</h2>
+                        <motion.h2 initial={homeFAQAnimations.title_ltr_initial} whileInView={homeFAQAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>DhatuAcademy Queries? Clarity Awaits</motion.h2>
 
-                        <p className="h6">Unpack course details certification perks and enrollment steps before diving into clinical trials mastery.</p>
+                        <motion.p initial={homeFAQAnimations.subTitle_ltr_initial} whileInView={homeFAQAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: 0.8 }} className="h6">Unpack course details certification perks and enrollment steps before diving into clinical trials mastery.</motion.p>
                     </div>
 
                     <div className="faq-lists">

@@ -32,7 +32,7 @@
     .arrow-link img { width: 50%; }
 
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { width: 310px; height: 200px; }
-    .stats-wrapper > img { width: 620px; left: 30px; }
+    .stats-wrapper > .stat-female-wrapper { width: 620px; left: 30px; }
     .stats-step1 .blue-box { width: 600px; }
     .stats-step2 .blue-box { width: 720px; }
     .stats-step2 .blue-box-2 { width: 270px; }
@@ -151,7 +151,7 @@
     .stats-headings h2 { width: 480px; }
     .stats-headings .h6 { width: 520px; }
 
-    .stats-wrapper > img { width: 550px; }    
+    .stats-wrapper > .stat-female-wrapper { width: 550px; }    
     .yellow-box .h6 { margin-bottom: 0; }
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { width: 270px; height: 172px; }
     .stats-step1 .blue-box { width: 525px; }
@@ -265,7 +265,7 @@
     .cta-wrapper { height: 400px; padding: 50px; }
     .cta-female { width: 500px; left: 30px; }
     
-    .stats-wrapper > img { width: 500px; }
+    .stats-wrapper > .stat-female-wrapper { width: 500px; }
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { height: 160px; }
     .stats-step1 .blue-box { width: 480px; }
     
@@ -376,7 +376,7 @@
     .stats-headings .h6 { width: 460px; }
     
     .yellow-box .h2 { margin-bottom: 8px; }
-    .stats-wrapper > img { width: 440px; }
+    .stats-wrapper > .stat-female-wrapper { width: 440px; }
     .yellow-box .h6 { line-height: 22px; }
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { width: 240px; height: 140px; }
     .stats-step1 .blue-box { width: 440px; }
@@ -492,7 +492,7 @@
     .stats-headings { flex-direction: column; gap: 20px; }
     .stats-headings h2, .stats-headings .h6 { width: 70%; text-align: center; margin: 0 auto; }
 
-    .stats-wrapper > img { width: 380px; }
+    .stats-wrapper > .stat-female-wrapper { width: 380px; }
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { height: 120px; padding: 10px; }
     .stats-step1 .blue-box { width: 350px; }
     .stats-step2 .blue-box { width: 460px; }
@@ -615,6 +615,7 @@
     .slider-mask-img-small { width: 150px; }
     .slide-details { width: 330px; }
 
+    .certifi-img-wrapper { width: 100%; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -656,7 +657,7 @@
     .stats-wrapper { margin-top: 40px; }
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { width: 200px; }
     .stats-step2 .blue-box-2 { display: none; }
-    .stats-wrapper > img { left: 15px; }
+    .stats-wrapper > .stat-female-wrapper { left: 15px; }
 
     /* .stats-step1 .blue-box { width: 330px; } */
     .stats-step1 .blue-box { width: 370px; }
@@ -907,7 +908,7 @@
 
     .stats-headings .h6 { width: 90%; }
     .stats-wrapper { display: flex; flex-direction: column-reverse; }
-    .stats-wrapper > img { position: relative; display: block; background-color: var(--primary-blue); width: 80%; left: 0; padding: 40px 30px 0 30px; border-radius: 20px; margin: 0 auto; }
+    .stats-wrapper > .stat-female-wrapper { position: relative; display: block; background-color: var(--primary-blue); width: 80%; left: 0; padding: 40px 30px 0 30px; border-radius: 20px; margin: 0 auto; }
     .stats-step1 .blue-box, .stats-step2 .blue-box, .stats-step3 .blue-box { display: none; }
     .steps-wrapper { margin-top: 20px; }
     .stats-step1, .stats-step2 { margin-bottom: 20px; }
@@ -1003,6 +1004,8 @@
     .steps-listings { display: none; }
     .steps-listings.steps-listing-mobile { display: block; }
     .steps-listings.steps-listing-mobile img { margin-top: 30px; }
+    .training-steps { height: auto; }
+
     .usp-list, .usp-list.active-usp { width: 100%; }
     /* .vertical-text { margin-bottom: 0 !important; } */
     .usp-list { height: 60px; }
@@ -1089,7 +1092,7 @@
     .stats-headings h2, .stats-headings .h6 { width: 100%; }
     .stats-wrapper { margin-top: 30px; }
     
-    .stats-wrapper > img { padding: 30px 30px 0 30px; }
+    .stats-wrapper > .stat-female-wrapper { padding: 30px 30px 0 30px; }
     .stats-step1 .yellow-box, .stats-step2 .yellow-box, .stats-step3 .yellow-box { width: 100%; height: 100px; }
     
     .steps-headings h2, .steps-headings .h6 { width: 100%; text-align: left; }
@@ -1151,6 +1154,7 @@
     .coming-soon { height: 60vh; }
 
     .slide-details { width: 100%; }
+    .trial-grwth-wrapper img { height: 250px; }
 }
 
 @media screen and (max-width: 400px) {
@@ -1183,7 +1187,7 @@
     
     .stats-headings { gap: 14px; }
     
-    .stats-wrapper > img { width: 100%; }
+    .stats-wrapper > .stat-female-wrapper { width: 100%; }
     .certifications-banner { height: 200px; }
     .certification-links { gap: 15px; }
     

@@ -313,7 +313,7 @@
 }
 
 
-
+section.section.why-academy-section { overflow: visible !important; }
 /* gives scroll room */
 .why-us-scroll-space {
   height: 600vh;
