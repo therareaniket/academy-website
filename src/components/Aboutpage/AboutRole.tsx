@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion"
 
@@ -22,14 +23,22 @@ export default function AboutRole() {
         return () => clearInterval(id);
     }, [images.length]);
 
+    const homeStatsAnimations = {
+        title_ltr_initial: { x: "-50px", opacity: 0, },
+        title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, } },
+
+        subTitle_ltr_initial: { x: "50px", opacity: 0, },
+        subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, } },
+    };
+
     return (
         <>
             <section className="section training-steps academy-roles">
                 <div className="container">
-                    <div className="steps-headings">
-                        <h2>Tailored for Every Role</h2>
+                    <div className="steps-headings ">
+                        <motion.h2 initial={homeStatsAnimations.title_ltr_initial} whileInView={homeStatsAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Tailored for Every Role</motion.h2>
 
-                        <p className="h6">DhatuAcademy provides role-specific training customized to clinical workflows, compliance requirements, and system operations—equipping every team member with vital skills precisely when needed.</p>
+                        <motion.p initial={homeStatsAnimations.subTitle_ltr_initial} whileInView={homeStatsAnimations.subTitle_ltr_animate} className="h6" viewport={{ once: true, amount: 0.8 }}>DhatuAcademy provides role-specific training customized to clinical workflows, compliance requirements, and system operations—equipping every team member with vital skills precisely when needed.</motion.p>
                     </div>
 
                     <div className="steps-listings">

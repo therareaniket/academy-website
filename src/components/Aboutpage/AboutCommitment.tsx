@@ -1,8 +1,31 @@
 "use client"
 
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function AboutCommitment() {
+
+ useEffect(() => {
+    const cards = document.querySelectorAll(
+      ".cmtmnt-headings, .mission, .learner-satisfaction, .proff-trained, .vision, .full-stats"
+    );
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => cards.forEach((card) => observer.unobserve(card));
+  }, []);
+
     return (
         <>
             <section className="section">
