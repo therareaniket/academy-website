@@ -10,25 +10,26 @@ export default function WhyChoose() {
 
     const homeStatsAnimations = {
         title_ltr_initial: { x: "-50px", opacity: 0, },
-        title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, } },
+        title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 0.5, duration: 1 } },
 
         subTitle_ltr_initial: { x: "50px", opacity: 0, },
-        subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, } },
+        subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 1 } },
     };
 
-    const { scrollYProgress } = useScroll({
-        target: sectionRef,
-        offset: ["start start", "end start"],
-    });
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start center", "end center"], // smoother progress
+  });
 
-    useEffect(() => {
-        return scrollYProgress.on("change", (v) => {
-            if (v < 0.25) setActiveWhyUs(0);
-            else if (v < 0.5) setActiveWhyUs(1);
-            else if (v < 0.75) setActiveWhyUs(2);
-            else setActiveWhyUs(3);
-        });
-    }, [scrollYProgress]);
+  // Update active card based on scroll progress
+  useEffect(() => {
+    return scrollYProgress.on("change", (v) => {
+      const index = Math.min(3, Math.floor(v * 4)); // divide progress evenly for 4 cards
+      setActiveWhyUs(index);
+    });
+  }, [scrollYProgress]);
+
+    
     return (
         <>
             <section className="section why-academy-section" style={{ paddingTop: 0, }}>

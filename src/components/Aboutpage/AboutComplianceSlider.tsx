@@ -3,9 +3,11 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-import { useEffect} from "react";
+import { useEffect } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
+import type { Swiper as SwiperType } from "swiper";
+
 
 
 export default function ComplianceSlider() {
@@ -29,8 +31,26 @@ export default function ComplianceSlider() {
         return () => observer.unobserve(heading);
     }, []);
 
+    const animateSlideImages = (swiper: SwiperType) => {
+        // remove animation from all images
+        document
+            .querySelectorAll(".masked-images img")
+            .forEach((img) => img.classList.remove("show"));
 
+        // active slide
+        const activeSlide = swiper.slides[swiper.activeIndex];
+        if (!activeSlide) return;
 
+        const images = activeSlide.querySelectorAll<HTMLImageElement>(
+            ".masked-images img"
+        );
+
+        images.forEach((img, index) => {
+            setTimeout(() => {
+                img.classList.add("show");
+            }, index * 150);
+        });
+    };
 
 
     return (
@@ -52,6 +72,8 @@ export default function ComplianceSlider() {
                             autoplay={{ delay: 3000, disableOnInteraction: false }}
                             pagination={{ clickable: true }}
                             className="abt-compliance-slider"
+                            onSwiper={(swiper) => animateSlideImages(swiper)}
+                            onSlideChange={(swiper) => animateSlideImages(swiper)}
                         >
 
                             <SwiperSlide className="abt-slider-item">

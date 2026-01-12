@@ -241,37 +241,15 @@
 
 /* custom animations */
 
-/* AboutCommitment.css (or global CSS) */
-
-/* Initial hidden state */
-/* Parent only controls visibility timing */
-.cmtmnt-headings {
-  overflow: hidden;
-}
-
-/* Initial state */
+.cmtmnt-headings { overflow: hidden; }
 .cmtmnt-headings h2,
 .cmtmnt-headings p {
   opacity: 0;
   transform: translateX(-60px);
   transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
-
-/* h2 comes first */
-.cmtmnt-headings.show h2 {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 0s;
-}
-
-/* p comes after */
-.cmtmnt-headings.show p {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 0.25s;
-}
-
-
+.cmtmnt-headings.show h2 { opacity: 1; transform: translateX(0); transition-delay: 1.5s; }
+.cmtmnt-headings.show p { opacity: 1; transform: translateX(0); transition-delay: 1.7s; }
 .mission,
 .learner-satisfaction,
 .proff-trained,
@@ -285,7 +263,6 @@
   will-change: transform, opacity;
 }
 
-/* When visible */
 .mission.show,
 .learner-satisfaction.show,
 .proff-trained.show,
@@ -294,68 +271,22 @@
   opacity: 1;
   transform: scale(1);
 }
-
-/* Staggered popup sequence */
-.mission.show {
-  transition-delay: 0.4s;
-}
-.learner-satisfaction.show {
-  transition-delay: 0.8s;
-}
-.proff-trained.show {
-  transition-delay: 1s;
-}
-.vision.show {
-  transition-delay: 1.6s;
-}
-.full-stats.show {
-  transition-delay: 1.8s;
-}
-
-
+.mission.show { transition-delay: 0.4s; }
+.learner-satisfaction.show { transition-delay: 0.8s; }
+.proff-trained.show { transition-delay: 1s; }
+.vision.show { transition-delay: 1.6s; }
+.full-stats.show { transition-delay: 1.7s; }
 section.section.why-academy-section { overflow: visible !important; }
-/* gives scroll room */
-.why-us-scroll-space {
-  height: 600vh;
-}
-
-
-.why-us-lists {
-  position: sticky;
-  top: 120px;
-}
-
-.compli-slider-headings {
-  overflow: hidden;
-}
-
-/* Initial state */
+.why-us-scroll-space { height: 200vh; }
+.why-us-lists { position: sticky; top: 120px; }
+.why-us-list-item { opacity: 0.4; transform: translateY(20px); transition: opacity 0.4s ease, transform 0.4s ease; }
+.active-why-us-list { opacity: 1; transform: translateY(0); }
+.compli-slider-headings { overflow: hidden; }
 .compli-slider-headings h2,
-.compli-slider-headings p {
-  opacity: 0;
-  transform: translateX(-60px);
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-}
-
-/* h2 first */
-.compli-slider-headings.show h2 {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 0s;
-}
-
-/* p second */
-.compli-slider-headings.show p {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 0.25s;
-}
-
-.timeline-headings {
-  overflow: hidden;
-}
-
-/* Initial hidden state */
+.compli-slider-headings p { opacity: 0; transform: translateX(-60px); transition: transform 0.8s ease-out, opacity 0.8s ease-out; }
+.compli-slider-headings.show h2 { opacity: 1; transform: translateX(0); transition-delay: 0s; }
+.compli-slider-headings.show p { opacity: 1; transform: translateX(0); transition-delay: 0.25s; }
+.timeline-headings { overflow: hidden; }
 .timeline-headings h2,
 .timeline-headings p {
   opacity: 0;
@@ -363,40 +294,52 @@ section.section.why-academy-section { overflow: visible !important; }
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
-/* h2 first */
-.timeline-headings.show h2 {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 0s;
-}
-
-/* p second */
-.timeline-headings.show p {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 1s;
-}
-
+.timeline-headings.show h2 { opacity: 1; transform: translateX(0); transition-delay: 0s; }
+.timeline-headings.show p { opacity: 1; transform: translateX(0); transition-delay: 1s; }
 
 .tl-step-wrapper {
+    opacity: 0; 
+    transform: translateX(0); 
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.tl-step-wrapper.left { transform: translateX(-80px); }
+.tl-step-wrapper.right { transform: translateX(80px); }
+.tl-step-wrapper.show { 
+    opacity: 1; 
+    transform: translateX(0); 
+}
+.timeline-even-steps {
+    position: relative;
+    z-index: 1; /* Ensure right side renders above */
+}
+
+.timeline-steps-container {
+    overflow: visible !important; /* Prevent clipping */
+    position: relative;
+}
+
+.tl-step-wrapper.right.show {
+    transform: translateX(0) !important; /* Force right animation */
+}
+
+.arrow-animate .mask-rect { animation: revealArrow 2s ease-out forwards; }
+@keyframes revealArrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.masked-images img {
   opacity: 0;
-  transform: translateX(0);
-  transition: all 0.6s ease-out;
+  transform: scale(0.85) translateY(20px);
+  transition:
+    opacity 3s ease,
+    transform 1s ease;
 }
+.masked-images img.show { opacity: 1; transform: scale(1) translateY(0); }
 
-/* Odd steps slide from left */
-.tl-step-wrapper.left {
-  transform: translateX(-100px);
-}
-
-/* Even steps slide from right */
-.tl-step-wrapper.right {
-  transform: translateX(100px);
-}
-
-/* When visible */
-.tl-step-wrapper.show {
-  opacity: 1;
-  transform: translateX(0);
-}
 

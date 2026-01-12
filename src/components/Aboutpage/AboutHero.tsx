@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function AboutHero() {
     return (
@@ -10,7 +11,7 @@ export default function AboutHero() {
                 
                 <div className="container">
                     <div className="hero-content">
-                        <h1>Empowering Clinical Trials Mastery at DhatuAcademy</h1>
+                        <motion.h1 initial={{ y: '50px', opacity: 0 }} animate={{ y: '0px', opacity: 1, }} transition={{ delay: 0.5, duration: 1 }} >Empowering Clinical Trials Mastery at DhatuAcademy</motion.h1>  
                     </div>
                 </div>
 

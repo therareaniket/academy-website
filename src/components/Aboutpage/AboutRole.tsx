@@ -25,10 +25,10 @@ export default function AboutRole() {
 
     const homeStatsAnimations = {
         title_ltr_initial: { x: "-50px", opacity: 0, },
-        title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, } },
+        title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 0.5, duration: 1 } },
 
         subTitle_ltr_initial: { x: "50px", opacity: 0, },
-        subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, } },
+        subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 1 } },
     };
 
     return (
