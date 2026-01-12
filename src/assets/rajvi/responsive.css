@@ -135,6 +135,12 @@
     .contact-form-image{ height: 260px; } .contact-form-fields input{ height: 45px ; } .contact-form-fields textarea{ height: 105px; }
     .footer-logo-wrapper img{ width: 200px; } .footer-links-wrapper{ padding-top: 50px; } .form-cards{ height: max-content; } .form-men-image{ width: 310px; }
 
+
+    .mission.show { transition-delay: 0.4s; }
+    .vision.show { transition-delay: 0.8s; }
+    .learner-satisfaction.show { transition-delay: 1.2s; }
+    .proff-trained.show { transition-delay: 1.6s; }
+    .full-stats.show { transition-delay: 2s; }
 }
 
 @media screen and (max-width: 1023px) {

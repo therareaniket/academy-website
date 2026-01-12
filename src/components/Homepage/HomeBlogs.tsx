@@ -5,13 +5,23 @@ import { motion } from "framer-motion";
 
 export default function HomeBlogs() {
 
-    const homeBlogsAnimations = {
+    const homeBlogsAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ?  {
 		title_ltr_initial: { x: "-50px", opacity: 0, },
-		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, } },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6  } },
 
 		subTitle_ltr_initial: { x: "50px", opacity: 0, },
-		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, } },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, duration: 0.6  } },
 
+        blogItem_ttb_initial: { y: "-50px", opacity: 0 },
+        blogItem_ttb_animate: { y: "0px", opacity: 1 }
+    } : {
+
+		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6  } },
+
+		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, duration: 0.6  } },  
+        
         blogItem_ttb_initial: { y: "-50px", opacity: 0 },
         blogItem_ttb_animate: { y: "0px", opacity: 1 }
     }
@@ -30,35 +40,35 @@ export default function HomeBlogs() {
                         <div className="blog-showcase">
                             <div className="blog-row">
                                 <div className="blog-list-lg">
-                                    <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} className="inline-block" >
+                                    {/* <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} className="inline-block" > */}
                                         <Image src="/images/homepage/home-blog-1.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
-                                    </motion.span>
+                                    {/* </motion.span> */}
 
-                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1.5 }} className="h4 text-md">Why Portal-Specific Training is the Future of Clinical Trials</motion.h3>
+                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">Why Portal-Specific Training is the Future of Clinical Trials</motion.h3>
                                 </div>
 
                                 <div className="blog-list-sm">
-                                    <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} className="inline-block" >
+                                    {/* <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} className="inline-block" > */}
                                         <Image src="/images/homepage/home-blog-2.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
-                                    </motion.span>
+                                    {/* </motion.span> */}
 
-                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1.5 }} className="h4 text-md">Hands-On Learning vs. Theory: Why Practical Training Wins</motion.h3>
+                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">Hands-On Learning vs. Theory: Why Practical Training Wins</motion.h3>
                                 </div>
                             </div>
 
                             <div className="blog-row">
                                 <div className="blog-list-lg">
-                                    <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} className="inline-block" >
+                                    {/* <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} className="inline-block" > */}
                                         <Image src="/images/homepage/home-blog-3.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
-                                    </motion.span>
+                                    {/* </motion.span> */}
 
                                     <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">The Role of Certifications in Clinical Research Careers</motion.h3>
                                 </div>
 
                                 <div className="blog-list-sm">
-                                    <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} className="inline-block" >
+                                    {/* <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} className="inline-block" > */}
                                         <Image src="/images/homepage/home-blog-4.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
-                                    </motion.span>
+                                    {/* </motion.span> */}
 
                                     <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">How Portal Expertise Improves Clinical Trials Accuracy</motion.h3>
                                 </div>

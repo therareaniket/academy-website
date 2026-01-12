@@ -124,6 +124,7 @@ body { background-color: var(--off-white); }
 
 section.section.training-steps { overflow: visible !important; }
 .training-steps { background-color: var(--black); color: var(--white); height: 170vh; }
+.training-steps.academy-roles { height: 200vh; }
 .steps-headings { display: flex; justify-content: space-between; }
 .steps-headings h2, .step-img { width: 752px; }
 .steps-headings .h6, .step-list { width: 705px; margin-bottom: 0; }
@@ -234,7 +235,7 @@ section.section.training-steps { overflow: visible !important; }
 /* SOLUTIONS PAGE */
 .solutions-hero { width: 100%; height: 700px; background-color: var(--hero-bg); display: flex; align-items: center; justify-content: center; position: relative; }
 .hero-content { width: 1120px; text-align: center; margin: 0 auto; position: relative; z-index: 10; }
-.inner-hero-cube { position: absolute; bottom: 35px; left: 50%; transform: translateX(-50%); z-index: 1; pointer-events: none;  }
+.inner-hero-cube { position: absolute; bottom: 35px;  z-index: 1; pointer-events: none;  }
 .solu-hero-1 { position: absolute; top: 200px; left: 175px; }
 .solu-hero-2 { position: absolute; bottom: 45px; left: 265px; }
 .solu-hero-3 { position: absolute; top: 110px; right: 230px; }
@@ -396,5 +397,5 @@ section.section.training-steps { overflow: visible !important; }
 .animate-ltr { animation: hero_rotate_left_to_right 2s ease-in-out infinite alternate; }
 .animate-scaleup { animation: hero_zoom_in_out 2s ease-in-out infinite alternate; }
 .animate-sliding { animation: hero_slide_left_to_right 2s ease-in-out infinite alternate; }
-.animate-rotate-full { animation: hero_rotate_circle 2s ease-in-out infinite alternate; }
+.animate-rotate-full { animation: hero_rotate_circle 3s ease-in-out infinite alternate; }
 .animate-cross-way { animation: hero_slide_cross_way 2s ease-in-out infinite alternate; }

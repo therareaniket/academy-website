@@ -20,7 +20,7 @@
 
     .hero-details h1 { width: 950px; }
     .home-hero { height: 750px; }
-    .site-hero-cube { width: 750px; bottom: 80px; }
+    .site-hero-cube { width: 750px; bottom: 80px; left: 30%; }
     .home-hero-bulb { width: 280px; top: 180px; left: 50px; }
     .home-hero-cap { right: 140px; width: 180px; }
     .home-hero-player { width: 200px; left: 260px; bottom: 90px; }
@@ -135,7 +135,7 @@
 
     .hero-details h1 { width: 800px; margin-bottom: 40px; }
     .home-hero {  height: 670px; }
-    .site-hero-cube { width: 660px; bottom: 50px; }
+    .site-hero-cube { width: 660px; bottom: 50px; left: 30%; }
     .home-hero-bulb { width: 230px; left: 30px; top: 160px; }
     .home-hero-cap { width: 160px; right: 120px; }
     .home-hero-player { width: 160px; }
@@ -252,7 +252,7 @@
     .header-megamenu.active .menu-grdnt-bg { width: 300px; }
     
     .home-hero { height: 620px; }
-    .site-hero-cube { width: 600px; bottom: 70px; }
+    .site-hero-cube { width: 600px; bottom: 70px; left: 28%; }
     .home-hero-cap { width: 130px; right: 140px; }
     .home-hero-bulb { width: 180px; left: 50px; }
     .home-hero-player { width: 140px; left: 240px; bottom: 90px; }
@@ -477,7 +477,7 @@
     .section { padding: 80px 0; }
 
     .home-hero { height: 550px; }
-    .site-hero-cube { width: 520px; bottom: 40px; }
+    .site-hero-cube { width: 520px; bottom: 40px; left: 25%; }
     .home-hero-cap { width: 110px; right: 100px; top: 120px; }
     .home-hero-player { width: 130px; bottom: 60px; }
     .home-hero-bulb { width: 160px; top: 180px; left: 20px; }
@@ -640,7 +640,7 @@
     .menu-line-3 { width: 24px; }
 
     .home-hero { height: 500px; }
-    .site-hero-cube { width: 500px; bottom: 30px; }
+    .site-hero-cube { width: 500px; bottom: 30px; left: 23%; }
     .home-hero-cap {  width: 100px; right: 80px; top: 100px; }
     .home-hero-player { width: 120px; bottom: 50px; left: 150px; }
     .get-started-btn { bottom: 80px; right: 140px; }
@@ -751,6 +751,12 @@
     .slider-mask-img-small { width: 140px; }
     
 
+    @keyframes  hero_slide_left_to_right {
+        0% { transform: translateX(-5px); }
+        50% { transform: translateX(5px); }
+        51% { transform: translateX(5px); }
+        100% { transform: translateX(-5px); }
+    }
 }
 
 @media screen and (max-width: 839px) {
@@ -836,7 +842,7 @@
     .get-started-btn { bottom: 120px; right: 80px; }
     .home-hero-player { width: 100px; left: 70px; bottom: 100px; }
     .home-hero-bulb { top: 100px; width: 100px; }
-    .site-hero-cube { width: 470px; bottom: 60px; }
+    .site-hero-cube { width: 470px; bottom: 60px; left: 17%; }
     .cta-wrapper { height: 240px; }
     .cta-details { width: 270px; }
     .cta-female { width: 300px; }
@@ -900,7 +906,7 @@
     
     /* .home-hero { max-height: 90vh; } */
     .hero-details h1 { width: 100%; margin-bottom: 80px; }
-    .site-hero-cube { width: 400px; bottom: 100px; }
+    .site-hero-cube { width: 400px; bottom: 100px; left: 18%; }
     .get-started-btn { bottom: 130px; }
     .cta-wrapper { justify-content: center; }
     .cta-details { width: 80%; }
@@ -994,7 +1000,7 @@
     .get-started-btn { flex-direction: column; gap: 6px; }
     .get-started-cta { flex-direction: column; gap: 6px; }
     .arrow-link img { width: 40px; }
-    .site-hero-cube { bottom: 120px; width: 370px; }
+    .site-hero-cube { bottom: 120px; width: 370px; left: 10%; }
     .cta-details { width: 90%; }
     .stats-headings .h6 { width: 95%; }
 
@@ -1004,7 +1010,7 @@
     .steps-listings { display: none; }
     .steps-listings.steps-listing-mobile { display: block; }
     .steps-listings.steps-listing-mobile img { margin-top: 30px; }
-    .training-steps { height: auto; }
+    .training-steps, .training-steps.academy-roles { height: auto; }
 
     .usp-list, .usp-list.active-usp { width: 100%; }
     /* .vertical-text { margin-bottom: 0 !important; } */
@@ -1075,7 +1081,7 @@
     }
 
     /* .home-hero-cap { top: 72%; } */
-    .site-hero-cube { bottom: 20%; }
+    .site-hero-cube { bottom: 20%; left: 6%; }
 
     .header-megamenu.active .menu-grdnt-bg { opacity: 90%; }
     .site-header.header-hide .header-logo-link { transform: translateX(-100px); }
@@ -1180,7 +1186,7 @@
     .home-hero-player { display: none; }
     .get-started-btn { flex-direction: column; gap: 6px; bottom: 90px; right: 50%; transform: translateX(50%); }
     .home-hero-bulb { top: 80px; }
-    .site-hero-cube { bottom: 14%; }
+    .site-hero-cube { width: 320px; bottom: 22%; left: 20px; }
     .stats-headings h2, .stats-headings .h6 { width: 100%; }
 
     .cta-wrapper { height: 220px; }
@@ -1214,6 +1220,13 @@
     .footer-notch { width: 220px; }
     .social-link-list { right: 40px; }
     .footer-links-main { flex-wrap: wrap; gap: 40px; }
+
+    @keyframes  hero_slide_left_to_right {
+        0% { transform: translateX(-3px); }
+        50% { transform: translateX(3px); }
+        51% { transform: translateX(3px); }
+        100% { transform: translateX(-3px); }
+    }
 }
 
 @media screen and (max-width: 374px) {

@@ -7,13 +7,20 @@ import { motion } from "framer-motion";
 export default function USPs(){
     const [activeUsp, setActiveUsp] = useState(0);
 
-    const homeUspAnimations = {
+    const homeUspAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
 		title_ltr_initial: { x: "-50px", opacity: 0, },
-		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 1 } },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
 
 		subTitle_ltr_initial: { x: "50px", opacity: 0, },
-		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 1 } },
-	}
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 } },
+	
+    } : {
+        title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
+
+		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, duration: 0.6 } },
+    }
 
     return (
         <>

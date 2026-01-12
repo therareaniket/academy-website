@@ -1,16 +1,33 @@
 "use client"
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function SoluComplianceList() {
+
+    const solutionListAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
+		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
+
+		subTitle_ltr_initial: { x: "50px", opacity: 0, },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 } },
+
+	} : {
+        title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
+
+		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, duration: 0.6 } },
+    }
+
     return (
         <>
             <section className="section">
                 <div className="container">
                     <div className="compliance-list-headings">
-                        <h2>Training Built for Accuracy and Compliance</h2>
+                        <motion.h2 initial={ solutionListAnimations.title_ltr_initial } whileInView={ solutionListAnimations.title_ltr_animate } viewport={{ once: true, amount: 0.8 }}>Training Built for Accuracy and Compliance</motion.h2>
 
-                        <p className="h6 text-rg">Comprehensive, role-based learning programs designed to help teams understand Dhatu products, follow SOP-driven workflows, and work confidently in real-world environments.</p>
+                        <motion.p initial={ solutionListAnimations.subTitle_ltr_initial } whileInView={ solutionListAnimations.subTitle_ltr_animate } className="h6 text-rg">Comprehensive, role-based learning programs designed to help teams understand Dhatu products, follow SOP-driven workflows, and work confidently in real-world environments.</motion.p>
                     </div>
 
                     <div className="compliance-lists">

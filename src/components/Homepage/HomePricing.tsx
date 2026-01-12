@@ -38,16 +38,25 @@ export default function HomePricing(){
     };
 
     
-    const homePricingAnimations = {
+    const homePricingAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
 		title_ltr_initial: { x: "-50px", opacity: 0, },
-		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 1 } },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
 
 		subTitle_ltr_initial: { x: "50px", opacity: 0, },
-		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 1 } },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 } },
 
         list_btt_initial: { y: '10px', opacity: 0, },
         list_btt_animate: { y: '0px', opacity: 1, },
-	}
+	} : {
+        title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
+
+		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, duration: 0.6 } },
+
+        list_btt_initial: { y: '10px', opacity: 0, },
+        list_btt_animate: { y: '0px', opacity: 1, },
+    }
 
     return (
         <>

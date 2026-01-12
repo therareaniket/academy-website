@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function AboutTimeline() {
 
@@ -56,7 +57,7 @@ export default function AboutTimeline() {
                         }
                     }
                 },
-                { threshold: 0.3, rootMargin: "0px 0px -20% 0px" }
+                { threshold: 0.2, rootMargin: "0px 0px -10% 0px" }
             );
 
             observer.observe(allSteps[0]);
@@ -134,7 +135,6 @@ export default function AboutTimeline() {
                         </div>
 
                         <div className="timeline-even-steps">
-
                             <div className="tl-step-wrapper right">
                                 <div className="tl-step step-2 site-radius-20">
                                     <div className="step-count site-radius-40">
@@ -184,7 +184,7 @@ export default function AboutTimeline() {
                     </div>
 
                     <div className="timeline-steps-container mobile-timeline-steps">
-                        <div className="tl-step step-1 site-radius-20">
+                        <motion.div className="tl-step step-1 site-radius-20" initial={{ x: "-30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
                                 <span className="h6 text-md vertical-text">1st Step</span>
                             </div>
@@ -196,9 +196,9 @@ export default function AboutTimeline() {
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-right.png" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
-                        </div>
+                        </motion.div>
 
-                        <div className="tl-step step-2 site-radius-20">
+                        <motion.div className="tl-step step-2 site-radius-20" initial={{ x: "30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
                                 <span className="h6 text-md vertical-text">2nd Step</span>
                             </div>
@@ -210,9 +210,9 @@ export default function AboutTimeline() {
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-left.png" alt="timeline-arrow-left" width={471} height={75} priority={false} className="timeline-arrow-left"></Image>
-                        </div>
+                        </motion.div>
 
-                        <div className="tl-step step-3 site-radius-20">
+                        <motion.div className="tl-step step-3 site-radius-20" initial={{ x: "-30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
                                 <span className="h6 text-md vertical-text">3rd Step</span>
                             </div>
@@ -224,9 +224,9 @@ export default function AboutTimeline() {
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-right.png" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
-                        </div>
+                        </motion.div>
 
-                        <div className="tl-step step-4 site-radius-20">
+                        <motion.div className="tl-step step-4 site-radius-20" initial={{ x: "30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
                                 <span className="h6 text-md vertical-text">4th Step</span>
                             </div>
@@ -238,9 +238,9 @@ export default function AboutTimeline() {
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-left.png" alt="timeline-arrow-left" width={471} height={75} priority={false} className="timeline-arrow-left"></Image>
-                        </div>
+                        </motion.div>
 
-                        <div className="tl-step step-5 site-radius-20">
+                        <motion.div className="tl-step step-5 site-radius-20" initial={{ x: "-30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
                                 <span className="h6 text-md vertical-text">5th Step</span>
                             </div>
@@ -252,9 +252,9 @@ export default function AboutTimeline() {
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-right.png" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
-                        </div>
+                        </motion.div>
 
-                        <div className="tl-step step-6 site-radius-20">
+                        <motion.div className="tl-step step-6 site-radius-20" initial={{ x: "30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
                                 <span className="h6 text-md vertical-text">6th Step</span>
                             </div>
@@ -264,7 +264,7 @@ export default function AboutTimeline() {
 
                                 <p className="text-18">Issue credentials for regulatory confidence and career growth.</p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

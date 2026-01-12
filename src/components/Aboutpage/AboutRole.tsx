@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion"
 
 export default function AboutRole() {
@@ -13,28 +13,55 @@ export default function AboutRole() {
         "/images/aboutpage/universal-access.webp",
     ];
 
+    const sectionRef = useRef<HTMLDivElement>(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
+    // useEffect(() => {
+    //     const id = setInterval(() => {
+    //         setActiveIndex((i) => (i + 1) % images.length);
+    //     }, 2000);
+
+    //     return () => clearInterval(id);
+    // }, [images.length]);
+
     useEffect(() => {
-        const id = setInterval(() => {
-            setActiveIndex((i) => (i + 1) % images.length);
-        }, 2000);
+        const section = sectionRef.current;
+        if (!section) return;
+            const onScroll = () => {
+            const sectionTop = section.offsetTop;
+            const scrollY = window.scrollY;
+            const progress = scrollY - sectionTop;
 
-        return () => clearInterval(id);
-    }, [images.length]);
+            if (progress >= 0) {
+                const step = Math.floor(progress / 200);
+                setActiveIndex(Math.min(Math.max(step, 0), 4));
+            }
+        };
 
-    const homeStatsAnimations = {
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
+
+    const homeStatsAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
         title_ltr_initial: { x: "-50px", opacity: 0, },
-        title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 0.5, duration: 1 } },
+        title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 0.5, duration: 0.6 } },
 
         subTitle_ltr_initial: { x: "50px", opacity: 0, },
-        subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 1 } },
+        subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
+    }:{
+
+        title_ltr_initial: { x: "-50px", opacity: 0, },
+        title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 0.5, duration: 0.6 } },
+
+        subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+        subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },  
     };
 
     return (
         <>
-            <section className="section training-steps academy-roles">
-                <div className="container">
+            <section className="section training-steps academy-roles" ref={sectionRef}>
+                <div className="container sticky-wrapper">
                     <div className="steps-headings ">
                         <motion.h2 initial={homeStatsAnimations.title_ltr_initial} whileInView={homeStatsAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Tailored for Every Role</motion.h2>
 

@@ -83,7 +83,7 @@ export default function HomeHero() {
 
                 <div className="container">
                     <div className="hero-details">
-                        <h1>Master All Clinical Trials with
+                        <h1>Master All Clinical Trials With
                             <span className="blue-span">
                                 <motion.span initial={homeHeroAnimations.spanAnimationInitial} animate={homeHeroAnimations.spanAnimationAnimate} transition={{delay: 1,}}>Agentic</motion.span> <motion.span initial={homeHeroAnimations.spanAnimationInitial} animate={homeHeroAnimations.spanAnimationAnimate} transition={{delay: 1.5,}}>Powered</motion.span>
                             </span>DhatuAcademy
