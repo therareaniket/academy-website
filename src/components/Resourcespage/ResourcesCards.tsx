@@ -130,7 +130,7 @@ export default function ResourcesCards() {
 
                                         <Link href="/Blogs/how-training-portal-improve-compliance-readiness-during-audits-introduction" className="resources-cards card-2">
                                             {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} > */}
-                                                <Image src="/images/resourcesdetail/updates-and-insights-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
+                                                <Image src="/images/resourcesdetail/updates-and-insights-blog-2-updated.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
                                                 
                                                 <div className="date-cate-span">
                                                     <span className="text-16 text-rg text-grey">Smit Shah</span>

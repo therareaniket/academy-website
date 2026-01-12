@@ -29,24 +29,25 @@ export default function ContactForm() {
 		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
 
 		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, duration: 0.6 } },
+
+        image_rtl_initial: { x: "50px", opacity: 0, },
+		image_rtl_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 } },
+    } : {
+
+        title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
+
+		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
 		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 } },
 
         image_rtl_initial: { x: "50px", opacity: 0, },
-		image_rtl_animate: { x: "0px", opacity: 1, },
-    } : {
-        title_ltr_initial: { x: "-50px", opacity: 0, },
-		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 1 } },
-
-		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
-		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 1 } },
-
-        image_rtl_initial: { x: "50px", opacity: 0, },
-		image_rtl_animate: { x: "0px", opacity: 1, },
+		image_rtl_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 } },
     }
 
     return (
         <>
-            <section className="section" id="academy-form">
+            <section className="section" id="academy-form" style={{ paddingBottom: '0px' }}>
                 <div className="container">
                     <div className="contact-form-wrapper">
                         <div className="contact-form-left">
@@ -81,7 +82,7 @@ export default function ContactForm() {
                                 <Image src="/images/contactpage/form-men-image.webp" alt="solu-hero-chart" width={568} height={582} className="form-men-image inline-block"></Image>
                             </motion.div>
 
-                            <motion.div className="form-cards-main"  initial="hidden" whileInView="visible" viewport={{ once: true, amount: isMobile ? 0.6 : 0.2 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.5,} } }}>
+                            <motion.div className="form-cards-main"  initial="hidden" whileInView="visible" viewport={{ once: true, amount: isMobile ? 0.6 : 0.5 }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.5,} } }}>
                                 <motion.div className="form-cards email-card site-radius-20" variants={contactCardsAnimation} transition={{  duration: 1, delay: isMobile ? 2 : 1  }}>
                                     <Image src="/images/contactpage/contact-card-mail.svg" alt="solu-hero-chart" width={33} height={26} className="contact-form-mail"></Image>
                                     <p className="text-18 text-rg">Email</p>

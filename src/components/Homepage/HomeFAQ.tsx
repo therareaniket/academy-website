@@ -22,7 +22,7 @@ export default function FAQs() {
 
     return (
         <>
-            <section className="section">
+            <section className="section" style={{ paddingBottom: '0px' }}>
                 <div className="container">
                     <div className="faq-headings">
                         <motion.h2 initial={homeFAQAnimations.title_ltr_initial} whileInView={homeFAQAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>DhatuAcademy Queries? Clarity Awaits</motion.h2>

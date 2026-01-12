@@ -1,17 +1,18 @@
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+"use client"
 
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, } from "@/components/ui/breadcrumb"
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion"
 
 export default function ResourcesDetail() {
+
+    const blogsAnimations = {
+        blogItem_ttb_initial: { y: "-50px", opacity: 0 },
+        blogItem_ttb_animate: { y: "0px", opacity: 1 }
+    }
+
     return (
         <>
             <section className="section">
@@ -49,9 +50,9 @@ export default function ResourcesDetail() {
 
                             <div className="sharedby-name">
                                 <div className="sharedby-date">
-                                    <span className="text-18 text-rg text-grey">Siddharth Shah</span>
+                                    <span className="text-18 text-rg text-grey">Smit Shah</span>
 
-                                    <span className="text-18 text-rg text-grey">September 10, 2025</span>
+                                    <span className="text-18 text-rg text-grey">December 10, 2025</span>
                                 </div>
 
                                 <div className="social-icons">
@@ -76,30 +77,22 @@ export default function ResourcesDetail() {
                             </div>
 
                             <div className="detail-cards-wrapper">
-                                <Link href="/Resources" className="resources-cards resources-detail-cards card-1">
-                                    <Image src="/images/resources/resources-card-1-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
-                                    <div className="date-cate-span">
-                                        <span className="text-16 text-rg text-grey">Siddharth Shah</span>
+                                <Link href="" className="resources-cards card-4">
+                                    {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} > */}
+                                        <Image src="/images/resources/learning-guides-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
+                                        
+                                        <div className="date-cate-span">
+                                            <span className="text-16 text-rg text-grey">Smit Shah</span>
 
-                                        <span className="text-16 text-rg text-grey">September 10, 2025</span>
-                                    </div>
+                                            <span className="text-16 text-rg text-grey">December 12, 2025</span>
+                                        </div>
+                                    {/* </motion.div> */}
 
-                                    <h3 className="h5 text-md">Why Portal-Specific Training is the Future of Clinical Trials</h3>
+                                    <motion.div   initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
+                                        <h3 className="h5 text-md">The Role of Certifications in Clinical Research Careers</h3>
 
-                                    <p className="h6 text-rg text-grey">Portal-specific training is transforming clinical trials by empowering sites to confidently use the exact digital tools needed for fast, error-free study execution.</p>
-                                </Link>
-
-                                <Link href="/Resources" className="resources-cards resources-detail-cards card-2">
-                                    <Image src="/images/resources/resources-card-2-img.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1"></Image>
-                                    <div className="date-cate-span">
-                                        <span className="text-16 text-rg text-grey">Somya Patel</span>
-
-                                        <span className="text-16 text-rg text-grey">October 12, 2025  </span>
-                                    </div>
-
-                                    <h3 className="h5 text-md">Hands-On Learning vs. Theory: Why Practical Training Wins Every Time</h3>
-
-                                    <p className="h6 text-rg text-grey">Practical exposure enables learners to apply knowledge in real-world scenarios, making hands-on training more effective than traditional theoretical learning.</p>
+                                        <p className="h6 text-rg text-grey">Industry-recognized certifications validate skills, improve employability, and open doors to advanced roles in clinical research.</p>
+                                    </motion.div>
                                 </Link>
                             </div>
                         </div>

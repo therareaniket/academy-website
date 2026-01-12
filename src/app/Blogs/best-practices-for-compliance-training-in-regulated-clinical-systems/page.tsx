@@ -3,10 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator,} from "@/components/ui/breadcrumb"
+import { motion } from "framer-motion"
 
 export default function TrainingUsersOnClinicalPlatform() {
+
+    const blogsAnimations = {
+        blogItem_ttb_initial: { y: "-50px", opacity: 0 },
+        blogItem_ttb_animate: { y: "0px", opacity: 1 }
+    }
+
     return (
         <>
             <section className="section">
@@ -147,17 +153,21 @@ export default function TrainingUsersOnClinicalPlatform() {
 
                             <div className="detail-cards-wrapper">
                                 <Link href="/Blogs/best-practices-for-training-users-on-clinical-trial-platforms" className="resources-cards card-1">
-                                    <Image src="/images/resourcesdetail/best-practices-blog-1.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
+                                    {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} > */}
+                                        <Image src="/images/resourcesdetail/best-practices-blog-1.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
 
-                                    <div className="date-cate-span">
-                                        <span className="text-16 text-rg text-grey">Smit Shah</span>
+                                        <div className="date-cate-span">
+                                            <span className="text-16 text-rg text-grey">Smit Shah</span>
 
-                                        <span className="text-16 text-rg text-grey">January 03, 2026</span>
-                                    </div>
+                                            <span className="text-16 text-rg text-grey">January 03, 2026</span>
+                                        </div>
+                                    {/* </motion.div> */}
 
-                                    <h3 className="h5 text-md">Best Practices for Training Users on Clinical Trial Platforms</h3>
+                                    <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
+                                        <h3 className="h5 text-md">Best Practices for Training Users on Clinical Trial Platforms</h3>
 
-                                    <p className="h6 text-rg text-grey">From data capture and compliance validation to payments and reporting, these systems are used daily by sponsors, CROs, sites, labs, and finance teams.</p>
+                                        <p className="h6 text-rg text-grey">From data capture and compliance validation to payments and reporting, these systems are used daily by sponsors, CROs, sites, labs, and finance teams.</p>
+                                    </motion.div>
                                 </Link>
                             </div>
                         </div>

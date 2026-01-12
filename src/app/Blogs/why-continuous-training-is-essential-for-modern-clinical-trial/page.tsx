@@ -3,10 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator,} from "@/components/ui/breadcrumb"
+import { motion } from "framer-motion"
 
 export default function TrainingUsersOnClinicalPlatform() {
+
+    const blogsAnimations = {
+        blogItem_ttb_initial: { y: "-50px", opacity: 0 },
+        blogItem_ttb_animate: { y: "0px", opacity: 1 }
+    }
+
     return (
         <>
             <section className="section">
@@ -137,17 +143,21 @@ export default function TrainingUsersOnClinicalPlatform() {
 
                             <div className="detail-cards-wrapper">
                                 <Link href="/Blogs/how-training-portal-improve-compliance-readiness-during-audits-introduction" className="resources-cards card-2">
-                                    <Image src="/images/resourcesdetail/updates-and-insights-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
-                                    
-                                    <div className="date-cate-span">
-                                        <span className="text-16 text-rg text-grey">Smit Shah</span>
+                                    {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} > */}
+                                        <Image src="/images/resourcesdetail/updates-and-insights-blog-2-updated.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
+                                        
+                                        <div className="date-cate-span">
+                                            <span className="text-16 text-rg text-grey">Smit Shah</span>
 
-                                        <span className="text-16 text-rg text-grey">January 03, 2026</span>
-                                    </div>
+                                            <span className="text-16 text-rg text-grey">January 03, 2026</span>
+                                        </div>
+                                    {/* </motion.div> */}
 
-                                    <h3 className="h5 text-md">How Training Portals Improve Compliance Readiness During Audits</h3>
+                                    <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
+                                        <h3 className="h5 text-md">How Training Portals Improve Compliance Readiness During Audits</h3>
 
-                                    <p className="h6 text-rg text-grey">Audits and inspections are inevitable in clinical research. One of the first areas inspectors examine is training documentation.</p>
+                                        <p className="h6 text-rg text-grey">Audits and inspections are inevitable in clinical research. One of the first areas inspectors examine is training documentation.</p>
+                                    </motion.div>
                                 </Link>
                             </div>
                         </div>

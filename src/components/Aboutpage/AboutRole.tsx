@@ -6,11 +6,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@
 
 export default function AboutRole() {
     const images = [
-        "/images/aboutpage/CRA.webp",
-        "/images/aboutpage/investigator.webp",
+        "/images/aboutpage/cra-training.webp",
+        "/images/aboutpage/investigator-focus.webp",
         "/images/aboutpage/site-efficiency-new.webp",
         "/images/aboutpage/sponsor-tools-new.webp",
-        "/images/aboutpage/universal-access.webp",
+        "/images/aboutpage/universal-access-updated.webp",
     ];
 
     const sectionRef = useRef<HTMLDivElement>(null);

@@ -221,6 +221,7 @@
     .social-media-wrapper{ width: 270px; padding-right: 35px; } .social-media-wrapper img{ width: 26px; } .social-media-wrapper{ padding-bottom: 15px; }
     .footer-copyright-links{ flex-direction: column; gap: 20px; padding-bottom: 25px; } .footer-newsletter-field input{ padding: 10px 20px; }
     
+    .why-us-scroll-space { height: 150vh; }
 }
 
 @media screen and (max-width: 575px) {
