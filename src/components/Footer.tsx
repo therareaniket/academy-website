@@ -18,7 +18,7 @@ export default function Footer() {
                             </div> */}
                             
                             <Link href="/" className="header-logo-link">
-							    <Image src="/images/header/DhatuAcademy-logo.svg" alt="header-logo" width={272} height={34}></Image>
+							    <Image src="/images/footer/footer-logo.svg" alt="header-logo" width={272} height={34}></Image>
 						    </Link>
 
                             <div className="footer-links-wrapper">
