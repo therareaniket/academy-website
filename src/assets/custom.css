@@ -84,10 +84,31 @@ body { background-color: var(--off-white); }
 .home-hero { position: relative; width: 100%; height: 1000px; overflow: hidden; background-color: var(--hero-bg); display: flex; align-items: center; justify-content: center; }
 .hero-details { position: relative; z-index: 2; }
 .hero-details h1 { width: 1153px; text-align: center; margin: 0 auto; margin-bottom: 60px; }
-.hero-details h1 span { background-color: var(--primary-blue); color: var(--white); display: inline-block; padding: 0px 30px; border-radius: 100px; }
+
+/* .hero-details h1 span { background: linear-gradient(90deg, rgba(255, 145, 43, 0.7) 0%, rgba(255, 98, 107, 0.7) 100%); color: var(--white); display: inline-block; padding: 0px 30px; border-radius: 100px; } */
+
+@keyframes gradientMove {
+   0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-details h1 span {
+    background: linear-gradient(90deg, rgba(255, 145, 43, 0.7) 0%, rgba(255, 98, 107, 0.7) 100%);
+    background-size: 200% 100%;
+    color: var(--white);
+    display: inline-block;
+    padding: 0px 30px;
+    border-radius: 100px;
+    animation: gradientMove 5s ease-in-out infinite reverse; 
+}
+
+/* Keyframe animation for smooth gradient movement */
+
+
+.h1-span-agentic, .h1-span-powered { background: none !important; }
 
 .site-hero-cube { position: absolute; bottom: 37px; left: 20%; transform: translateX(-49%); z-index: 1; pointer-events: none; }
-
 .home-hero-bulb { position: absolute; left: 0; top: 190px; z-index: 2; }
 .home-hero-cap { position: absolute; right: 0; top: 162px; right: 155px; z-index: 3; }
 .home-hero-player { position: absolute; left: 265px; bottom: 140px; z-index: 4; }
@@ -400,3 +421,12 @@ section.section.training-steps { overflow: visible !important; }
 .animate-rotate-full { animation: hero_rotate_circle 3s ease-in-out infinite alternate; }
 .animate-cross-way { animation: hero_slide_cross_way 2s ease-in-out infinite alternate; }
 
+@keyframes span-agentic {
+    0% { opacity: 0; transform: scale(1.3); }
+    20% { opacity: 1; transform: scale(1); }
+    80% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.7); }
+}
+
+.blue-span .h1-span-agentic { animation: span-agentic 4s ease-in-out infinite !important; animation-delay: 0.5s !important; }
+.blue-span .h1-span-powered { animation: span-agentic 4s ease-in-out infinite !important; animation-delay: 1s !important; }
