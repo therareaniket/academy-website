@@ -52,8 +52,8 @@ export default function Footer() {
 
                                         <div className="footer-cnct-links">
                                             <ul>
-                                                <li className="text-rg text-16 text-grey"><Link href="">Terms of Use</Link></li>
-                                                <li className="text-rg text-16 text-grey"><Link href="">Privacy Policy</Link></li>
+                                                <li className="text-rg text-16 text-grey"><Link href="/Terms&Condition">Terms of Use</Link></li>
+                                                <li className="text-rg text-16 text-grey"><Link href="/PrivacyPolicy">Privacy Policy</Link></li>
                                             </ul>
                                         </div>
                                     </div>

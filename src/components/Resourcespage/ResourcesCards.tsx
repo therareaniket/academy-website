@@ -48,7 +48,7 @@ export default function ResourcesCards() {
                                             </motion.div>
                                         </Link>
 
-                                        <Link href="" className="resources-cards card-4">
+                                        <Link href="/Blogs/role-of-certifications-in-clinical-research-careers" className="resources-cards card-4">
                                             {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} > */}
                                                 <Image src="/images/resources/learning-guides-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
                                                 

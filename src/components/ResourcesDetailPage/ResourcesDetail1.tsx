@@ -77,7 +77,7 @@ export default function ResourcesDetail() {
                             </div>
 
                             <div className="detail-cards-wrapper">
-                                <Link href="" className="resources-cards card-4">
+                                <Link href="/Blogs/role-of-certifications-in-clinical-research-careers" className="resources-cards card-4">
                                     {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} > */}
                                         <Image src="/images/resources/learning-guides-blog-2.webp" alt="portaltraining" width="585" height="312" className="portaltraining-1 site-radius-20"></Image>
                                         
@@ -88,7 +88,7 @@ export default function ResourcesDetail() {
                                         </div>
                                     {/* </motion.div> */}
 
-                                    <motion.div   initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
+                                    <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
                                         <h3 className="h5 text-md">The Role of Certifications in Clinical Research Careers</h3>
 
                                         <p className="h6 text-rg text-grey">Industry-recognized certifications validate skills, improve employability, and open doors to advanced roles in clinical research.</p>

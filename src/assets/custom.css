@@ -430,3 +430,11 @@ section.section.training-steps { overflow: visible !important; }
 
 .blue-span .h1-span-agentic { opacity: 0; animation: span-agentic 4s ease-in-out infinite !important; animation-delay: 0.5s !important; }
 .blue-span .h1-span-powered { opacity: 0; animation: span-agentic 4s ease-in-out infinite !important; animation-delay: 1s !important; }
+
+.legel-page { margin-top: 50px; }
+.legel-page h1 { margin-bottom: 20px; }
+.legel-page h2 { margin-top: 30px; margin-bottom: 10px; }
+.da-site-para { margin-bottom: 0; }
+.text-block a { color: var(--primary-yellow); }
+.text-block ul { padding-left: 18px; }
+.text-block li { list-style-type: disc; }

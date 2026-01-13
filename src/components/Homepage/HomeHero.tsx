@@ -67,7 +67,7 @@ export default function HomeHero() {
                     <Image src="/images/general/site-hero-cube.svg" alt="site-hero-cube" width={1070} height={837}></Image>
                 </motion.div>
                 
-                <Image src="/images/homepage/home-hero-bulb.webp" alt="home-hero-bulb" width={381} height={490} className="home-hero-bulb"></Image>
+                <Image src="/images/homepage/home-hero-bulb.webp" alt="home-hero-bulb" width={381} height={490} className="home-hero-bulb animate-ltr"></Image>
                 
                 <Image src="/images/homepage/home-hero-cap.webp" alt="home-hero-cap" width={224} height={217} className="home-hero-cap animate-ltr"></Image>
                 
