@@ -126,7 +126,7 @@ export default function AboutRole() {
                                 <AccordionContent className="step-img">
                                     <p className="text-18 text-[gray]">Speedy onboarding, study-tailored content.</p>
 
-                                    <Image src="/images/aboutpage/CRA.webp" alt="CRA" width={752} height={620} priority={false} className="site-radius-20" />
+                                    <Image src="/images/aboutpage/cra-training.webp" alt="CRA" width={752} height={620} priority={false} className="site-radius-20" />
                                 </AccordionContent>
                             </AccordionItem>
 
@@ -138,7 +138,7 @@ export default function AboutRole() {
                                 <AccordionContent className="step-img">
                                     <p className="text-18 text-[gray]">Compliance mastery, product deep dives.</p>
 
-                                    <Image src="/images/aboutpage/investigator.webp" alt="investigator" width={752} height={620} priority={false} className="site-radius-20" />
+                                    <Image src="/images/aboutpage/investigator-focus.webp" alt="investigator" width={752} height={620} priority={false} className="site-radius-20" />
                                 </AccordionContent>
                             </AccordionItem>
 
@@ -174,7 +174,7 @@ export default function AboutRole() {
                                 <AccordionContent className="step-img">
                                     <p className="text-18 text-[gray]">Adaptive learning for all roles.</p>
 
-                                    <Image src="/images/aboutpage/universal-access.webp" alt="site-efficiency" width={752} height={620} priority={false} className="site-radius-20" />
+                                    <Image src="/images/aboutpage/universal-access-updated.webp" alt="site-efficiency" width={752} height={620} priority={false} className="site-radius-20" />
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>

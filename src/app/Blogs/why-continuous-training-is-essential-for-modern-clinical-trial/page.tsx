@@ -22,9 +22,9 @@ export default function TrainingUsersOnClinicalPlatform() {
                             <TabsList className="resources-tab-trigger resources-card-left resources-detail-tabs text-18">
                                 <span className="h5 text-md">Categories</span>
                                 <div className="res-category-buttons">
-                                    <TabsTrigger className="text-18 text-rg categories-trigger-buttons" value="clinicalresearch">Learning Guides</TabsTrigger>
-                                    <TabsTrigger className="text-18 text-rg categories-trigger-buttons" value="portaltraining">Best Practices</TabsTrigger>
-                                    <TabsTrigger className="text-18 text-rg categories-trigger-buttons" value="handsonlearning">Updates & Insights</TabsTrigger>
+                                    <TabsTrigger className="text-18 text-rg categories-trigger-buttons" value="clinicalresearch"> <Link href="/Resources">Learning Guides</Link></TabsTrigger>
+                                    <TabsTrigger className="text-18 text-rg categories-trigger-buttons" value="portaltraining"> <Link href="/Resources">Best Practices</Link></TabsTrigger>
+                                    <TabsTrigger className="text-18 text-rg categories-trigger-buttons" value="handsonlearning"> <Link href="/Resources">Updates & Insights</Link></TabsTrigger>
                                 </div>
                             </TabsList>
                         </Tabs>

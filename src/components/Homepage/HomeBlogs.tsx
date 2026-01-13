@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HomeBlogs() {
 
@@ -39,67 +40,67 @@ export default function HomeBlogs() {
                     <div className="blog-showcase-wrapper">
                         <div className="blog-showcase">
                             <div className="blog-row">
-                                <div className="blog-list-lg">
+                                <Link href="/ResourcesDetail" className="blog-list-lg">
                                     {/* <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} className="inline-block" > */}
                                         <Image src="/images/homepage/home-blog-1.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
                                     {/* </motion.span> */}
 
                                     <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">Why Portal-Specific Training is the Future of Clinical Trials</motion.h3>
-                                </div>
+                                </Link>
 
-                                <div className="blog-list-sm">
+                                <Link href="/Blogs/best-practices-for-training-users-on-clinical-trial-platforms" className="blog-list-sm">
                                     {/* <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} className="inline-block" > */}
-                                        <Image src="/images/homepage/home-blog-2.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
+                                        <Image src="/images/resourcesdetail/best-practices-blog-1.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
                                     {/* </motion.span> */}
 
-                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">Hands-On Learning vs. Theory: Why Practical Training Wins</motion.h3>
-                                </div>
+                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">Best Practices for Training Users on Clinical Trial Platforms</motion.h3>
+                                </Link>
                             </div>
 
                             <div className="blog-row">
-                                <div className="blog-list-lg">
+                                <Link href="/Blogs/why-continuous-training-is-essential-for-modern-clinical-trial" className="blog-list-lg">
                                     {/* <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} className="inline-block" > */}
-                                        <Image src="/images/homepage/home-blog-3.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
+                                        <Image src="/images/resourcesdetail/updates-and-insights-blog-1.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
                                     {/* </motion.span> */}
 
-                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">The Role of Certifications in Clinical Research Careers</motion.h3>
-                                </div>
+                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">Why Training Is Essential for Modern Clinical Trial Platforms</motion.h3>
+                                </Link>
 
-                                <div className="blog-list-sm">
+                                <Link href="/Blogs/how-training-portal-improve-compliance-readiness-during-audits-introduction" className="blog-list-sm">
                                     {/* <motion.span initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} className="inline-block" > */}
-                                        <Image src="/images/homepage/home-blog-4.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
+                                        <Image src="/images/resourcesdetail/updates-and-insights-blog-2-updated.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
                                     {/* </motion.span> */}
 
-                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">How Portal Expertise Improves Clinical Trials Accuracy</motion.h3>
-                                </div>
+                                    <motion.h3 initial={homeBlogsAnimations.blogItem_ttb_initial} whileInView={homeBlogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 0.5 }} className="h4 text-md">How To Improve Compliance Readiness During Audits</motion.h3>
+                                </Link>
                             </div>
                         </div>
 
                         <div className="blog-showcase blog-mobile" >
                             <div className="blog-row">
-                                <div className="blog-list-lg">
+                                <Link href="/ResourcesDetail" className="blog-list-lg">
                                     <Image src="/images/homepage/home-blog-1.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
 
                                     <h3 className="h4 text-md">Why Portal-Specific Training is the Future of Clinical Trials</h3>
-                                </div>
+                                </Link>
 
-                                <div className="blog-list-sm">
-                                    <Image src="/images/homepage/home-blog-2.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
+                                <Link href="/Blogs/best-practices-for-training-users-on-clinical-trial-platforms" className="blog-list-sm">
+                                    <Image src="/images/resourcesdetail/best-practices-blog-1.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
 
-                                    <h3 className="h4 text-md">Hands-On Learning vs. Theory: Why Practical Training Wins</h3>
-                                </div>
+                                    <h3 className="h4 text-md">Best Practices for Training Users on Clinical Trial Platforms</h3>
+                                </Link>
 
-                                <div className="blog-list-lg">
-                                    <Image src="/images/homepage/home-blog-3.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
+                                <Link href="/Blogs/why-continuous-training-is-essential-for-modern-clinical-trial" className="blog-list-lg">
+                                    <Image src="/images/resourcesdetail/updates-and-insights-blog-1.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
 
-                                    <h3 className="h4 text-md">The Role of Certifications in Clinical Research Careers</h3>
-                                </div>
+                                    <h3 className="h4 text-md">Why Training Is Essential for Modern Clinical Trial Platforms</h3>
+                                </Link>
 
-                                <div className="blog-list-sm">
-                                    <Image src="/images/homepage/home-blog-4.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
+                                <Link href="/Blogs/how-training-portal-improve-compliance-readiness-during-audits-introduction" className="blog-list-sm">
+                                    <Image src="/images/resourcesdetail/updates-and-insights-blog-2-updated.webp" alt="home-blog-lg" width={705} height={377} className="site-radius-20"></Image>
 
-                                    <h3 className="h4 text-md">How Portal Expertise Improves Clinical Trials Accuracy</h3>
-                                </div>
+                                    <h3 className="h4 text-md">How To Improve Compliance Readiness During Audits</h3>
+                                </Link>
                             </div>
                         </div>
                     </div>  

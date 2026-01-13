@@ -984,6 +984,12 @@
     .foot-icon { font-size: 24px; }
     .social-link-list ul { gap: 24px; }
     .social-link-list { top: 6px; right: 38px; }
+
+    .blog-details-paragraph .h5 { margin-bottom: 10px; }
+    .blog-details-paragraph li.h6 { margin-bottom: 0; }
+    .blog-details-paragraph li { list-style-position: outside; }
+    .blog-details-paragraph ul { padding-left: 18px; }
+
 }
 
 @media screen and (max-width: 576px) {
