@@ -34,6 +34,13 @@
     .contact-form-fields input, .contact-form-fields textarea, .contact-form-image, .form-cards{ width: 100%; }
     .social-media-wrapper img{ width: 32px; height: 32px; }
     .contact-form-mail{ width: 28px; height: auto; } .contact-form-call{ width: 24px; } .contact-form-location{ width: 20px; }
+
+    .solution-laptop{ width: 120px; height: auto; }
+    .solution-easily-added-text-left{ width: 800px; } .solution-easily-added-text-left h2{ margin-bottom: 0; }
+    .solution-training-points{ width: 290px; }
+    .solution-train-card-1, .solution-train-card-4{ width: 750px; } .solution-train-card-2, .solution-train-card-3{ width: 560px; }
+    .solution-train-academy-heading-left{ width: 525px; } .solution-train-academy-heading-right{ width: 645px; }
+    .solution-train-card-4{ background-position: top; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -65,6 +72,26 @@
     .social-media-wrapper{ width: 440px; } .footer-logo-wrapper{ padding-top: 150px; } .footer-copyright-links{ padding-top: 110px; } .social-media-wrapper{ padding-bottom: 20px; }
     .contact-form-left{ width: 50%; } .contact-form-fields input{ height: 60px; } .contact-form-fields textarea{ height: 135px; } .form-cards{ height: 136px; }
     .contact-form-image{ height: 420px; } 
+
+    .solution-easily-added-text-left{ width: 760px; } .solution-laptop{ width: 100px; }
+    .solution-training-title { padding-top: 20px; margin-bottom: 0; }
+    .solution-training-points{ width: 272px; align-items: flex-start; } .solution-training-wrapper{ gap: 50px; }
+    .solution-training-points img{ width: 40px; height: 40px; }
+    .solution-train-academy-heading-right{ width: 530px; } .solution-train-academy-heading-left{ width: 595px; }
+    .solution-train-card-1, .solution-train-card-4{ width: 670px; }
+    .solution-train-card-2, .solution-train-card-3{ width: 500px; }
+    .solution-tarining-pointers{ gap: 40px; }
+    .solution-easily-added-right{ right: 130px !important; }
+    .sol-easily-added-text-wrapper{ padding: 110px 0; }
+
+    .dhatu-mesh{ width: 115px; height: auto; } 
+    .dhatu-pay{ width: 90px; height: auto; } 
+    .dhatu-match{ width: 110px; height: auto; } 
+    .dhatu-comply{ width: 130px; height: auto; }
+    .dhatu-mind{ width: 100px; height: auto; } 
+    .dhatu-safety{ width: 120px; height: auto; } 
+    .dhatu-vault{ width: 110px; height: auto; }
+    .dhatu-control{ width: 115px; height: auto; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -83,7 +110,13 @@
     .social-media-wrapper{ width: 410px; } .social-media-wrapper img{ width: 28px; height: auto; } .footer-cnct-links{ padding-top: 15px; }
     .contact-form-fields input{ height: 50px; } .form-cards{ height: 130px; } .contact-form-fields input{ margin-bottom: 20px; } .contact-form-image{ height: 350px; }
     .contact-form-mail{ width: 24px; } .contact-form-call{ width: 22px; }
-
+    .solution-easily-added-text-left{ width: 618px; } .solution-easily-added-right{ right: 180px !important; }
+    .solution-laptop{ width: 80px; } .solution-sipral{ width: 40px; } .solution-training-points{ width: 236px; }
+    .solution-train-card-1, .solution-train-card-4{ width: 590px; } 
+    .solution-train-card-2, .solution-train-card-3{ width: 440px; }
+    .solution-train-academy-heading{ padding-bottom: 40px; }
+    .solution-train-academy-heading-left{ margin-bottom: 0 !important; }
+    .sol-easily-added-text-wrapper{ padding: 90px 0; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -97,6 +130,16 @@
     .contact-form-fields input{ height: 60px; } .contact-form-fields textarea{ height: 130px; } .contact-form-image{ height: 313px; } .contact-form-fields{ padding-top: 20px; }
     .form-cards{ height: 130px; } .contact-form-wrapper{ gap: 40px; } .form-men-image{ width: 371px; }
     .footer-text-quote{ width: 400px; } .form-cards{ height: 145px; }
+
+    .solution-easily-added-right{ position: static !important; }
+    .solution-easily-added-text-left{ width: 100%; text-align: center; }
+    .sol-easily-added-text-wrapper{ flex-direction: column; gap: 30px; }
+    .solution-training-points{ width: 211px; } .solution-training-points img{ width: 34px; height: 34px; }
+    .solution-train-card-2, .solution-train-card-3{ width: 410px; }
+    .solution-train-card-1, .solution-train-card-4{ width: 520px; }
+    .solution-training-title{ padding-top: 0; }
+    .solution-train-academy-heading-left{ width: 330px; }
+    .sol-easily-added-text-wrapper{ padding: 60px 0; }
 }
 
 @media screen and (max-width: 1199px) {
@@ -141,6 +184,13 @@
     .learner-satisfaction.show { transition-delay: 1.2s; }
     .proff-trained.show { transition-delay: 1.6s; }
     .full-stats.show { transition-delay: 2s; }
+    .solution-train-academy-heading-right{ width: 410px; }
+    .solution-train-card-1, .solution-train-card-4{ width: 420px; } 
+    .solution-train-card-2, .solution-train-card-3{ width: 350px; }
+    .solution-training-wrapper{ flex-direction: column; gap: 30px; }
+    .solution-training-right img{ height: 350px; object-fit: cover; border-radius: 20px; }
+    .solution-training-points{ width: calc(50% - 20px); }
+    
 }
 
 @media screen and (max-width: 1023px) {
@@ -163,6 +213,21 @@
     .footer-links-main{ gap: 50px; } .footer-text-quote{ width: 340px; } .social-media-wrapper{ width: 330px; padding-left: 90px; gap: 20px; justify-content: end; }
     .footer-logo-wrapper{ padding-top: 100px; } .footer-text-quote h2{ margin-bottom: 10px; } .form-cards{ height: 130px; } .form-cards{ gap: 5px; }
     .contact-form-call{ width: 20px; } .contact-form-location{ width: 18px; }
+    .solution-train-card-1, .solution-train-card-4, .solution-train-card-2, .solution-train-card-3{ width: calc(50% - 10px); padding: 30px 20px; }
+    .solution-train-card-wrapper{ gap: 20px; }
+    .solution-tarining-left{ width: 100%; }
+    .solution-train-academy-heading{ flex-direction: column; gap: 0px; }
+    .solution-train-academy-heading-left, .solution-train-academy-heading-right{ width: 100%; gap: 0; }
+    .sol-easily-added-text-wrapper{ padding: 50px 0; }
+
+    .dhatu-mesh{ width: 100px; height: auto; } 
+    .dhatu-pay{ width: 80px; height: auto; } 
+    .dhatu-match{ width: 100px; height: auto; } 
+    .dhatu-comply{ width: 110px; height: auto; }
+    .dhatu-mind{ width: 90px; height: auto; } 
+    .dhatu-safety{ width: 100px; height: auto; } 
+    .dhatu-vault{ width: 90px; height: auto; }
+    .dhatu-control{ width: 100px; height: auto; }
 }
 
 @media screen and (max-width: 839px) {
@@ -176,6 +241,9 @@
     .detail-card-btn h3 { margin-bottom: 0; }
     .footer-text-quote{ width: 290px; }
     .form-cards{ height: 129px; }
+    .solution-training-right img{ height: 300px; }
+
+    .dhatu-mesh{ width: 90px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -190,6 +258,9 @@
     .footer-right-links{ gap: 20px; }
     .contact-form-fields input{ height: 40px; } .contact-form-fields textarea{ height: 90px; } .form-cards{ height: 117px; }
     .contact-form-mail{ width: 22px; } .contact-form-call{ width: 18px; } .contact-form-location{ width: 16px; }
+    .solution-train-card-1, .solution-train-card-4, .solution-train-card-2, .solution-train-card-3{ width: 100%; height: 200px;}
+    .solution-train-card-1{ background-position: center; }
+    .solution-train-academy-heading{ padding-bottom: 30px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -234,6 +305,7 @@
     .detail-cards-wrapper .resources-cards{ width: 100% !important; }
     .form-men-image{ width: 265px; } .contact-form-wrapper{ gap: 30px; } .form-cards p{ margin-bottom: 0; } 
     .footer-logo-wrapper img{ width: 180px; } .social-media-wrapper img{ width: 24px; } 
+    .solution-training-right img{ height: 260px; }
 }
 
 @media screen and (max-width: 480px) {
@@ -247,12 +319,19 @@
     .footer-newsletter-field input{ width: 250px; }
     .res-category-buttons{ width: 100%; flex-wrap: wrap; justify-content: flex-start; } .resources-tab-trigger{ width: 100% !important; max-width: auto; min-width: 100% !important;}
     .resources-hero-2{ bottom: 70px !important; }
+    .solution-laptop{ width: 60px; } .solution-sipral{ width: 25px; }
+    .solution-tarining-pointers{ flex-direction: column; gap: 10px; }
+    .solution-training-points{ width: 100%; }
+    .solution-train-card-1, .solution-train-card-4, .solution-train-card-2, .solution-train-card-3{ height: 250px; }
+    .solution-training-points img{ width: 24px; height: 24px; }
 }
 
 @media screen and (max-width: 400px) {
     .cnct-submit-btn{ margin-top: 30px; } .cnct-submit-btn{ padding: 8px 12px !important; }
     .footer-newsletter-field{ flex-direction: column; align-items: flex-start; gap: 10px; } .social-media-wrapper{ width: max-content; } .social-media-wrapper{ padding-left: 60px; }
     .contact-form-call{ width: 16px; } .contact-form-location{ width: 14px; }
+
+    .solution-easily-added-right a{ transform: translateX(0); }
 }
 
 @media screen and (max-width: 374px) {}

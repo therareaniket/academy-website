@@ -71,8 +71,8 @@
     .compliance-list-headings .h6 { width: 550px; }
     .compliance-list { width: 420px; height: 160px; }
     
-    img.dhatu-vault { width: 155px; }
-    img.dhatu-control { width: 180px; }
+    /* img.dhatu-vault { width: 155px; } */
+    /* img.dhatu-control { width: 180px; } */
     .three-lines { width: 270px; top: 140px; }
 
     .why-academy-headings h2 { width: 680px; }
@@ -309,15 +309,15 @@
     .compliance-list { width: 330px; height: 140px; padding: 18px; }
     .compliance-link-arrow { width: 30px; height: 30px; }
     .compliance-link-arrow img { width: 13px; height: 13px; }
-    .compli-name img { width: 140px; }
+    /* .compli-name img { width: 140px; } */
 
-    img.dhatu-pay { width: 120px; }
+    /* img.dhatu-pay { width: 120px; }
     img.dhatu-match { width: 150px; }
     img.dhatu-comply { width: 160px; }
     img.dhatu-mind { width: 135px; }
     img.dhatu-safety { width: 160px; }
     img.dhatu-vault { width: 145px; }
-    img.dhatu-control { width: 170px; }
+    img.dhatu-control { width: 170px; } */
 
     .card-details, .card-swipe { height: 430px; }
     .slide-card-title img { width: 120px; top: 10px; }
@@ -419,9 +419,9 @@
     .compliance-list { height: 130px; padding: 15px; }
     .compliance-row + .compliance-row { margin-top: 25px; }
 
-    img.dhatu-safety { width: 150px; }
+    /* img.dhatu-safety { width: 150px; }
     img.dhatu-vault { width: 135px; }
-    img.dhatu-control { width: 160px; }
+    img.dhatu-control { width: 160px; } */
 
     .pricing-main-box { padding: 20px; }
     .plan-card-detail-wrapper { gap: 20px; }
@@ -703,16 +703,16 @@
     .solu-hero-4 { width: 60px; bottom: 100px; right: 150px; }
     
     .compliance-list-headings h2, .compliance-list-headings .h6 { width: 90%; }
-    .compli-name img { width: 120px; }
+    /* .compli-name img { width: 120px; } */
     .compliance-list { width: 330px; height: 124px; }
     .compliance-link-arrow { width: 25px; height: 25px; }
     .compliance-link-arrow img { width: 12px; height: 12px; }
 
-    img.dhatu-pay { width: 100px; }
+    /* img.dhatu-pay { width: 100px; }
     img.dhatu-safety { width: 134px; }
     img.dhatu-vault { width: 122px; }
     img.dhatu-control { width: 150px; }
-    img.dhatu-comply { width: 150px; }
+    img.dhatu-comply { width: 150px; } */
 
     .plan-card-detail-wrapper { flex-direction: column; }
     .card-swipe { width: 100%;  height: 230px; }
@@ -952,13 +952,13 @@
     .compliance-list { width: 240px; }
     .compliance-link-arrow { width: 20px; height: 20px; }
     .compliance-link-arrow img { width: 10px; height: 12px; }
-    .compli-name img { width: 120px; }
-    img.dhatu-pay { width: 100px; }
+    /* .compli-name img { width: 120px; } */
+    /* img.dhatu-pay { width: 100px; }
     img.dhatu-match { width: 120px; } 
     img.dhatu-safety { width: 125px; } 
     img.dhatu-vault { width: 120px; } 
     img.dhatu-control { width: 140px; } 
-    img.dhatu-comply { width: 145px; } 
+    img.dhatu-comply { width: 145px; }  */
     
     .card-swipe { margin: 0 auto; }
     .sliding-card { width: 70%; left: 15%; }

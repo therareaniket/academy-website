@@ -276,10 +276,11 @@ section.section.training-steps { overflow: visible !important; }
   bottom: -2px;
   z-index: -1;
   background: linear-gradient(to bottom, #FF626B, #FF912B);
-  opacity: 70%;
+  opacity: 20%;
   border-radius: 22px;
 }
-.compliance-list:hover { background-color: transparent; filter: drop-shadow(0 0 10px  #FF626B) drop-shadow(0 0 2px #FF912B); }
+/* .compliance-list:hover { background-color: transparent; filter: drop-shadow(0 0 10px  #FF626B) drop-shadow(0 0 2px #FF912B); } */
+.compliance-list:hover { background-color: transparent; filter: drop-shadow(0 0 8px rgba(255, 98, 107, 0.4)) drop-shadow(0 0 3px rgba(255, 145, 43, 0.3)); }
 .compliance-link-arrow { width: 40px; height: 40px; border-radius: 50%; background-color: var(--black); display: flex; align-items: center; justify-content: center; transition: var(--transition); }
 .compliance-list:hover .compliance-link-arrow { transform: rotate(45deg); }
 .compli-name { display: flex; align-items: center; justify-content: space-between; }
