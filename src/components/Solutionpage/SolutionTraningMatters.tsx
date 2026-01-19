@@ -1,54 +1,47 @@
 "use client";
-import { useEffect } from "react";
 import Image from "next/image";
-
+import { useEffect } from "react";
 
 export default function SolutionTraningMatters() {
 
-    useEffect(() => {
-        const section = document.querySelector(".solution-training-wrapper");
-        if (!section) return;
+useEffect(() => {
+    const section = document.querySelector(".solution-training-wrapper");
+    if (!section) return;
 
-        const heading = section.querySelector("h2");
-        const paragraph = section.querySelector(".solution-training-title");
-        const cards = section.querySelectorAll(".solution-training-points");
-        const image = section.querySelector(".solution-training-right");
+    const h2 = section.querySelector("h2") as HTMLElement | null;
+    const p = section.querySelector("p") as HTMLElement | null;
+    const points = section.querySelectorAll<HTMLElement>(".solution-training-points");
+    const image = section.querySelector(".solution-training-right") as HTMLElement | null;
 
-        if (!heading || !paragraph || !image) return;
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+            if (!entry.isIntersecting) return;
 
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (!entry.isIntersecting) return;
+            section.classList.add("active");
 
+            // h2
+            if (h2) h2.style.transitionDelay = "0s";
 
-                setTimeout(() => {
-                    heading.classList.add("animate-in");
-                }, 0);
+            // p
+            if (p) p.style.transitionDelay = "0.3s";
 
-                setTimeout(() => {
-                    paragraph.classList.add("animate-in");
-                }, 200);
+            // points stagger
+            points.forEach((point, index) => {
+                point.style.transitionDelay = `${0.6 + index * 0.2}s`;
+            });
 
+            // image
+            if (image) {
+                image.style.transitionDelay = `${0.6 + points.length * 0.2}s`;
+            }
 
-                cards.forEach((card, index) => {
-                    setTimeout(() => {
-                        card.classList.add("animate-in");
-                    }, 400 + index * 200);
-                });
+            observer.disconnect();
+        },
+        { threshold: 0.4 }
+    );
 
-
-                setTimeout(() => {
-                    image.classList.add("animate-in");
-                }, 400 + cards.length * 200 + 200);
-
-                observer.disconnect();
-            },
-            { threshold: 0.3 }
-        );
-
-        observer.observe(section);
-    }, []);
-
+    observer.observe(section);
+}, []);
 
     return (
         <>

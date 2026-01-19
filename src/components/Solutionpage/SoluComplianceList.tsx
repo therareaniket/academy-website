@@ -41,7 +41,7 @@ export default function SoluComplianceList() {
                                     </div>
                                 </div>
 
-                                <p className="text-18 text-rg">DhatuMesh enables secure, accurate capture of clinical trial data across sites and studies.</p>
+                                <p className="text-18 text-rg">Accurate Clinical Data Capture Across Sites</p>
                             </div>
 
                             <div className="compliance-list site-radius-30">
@@ -53,7 +53,7 @@ export default function SoluComplianceList() {
                                     </div>
                                 </div>
 
-                                <p className="text-18 text-rg">DhatuPay simplifies secure payments with compliant, streamlined transaction workflows.</p>
+                                <p className="text-18 text-rg">Compliant and Transparent Clinical Trial Payments</p>
                             </div>
 
                             <div className="compliance-list site-radius-30">
@@ -65,7 +65,7 @@ export default function SoluComplianceList() {
                                     </div>
                                 </div>
 
-                                <p className="text-18 text-rg">DhatuMatch supports compliant, recruitment across sponsors, campaigns, and sites.</p>
+                                <p className="text-18 text-rg">Ethical and Compliant Trial Recruitment</p>
                             </div>
                         </div>
 
@@ -79,7 +79,7 @@ export default function SoluComplianceList() {
                                     </div>
                                 </div>
 
-                                <p className="text-18 text-rg">DhatuComply helps teams manage compliance through structured, audit-ready workflows.</p>
+                                <p className="text-18 text-rg">Audit-Ready Compliance Management</p>
                             </div>
 
                             <div className="compliance-list site-radius-30">
@@ -91,7 +91,7 @@ export default function SoluComplianceList() {
                                     </div>
                                 </div>
 
-                                <p className="text-18 text-rg">DhatuMind is a centralized platform for managing clinical trial data with integrity.</p>
+                                <p className="text-18 text-rg">Centralized Oversight with Data Integrity</p>
                             </div>
                         </div>
 
@@ -105,7 +105,7 @@ export default function SoluComplianceList() {
                                     </div>
                                 </div>
 
-                                <p className="text-18 text-rg">DhatuSafety is a centralized platform for managing clinical trial data with integrity.</p>
+                                <p className="text-18 text-rg">Consistent and Compliant Safety Reporting</p>
                             </div>
 
                             <div className="compliance-list site-radius-30">
@@ -117,7 +117,7 @@ export default function SoluComplianceList() {
                                     </div>
                                 </div>
 
-                                <p className="text-18 text-rg">DhatuVault is a centralized platform for managing clinical trial data with integrity.</p>
+                                <p className="text-18 text-rg"> Secure and Controlled Trial Documentation</p>
                             </div>
 
                             <div className="compliance-list site-radius-30">
@@ -129,7 +129,7 @@ export default function SoluComplianceList() {
                                     </div>
                                 </div>
 
-                                <p className="text-18 text-rg">DhatuControl enables secure, accurate capture of clinical trial data across sites and studies.</p>
+                                <p className="text-18 text-rg">Operational Control and Study Governance</p>
                             </div>
                         </div>
                     </div>

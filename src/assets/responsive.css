@@ -69,7 +69,7 @@
     .solu-hero-4 { width: 110px; right: 250px; }
 
     .compliance-list-headings .h6 { width: 550px; }
-    .compliance-list { width: 420px; height: 160px; }
+    .compliance-list { width: 420px; height: 140px; }
     
     /* img.dhatu-vault { width: 155px; } */
     /* img.dhatu-control { width: 180px; } */
@@ -306,7 +306,7 @@
 
     .compliance-list-headings .h6 { width: 480px; }
     .compliance-row { gap: 34px; }
-    .compliance-list { width: 330px; height: 140px; padding: 18px; }
+    .compliance-list { width: 330px; height: 120px; padding: 18px; }
     .compliance-link-arrow { width: 30px; height: 30px; }
     .compliance-link-arrow img { width: 13px; height: 13px; }
     /* .compli-name img { width: 140px; } */
@@ -416,7 +416,7 @@
     
     .compliance-list-headings .h6 { width: 380px; }
     .compliance-row { gap: 25px; }
-    .compliance-list { height: 130px; padding: 15px; }
+    .compliance-list { height: 110px; padding: 15px; }
     .compliance-row + .compliance-row { margin-top: 25px; }
 
     /* img.dhatu-safety { width: 150px; }
@@ -704,7 +704,7 @@
     
     .compliance-list-headings h2, .compliance-list-headings .h6 { width: 90%; }
     /* .compli-name img { width: 120px; } */
-    .compliance-list { width: 330px; height: 124px; }
+    .compliance-list { width: 330px; height: 110px; }
     .compliance-link-arrow { width: 25px; height: 25px; }
     .compliance-link-arrow img { width: 12px; height: 12px; }
 
@@ -866,7 +866,7 @@
     .solu-hero-3 { right: 60px; }
     .solu-hero-4 { right: 100px; }
 
-    .compliance-list { width: 280px; height: 125px; }
+    .compliance-list { width: 280px; }
     .compliance-lists { margin-top: 40px; }
 
     .proff-trained .h1 { font-size: 22px; line-height: 28px; }
@@ -1031,7 +1031,7 @@
     .solu-hero-4 { right: 12%; }
 
     .certification-links .link-padding { padding: 6px 15px; }
-    .compliance-list { width: 90%; height: 105px; }
+    .compliance-list { width: 90%; height: 100px; }
     .compliance-link-arrow { width: 25px; height: 25px; }
     .compliance-link-arrow img { width: 12px; height: 12px; }
     
@@ -1238,6 +1238,7 @@
     .testi-list { width: 100px; }
     .footer-links-main { flex-direction: column; gap: 20px; }
     .masked-images { width: 280px; height: 206px; }
+    .compliance-list{ height: 105px; }
 }
 
 @media screen and (max-width: 359px) {}

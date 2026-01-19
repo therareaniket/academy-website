@@ -78,11 +78,12 @@
     .solution-training-points{ width: 272px; align-items: flex-start; } .solution-training-wrapper{ gap: 50px; }
     .solution-training-points img{ width: 40px; height: 40px; }
     .solution-train-academy-heading-right{ width: 530px; } .solution-train-academy-heading-left{ width: 595px; }
-    .solution-train-card-1, .solution-train-card-4{ width: 670px; }
-    .solution-train-card-2, .solution-train-card-3{ width: 500px; }
+    .solution-train-card-1, .solution-train-card-4{ width: 670px; height: 325px; }
+    .solution-train-card-2, .solution-train-card-3{ width: 500px; height: 325px; }
     .solution-tarining-pointers{ gap: 40px; }
     .solution-easily-added-right{ right: 130px !important; }
     .sol-easily-added-text-wrapper{ padding: 110px 0; }
+    
 
     .dhatu-mesh{ width: 115px; height: auto; } 
     .dhatu-pay{ width: 90px; height: auto; } 
@@ -112,8 +113,8 @@
     .contact-form-mail{ width: 24px; } .contact-form-call{ width: 22px; }
     .solution-easily-added-text-left{ width: 618px; } .solution-easily-added-right{ right: 180px !important; }
     .solution-laptop{ width: 80px; } .solution-sipral{ width: 40px; } .solution-training-points{ width: 236px; }
-    .solution-train-card-1, .solution-train-card-4{ width: 590px; } 
-    .solution-train-card-2, .solution-train-card-3{ width: 440px; }
+    .solution-train-card-1, .solution-train-card-4{ width: 590px; height: 300px; } 
+    .solution-train-card-2, .solution-train-card-3{ width: 440px; height: 300px; }
     .solution-train-academy-heading{ padding-bottom: 40px; }
     .solution-train-academy-heading-left{ margin-bottom: 0 !important; }
     .sol-easily-added-text-wrapper{ padding: 90px 0; }
@@ -135,8 +136,8 @@
     .solution-easily-added-text-left{ width: 100%; text-align: center; }
     .sol-easily-added-text-wrapper{ flex-direction: column; gap: 30px; }
     .solution-training-points{ width: 211px; } .solution-training-points img{ width: 34px; height: 34px; }
-    .solution-train-card-2, .solution-train-card-3{ width: 410px; }
-    .solution-train-card-1, .solution-train-card-4{ width: 520px; }
+    .solution-train-card-2, .solution-train-card-3{ width: 410px; height: 280px; }
+    .solution-train-card-1, .solution-train-card-4{ width: 520px; height: 280px; }
     .solution-training-title{ padding-top: 0; }
     .solution-train-academy-heading-left{ width: 330px; }
     .sol-easily-added-text-wrapper{ padding: 60px 0; }
@@ -324,6 +325,10 @@
     .solution-training-points{ width: 100%; }
     .solution-train-card-1, .solution-train-card-4, .solution-train-card-2, .solution-train-card-3{ height: 250px; }
     .solution-training-points img{ width: 24px; height: 24px; }
+        .solution-train-card-wrapper{ display: none; }
+    .solution-train-mobile{ display: flex; }
+    .solution-train-mobile .solution-train-row .solution-train-card{ width: 320px !important; }
+    .animate-card .animate-title, .animate-card .animate-text{ opacity: 1; transform: translateY(0); }
 }
 
 @media screen and (max-width: 400px) {
