@@ -4,32 +4,58 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function HomeTestimonials(){
+type HomeTestimonialProps = {
+    testimonialsTitle: string;
+    testimonialsSubtitle: string;
+    testimonialList : {
+        testimonial1Name: string;
+        testimonial1Initial: string;
+        testimonial1Designation: string;
+        testimonial1Message: string;
+
+        testimonial2Name: string;
+        testimonial2Initial: string;
+        testimonial2Designation: string;
+        testimonial2Message: string;
+
+        testimonial3Name: string;
+        testimonial3Initial: string;
+        testimonial3Designation: string;
+        testimonial3Message: string;
+
+        testimonial4Name: string;
+        testimonial4Initial: string;
+        testimonial4Designation: string;
+        testimonial4Message: string;
+    };
+}
+
+export default function HomeTestimonials( { testimonialsTitle, testimonialsSubtitle, testimonialList } : HomeTestimonialProps ){
 
     const testimonialDetails = [
         {
-            name: "Priya S.",
-            nameInitial: "P",
-            designation: "Clinical Trials Professional",
-            message: "DhatuAcademy transformed my clinical trials workflow across products. The hands-on modules and certifications gave me real proficiency for pros level work."
+            name: testimonialList.testimonial1Name,
+            nameInitial: testimonialList.testimonial1Initial,
+            designation: testimonialList.testimonial1Designation,
+            message: testimonialList.testimonial1Message,
         },
         {
-            name: "Raj K.",
-            nameInitial: "R",
-            designation: "Training Lead",
-            message: "Perfect for trainers like me. Structured paths and compliance training make teaching clinical trials standards seamless and effective."
+            name: testimonialList.testimonial2Name,
+            nameInitial: testimonialList.testimonial2Initial,
+            designation: testimonialList.testimonial2Designation,
+            message: testimonialList.testimonial2Message,
         },
         {
-            name: "Anika M.",
-            nameInitial: "A",
-            designation: "New Learner",
-            message: "Low cost standard access unlocked core skills fast. Now premium AI paths boost my learning on multiple platforms."
+            name: testimonialList.testimonial3Name,
+            nameInitial: testimonialList.testimonial3Initial,
+            designation: testimonialList.testimonial3Designation,
+            message: testimonialList.testimonial3Message,
         },
         {
-            name: "Vikram R.",
-            nameInitial: "V",
-            designation: "Compliance Specialist",
-            message: "Expert SOP modules across clinical trials products built my compliance skills quickly. Certifications now showcase my proficiency everywhere."
+            name: testimonialList.testimonial4Name,
+            nameInitial: testimonialList.testimonial4Initial,
+            designation: testimonialList.testimonial4Designation,
+            message: testimonialList.testimonial4Message,
         },
     ];
 
@@ -47,10 +73,10 @@ export default function HomeTestimonials(){
     const activeTestimonial = testimonialDetails[activeIndex];
 
     const homeTestimonialsAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
-		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_initial: { x: "0px", opacity: 1, },
 		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, } },
 
-		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+		subTitle_ltr_initial: { x: "0px", opacity: 1, },
 		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6, } },
     } : {
 
@@ -66,9 +92,9 @@ export default function HomeTestimonials(){
             <section className="section home-testimonials">
                 <div className="container">
                     <div className="testimonial-headings">
-                        <motion.h2 initial={ homeTestimonialsAnimations.title_ltr_initial } whileInView={ homeTestimonialsAnimations.title_ltr_animate } viewport={{ once: true, amount: 0.8 }}>Voices from Clinical Trials Learners</motion.h2>
+                        <motion.h2 initial={ homeTestimonialsAnimations.title_ltr_initial } whileInView={ homeTestimonialsAnimations.title_ltr_animate } viewport={{ once: true, amount: 0.8 }}>{testimonialsTitle}</motion.h2>
 
-                        <motion.p initial={ homeTestimonialsAnimations.subTitle_ltr_initial } whileInView={ homeTestimonialsAnimations.subTitle_ltr_animate } viewport={{ once: true, amount: 0.8 } } className="h6 text-rg">Real insights before your DhatuAcademy journey begins</motion.p>
+                        <motion.p initial={ homeTestimonialsAnimations.subTitle_ltr_initial } whileInView={ homeTestimonialsAnimations.subTitle_ltr_animate } viewport={{ once: true, amount: 0.8 } } className="h6 text-rg">{testimonialsSubtitle}</motion.p>
                     </div>
 
                     <div className="testimonial-wrapper">

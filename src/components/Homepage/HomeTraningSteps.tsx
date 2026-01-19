@@ -4,7 +4,18 @@ import { useEffect, useRef, useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
 
-export default function HomeTraningSteps() {
+type HomeCareerProps = {
+    careerStepsTitle: string;
+    careerStepsSubtitle: string;
+    careerStep1Title: string;
+    careerStep1Subtitle: string;
+    careerStep2Title: string;
+    careerStep2Subtitle: string;
+    careerStep3Title: string;
+    careerStep3Subtitle: string;
+}
+
+export default function HomeTraningSteps( {careerStepsTitle, careerStepsSubtitle, careerStep1Title, careerStep1Subtitle, careerStep2Title, careerStep2Subtitle, careerStep3Title, careerStep3Subtitle} : HomeCareerProps ) {
     const images = [
         "/images/homepage/step-1-enroll.webp",
         "/images/homepage/step-2-experience.webp",
@@ -39,14 +50,12 @@ export default function HomeTraningSteps() {
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
-
-
     
 	const homeStepsAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
-		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_initial: { x: "0px", opacity: 1, },
 		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 }},
 
-		subTitle_ltr_initial: { x: "50px", opacity: 0, },
+		subTitle_ltr_initial: { x: "0px", opacity: 1, },
 		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 }},
 	} : {
         title_ltr_initial: { x: "-50px", opacity: 0, },
@@ -62,9 +71,9 @@ export default function HomeTraningSteps() {
                 <div className="container sticky-wrapper">
                     {/* <div className=""> */}
                         <div className="steps-headings">
-                            <motion.h2 initial={homeStepsAnimations.title_ltr_initial} whileInView={homeStepsAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Launch Clinical Trials Mastery Here Convert Skills to Careers</motion.h2>
+                            <motion.h2 initial={homeStepsAnimations.title_ltr_initial} whileInView={homeStepsAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>{careerStepsTitle}</motion.h2>
 
-                            <motion.p className="h6" initial={homeStepsAnimations.subTitle_ltr_initial} whileInView={homeStepsAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Follow these simple steps to master all our clinical trials products on DhatuAcademy. Existing subscribers enjoy complimentary core access. Upgrade to premium AI for complete platform proficiency.</motion.p>
+                            <motion.p className="h6" initial={homeStepsAnimations.subTitle_ltr_initial} whileInView={homeStepsAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: 0.8 }}>{careerStepsSubtitle}</motion.p>
                         </div>
 
                         <div className="steps-listings">
@@ -76,25 +85,25 @@ export default function HomeTraningSteps() {
                                 <div className={`step-list ${activeIndex === 0 ? "active-step" : ""}`}>
                                     <span className="h6">Step 1</span>
 
-                                    <h3 className="h4 text-md">Enroll in Clinical Trials Courses</h3>
+                                    <h3 className="h4 text-md">{careerStep1Title}</h3>
 
-                                    <p className="text-18">Select expert crafted modules across our clinical trials products and begin your learning journey today.</p>
+                                    <p className="text-18">{careerStep1Subtitle}</p>
                                 </div>
 
                                 <div className={`step-list ${activeIndex === 1 ? "active-step" : ""}`}>
                                     <span className="h6">Step 2</span>
 
-                                    <h3 className="h4 text-md">Hands On Clinical Trials Practice</h3>
+                                    <h3 className="h4 text-md">{careerStep2Title}</h3>
 
-                                    <p className="text-18">Build real world skills via interactive simulations and projects tailored for clinical trials platforms.</p>
+                                    <p className="text-18">{careerStep2Subtitle}</p>
                                 </div>
 
                                 <div className={`step-list ${activeIndex === 2 ? "active-step" : ""}`}>
                                     <span className="h6">Step 3</span>
 
-                                    <h3 className="h4 text-md">Earn Your Mastery Certificate</h3>
+                                    <h3 className="h4 text-md">{careerStep3Title}</h3>
 
-                                    <p className="text-18">Complete training to receive expert validated certification boosting your clinical trials career profile.</p>
+                                    <p className="text-18">{careerStep3Subtitle}</p>
                                 </div>
                             </div>
                         </div>
@@ -103,11 +112,11 @@ export default function HomeTraningSteps() {
                             <Accordion defaultValue="item-1" type="single" collapsible className="steps-mob-accord">
                                 <AccordionItem value="item-1" className="steps-mob-item">
                                     <AccordionTrigger className="steps-mob-trigger">
-                                        <h3 className="h4 text-md"><span className="h6 block text-rg text-[gray]">Step 1</span>Enroll in Clinical Trials Courses</h3>
+                                        <h3 className="h4 text-md"><span className="h6 block text-rg text-[gray]">Step 1</span>{careerStep1Title}</h3>
                                     </AccordionTrigger>
 
                                     <AccordionContent className="step-img">
-                                        <p className="text-18 text-[gray]">Select expert crafted modules across our clinical trials products and begin your learning journey today.</p>
+                                        <p className="text-18 text-[gray]">{careerStep1Subtitle}</p>
 
                                         <Image src="/images/homepage/step-1-enroll.webp" alt="enroll" width={752} height={620} priority={false} className="site-radius-20" />
                                     </AccordionContent>
@@ -115,11 +124,11 @@ export default function HomeTraningSteps() {
 
                                 <AccordionItem value="item-2" className="steps-mob-item">
                                     <AccordionTrigger className="steps-mob-trigger">
-                                        <h3 className="h4 text-md"><span className="h6 block text-rg text-[gray]">Step 2</span>Hands On Clinical Trials Practice</h3>
+                                        <h3 className="h4 text-md"><span className="h6 block text-rg text-[gray]">Step 2</span>{careerStep2Title}</h3>
                                     </AccordionTrigger>
 
                                     <AccordionContent className="step-img">
-                                        <p className="text-18 text-[gray]">Build real world skills via interactive simulations and projects tailored for clinical trials platforms.</p>
+                                        <p className="text-18 text-[gray]">{careerStep2Subtitle}</p>
 
                                         <Image src="/images/homepage/step-2-experience.webp" alt="experience" width={752} height={620} priority={false} className="site-radius-20" />
                                     </AccordionContent>
@@ -127,11 +136,11 @@ export default function HomeTraningSteps() {
 
                                 <AccordionItem value="item-3" className="steps-mob-item">
                                     <AccordionTrigger className="steps-mob-trigger">
-                                        <h3 className="h4 text-md"><span className="h6 block text-rg text-[gray]">Step 3</span>Earn Your Mastery Certificate</h3>
+                                        <h3 className="h4 text-md"><span className="h6 block text-rg text-[gray]">Step 3</span>{careerStep3Title}</h3>
                                     </AccordionTrigger>
 
                                     <AccordionContent className="step-img">
-                                        <p className="text-18 text-[gray]">Complete training to receive expert validated certification boosting your clinical trials career profile.</p>
+                                        <p className="text-18 text-[gray]">{careerStep3Subtitle}</p>
 
                                         <Image src="/images/homepage/step-3-complt-training.webp" alt="complt-training" width={752} height={620} priority={false} className="site-radius-20" />
                                     </AccordionContent>

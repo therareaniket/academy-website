@@ -3,7 +3,19 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-export default function HomeStats() {
+type HomeStatsProps = {
+	statisticsTitle: string;
+	statisticsSubtitle: string;
+
+	statistics1Number: string;
+	statistics1Description: string;
+	statistics2Number: string;
+	statistics2Description: string;
+	statistics3Number: string;
+	statistics3Description: string;
+}
+
+export default function HomeStats( { statisticsTitle, statisticsSubtitle, statistics1Number, statistics1Description, statistics2Number, statistics2Description, statistics3Number, statistics3Description } : HomeStatsProps ) {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
@@ -22,10 +34,10 @@ export default function HomeStats() {
 	};
 
 	const homeStatsAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
-		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_initial: { x: "0px", opacity: 1, },
 		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 0.5, duration: 0.6 } },
 
-		subTitle_ltr_initial: { x: "50px", opacity: 0, },
+		subTitle_ltr_initial: { x: "0px", opacity: 1, },
 		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
 
 		stats_female_initial: { x: "-100px", opacity: 0, },
@@ -48,9 +60,9 @@ export default function HomeStats() {
             <section className="section home-statistics">
                 <div className="container">
                     <div className="stats-headings">
-                        <motion.h2 initial={homeStatsAnimations.title_ltr_initial} whileInView={homeStatsAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Advance Excel Clinical Trials Success Awaits</motion.h2>
+                        <motion.h2 initial={homeStatsAnimations.title_ltr_initial} whileInView={homeStatsAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>{statisticsTitle}</motion.h2>
 
-                        <motion.p initial={homeStatsAnimations.subTitle_ltr_initial} whileInView={homeStatsAnimations.subTitle_ltr_animate} className="h6" viewport={{ once: true, amount: isMobile ? 0.5 : 0.8 }}>DhatuAcademy transforms clinical trials knowledge into career breakthroughs. Existing subscribers access core training perks. Premium AI unlocks job ready mastery across our digital products for pros trainers and learners.</motion.p>
+                        <motion.p initial={homeStatsAnimations.subTitle_ltr_initial} whileInView={homeStatsAnimations.subTitle_ltr_animate} className="h6" viewport={{ once: true, amount: isMobile ? 0.5 : 0.8 }}>{statisticsSubtitle}</motion.p>
                     </div>
 
                     <div className="stats-wrapper">
@@ -61,9 +73,9 @@ export default function HomeStats() {
 								</div>
 
 								<motion.div className="yellow-box site-radius-20" variants={yellowStarVariants} transition= {{delay: isMobile ? 1.2 : 2, duration: 1}}>
-									<h3 className="h2">98%</h3>
+									<h3 className="h2">{statistics1Number}</h3>
 
-									<p className="h6 text-sb">Premium Users Achieve Mastery</p>
+									<p className="h6 text-sb">{statistics1Description}</p>
 								</motion.div>
 
 							</div>
@@ -76,9 +88,9 @@ export default function HomeStats() {
 								</div>
 
 								<motion.div className="yellow-box site-radius-20" variants={yellowStarVariants} transition= {{ delay: isMobile ? 1.6 : 2, duration: 1}}>
-									<h3 className="h2">10K+</h3>
+									<h3 className="h2">{statistics2Number}</h3>
 
-									<p className="h6 text-sb">Clinical Trials Experts Empowered</p>
+									<p className="h6 text-sb">{statistics2Description}</p>
 								</motion.div>
 
 								<motion.div className="blue-box-2 site-radius-20" variants={yellowStarVariants} transition= {{ delay: 3, duration: 1}}>
@@ -92,9 +104,9 @@ export default function HomeStats() {
 								</div>
 
 								<motion.div className="yellow-box site-radius-20" variants={yellowStarVariants} transition= {{delay: isMobile ? 2 : 2, duration: 1}}>
-									<h3 className="h2">300+</h3>
+									<h3 className="h2">{statistics3Number}</h3>
 
-									<p className="h6 text-sb">Core Modules for Subscribers</p>
+									<p className="h6 text-sb">{statistics3Description}</p>
 								</motion.div>
 
 								<motion.div className="blue-box-2 site-radius-20" variants={yellowStarVariants} transition= {{delay: 3, duration: 1}}>

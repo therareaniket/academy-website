@@ -3,13 +3,16 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion"
+import { delay, motion } from "framer-motion"
 
 export default function ResourcesCards() {
 
     const blogsAnimations = {
         blogItem_ttb_initial: { y: "-50px", opacity: 0 },
-        blogItem_ttb_animate: { y: "0px", opacity: 1 }
+        blogItem_ttb_animate: { y: "0px", opacity: 1, transition: { duration: 0.6  } },
+
+        slow_blogItem_ttb_initial: { y: "-50px", opacity: 0 },
+        slow_blogItem_ttb_animate: { y: "0px", opacity: 1, transition: { delay: 0.6, duration: 0.6  } }
     }
 
     return (
@@ -41,11 +44,11 @@ export default function ResourcesCards() {
                                                 </div>
                                             {/* </motion.div> */}
 
-                                            <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
-                                                <h3 className="h5 text-md">Why Portal-Specific Training is the Future of Clinical Trials</h3>
+                                            {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }}> */}
+                                                <motion.h3 className="h5 text-md" initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }}>Why Portal-Specific Training is the Future of Clinical Trials</motion.h3>
 
-                                                <p className="h6 text-rg text-grey">Portal-specific training is transforming clinical trials by empowering sites to confidently use the exact digital tools needed for fast, error-free study execution.</p>
-                                            </motion.div>
+                                                <motion.p className="h6 text-rg text-grey" initial={blogsAnimations.slow_blogItem_ttb_initial} whileInView={blogsAnimations.slow_blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} >Portal-specific training is transforming clinical trials by empowering sites to confidently use the exact digital tools needed for fast, error-free study execution.</motion.p>
+                                            {/* </motion.div> */}
                                         </Link>
 
                                         <Link href="/Blogs/role-of-certifications-in-clinical-research-careers" className="resources-cards card-4">
@@ -59,11 +62,11 @@ export default function ResourcesCards() {
                                                 </div>
                                             {/* </motion.div> */}
 
-                                            <motion.div   initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
-                                                <h3 className="h5 text-md">The Role of Certifications in Clinical Research Careers</h3>
+                                            {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} > */}
+                                                <motion.h3 className="h5 text-md" initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }}>The Role of Certifications in Clinical Research Careers</motion.h3>
 
-                                                <p className="h6 text-rg text-grey">Industry-recognized certifications validate skills, improve employability, and open doors to advanced roles in clinical research.</p>
-                                            </motion.div>
+                                                <motion.p className="h6 text-rg text-grey" initial={blogsAnimations.slow_blogItem_ttb_initial} whileInView={blogsAnimations.slow_blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} >Industry-recognized certifications validate skills, improve employability, and open doors to advanced roles in clinical research.</motion.p>
+                                            {/* </motion.div> */}
                                         </Link>
                                     </div>
                                 </TabsContent>
@@ -81,11 +84,11 @@ export default function ResourcesCards() {
                                                 </div>
                                             {/* </motion.div> */}
 
-                                            <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
-                                                <h3 className="h5 text-md">Best Practices for Training Users on Clinical Trial Platforms</h3>
+                                            {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} > */}
+                                                <motion.h3 className="h5 text-md" initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }}>Best Practices for Training Users on Clinical Trial Platforms</motion.h3>
 
-                                                <p className="h6 text-rg text-grey">From data capture and compliance validation to payments and reporting, these systems are used daily by sponsors, CROs, sites, labs, and finance teams.</p>
-                                            </motion.div>
+                                                <motion.p className="h6 text-rg text-grey" initial={blogsAnimations.slow_blogItem_ttb_initial} whileInView={blogsAnimations.slow_blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} >From data capture and compliance validation to payments and reporting, these systems are used daily by sponsors, CROs, sites, labs, and finance teams.</motion.p>
+                                            {/* </motion.div> */}
                                         </Link>
 
                                         <Link href="/Blogs/best-practices-for-compliance-training-in-regulated-clinical-systems" className="resources-cards card-2">
@@ -99,11 +102,11 @@ export default function ResourcesCards() {
                                                 </div>
                                             {/* </motion.div> */}
 
-                                            <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
-                                                <h3 className="h5 text-md">Best Practices for Compliance Training in Regulated Clinical Systems</h3>
+                                            {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} > */}
+                                                <motion.h3 className="h5 text-md" initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }}>Best Practices for Compliance Training in Regulated Clinical Systems</motion.h3>
 
-                                                <p className="h6 text-rg text-grey">Regulations such as ICH-GCP, 21 CFR Part 11, GDPR that every user interacting with clinical systems is adequately trained and accountable.</p>
-                                            </motion.div>
+                                                <motion.p className="h6 text-rg text-grey" initial={blogsAnimations.slow_blogItem_ttb_initial} whileInView={blogsAnimations.slow_blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} >Regulations such as ICH-GCP, 21 CFR Part 11, GDPR that every user interacting with clinical systems is adequately trained and accountable.</motion.p>
+                                            {/* </motion.div> */}
                                         </Link>
                                     </div>
                                 </TabsContent>
@@ -121,11 +124,11 @@ export default function ResourcesCards() {
                                                 </div>
                                             {/* </motion.div> */}
 
-                                            <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
-                                                <h3 className="h5 text-md">Why Continuous Training Is Essential for Modern Clinical Trial Platforms</h3>
+                                            {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} > */}
+                                                <motion.h3 className="h5 text-md" initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }}>Why Continuous Training Is Essential for Modern Clinical Trial Platforms</motion.h3>
 
-                                                <p className="h6 text-rg text-grey">Clinical trial platforms evolve continuously due to regulatory changes, technology upgrades, and operational improvements.</p>
-                                            </motion.div>
+                                                <motion.p className="h6 text-rg text-grey" initial={blogsAnimations.slow_blogItem_ttb_initial} whileInView={blogsAnimations.slow_blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} >Clinical trial platforms evolve continuously due to regulatory changes, technology upgrades, and operational improvements.</motion.p>
+                                            {/* </motion.div> */}
                                         </Link>
 
                                         <Link href="/Blogs/how-training-portal-improve-compliance-readiness-during-audits-introduction" className="resources-cards card-2">
@@ -139,11 +142,11 @@ export default function ResourcesCards() {
                                                 </div>
                                             {/* </motion.div> */}
 
-                                            <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} >
-                                                <h3 className="h5 text-md">How Training Portals Improve Compliance Readiness During Audits</h3>
+                                            {/* <motion.div initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} transition={{ delay: 1 }} > */}
+                                                <motion.h3 className="h5 text-md" initial={blogsAnimations.blogItem_ttb_initial} whileInView={blogsAnimations.blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }}>How Training Portals Improve Compliance Readiness During Audits</motion.h3>
 
-                                                <p className="h6 text-rg text-grey">Audits and inspections are inevitable in clinical research. One of the first areas inspectors examine is training documentation.</p>
-                                            </motion.div>
+                                                <motion.p className="h6 text-rg text-grey" initial={blogsAnimations.slow_blogItem_ttb_initial} whileInView={blogsAnimations.slow_blogItem_ttb_animate} viewport={{ once: true, amount: 0.8 }} >Audits and inspections are inevitable in clinical research. One of the first areas inspectors examine is training documentation.</motion.p>
+                                            {/* </motion.div> */}
                                         </Link>
                                     </div>
                                 </TabsContent>

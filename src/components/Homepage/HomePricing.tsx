@@ -5,7 +5,28 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function HomePricing(){
+type HomePricingProps = {
+    pricingTitle: string;
+    pricingSubtitle: string;
+    planList : {
+        standardPlanIntro: string;
+        standardInclude1: string;
+        standardInclude2: string;
+        standardInclude3: string;
+        standardInclude4: string;
+        standardInclude5: string;
+
+        enterprisePlanIntro: string;
+        enterpriseInclude1: string;
+        enterpriseInclude2: string;
+        enterpriseInclude3: string;
+        enterpriseInclude4: string;
+        enterpriseInclude5: string;
+    };
+
+}
+
+export default function HomePricing( { pricingTitle, pricingSubtitle, planList } : HomePricingProps ){
     const [activePlan, setActivePlan] = useState<'standard' | 'enterprise'>('standard');
 
     const planDetails = {
@@ -13,22 +34,22 @@ export default function HomePricing(){
             price: "$59",
             textColor: "text-[#FEAF06]",
             features: [
-                "Essential modules across all clinical trials products",
-                "Interactive basics for pros trainers and learners",
-                "Progress tracking for steady advancement",
-                "Community forums for peer collaboration",
-                "Core completion certificates"
+                planList.standardInclude1,
+                planList.standardInclude2,
+                planList.standardInclude3,
+                planList.standardInclude4,
+                planList.standardInclude5,
             ]
         },
         enterprise: {
             price: "$299",
             textColor: "text-[#8C67FB]",
             features: [
-                "Unlimited modules across all clinical trials products",
-                "AI powered personalized learning paths",
-                "Advanced simulations and hands on projects",
-                "Advanced simulations and hands on projects",
-                "Premium certificates with industry recognition",
+                planList.enterpriseInclude1,
+                planList.enterpriseInclude2,
+                planList.enterpriseInclude3,
+                planList.enterpriseInclude4,
+                planList.enterpriseInclude5,
             ]
         }
     };
@@ -39,10 +60,10 @@ export default function HomePricing(){
 
     
     const homePricingAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
-		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_initial: { x: "0px", opacity: 1, },
 		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
 
-		subTitle_ltr_initial: { x: "50px", opacity: 0, },
+		subTitle_ltr_initial: { x: "0px", opacity: 1, },
 		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 } },
 
         list_btt_initial: { y: '10px', opacity: 0, },
@@ -63,9 +84,9 @@ export default function HomePricing(){
             <section>
                 <div className="container">
                     <div className="stats-headings">
-                        <motion.h2 initial={homePricingAnimations.title_ltr_initial} whileInView={homePricingAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Simple Pricing. Full Clinical Trials Value</motion.h2>
+                        <motion.h2 initial={homePricingAnimations.title_ltr_initial} whileInView={homePricingAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>{pricingTitle}</motion.h2>
 
-                        <motion.p initial={homePricingAnimations.subTitle_ltr_initial} whileInView={homePricingAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: 0.8 }} className="h6">Straightforward plans unlock core access for existing subscribers and premium AI across our products. Tailored options fit clinical trials pros trainers and learners perfectly.</motion.p>
+                        <motion.p initial={homePricingAnimations.subTitle_ltr_initial} whileInView={homePricingAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: 0.8 }} className="h6">{pricingSubtitle}</motion.p>
                     </div>
 
                     <div className="pricing-detailed-wrapper">
@@ -79,7 +100,7 @@ export default function HomePricing(){
                                             <div className="slide-card-title">
                                                 <h3 className="h4 text-bd">Standard</h3>
 
-                                                <p className="h6 text-rg">Low cost core access for existing clinical trials product subscribers</p>
+                                                <p className="h6 text-rg">{planList.standardPlanIntro}</p>
 
                                                 <Image src="/images/homepage/pricing-yellow-card-desktop.png" alt="pricing-yellow-card-desktop" width={172} height={175} priority={false}></Image>
                                             </div>
@@ -93,7 +114,7 @@ export default function HomePricing(){
                                             <div className="slide-card-title">
                                                 <h3 className="h4 text-bd">Enterprise</h3>
 
-                                                <p className="h6 text-rg">Full access with AI features for advanced clinical trials mastery</p>
+                                                <p className="h6 text-rg">{planList.enterprisePlanIntro}</p>
 
                                                 <Image src="/images/homepage/pricing-blue-card-desktop.png" alt="pricing-yellow-card-desktop" width={172} height={175} priority={false}></Image>
                                             </div>

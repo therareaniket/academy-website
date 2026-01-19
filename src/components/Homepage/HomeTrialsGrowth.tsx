@@ -5,7 +5,15 @@ import Link from "next/link";
 import { delay, motion, scale } from "framer-motion"
 import { useEffect, useState } from "react";
 
-export default function TrialGrowth(){
+type TrialGrowthProps = {
+    certificationTitle: string;
+    certificationSubtitle: string;
+    certificationUsp1: string;
+    certificationUsp2: string;
+    certificationUsp3: string;
+}
+
+export default function TrialGrowth( { certificationTitle, certificationSubtitle, certificationUsp1, certificationUsp2, certificationUsp3 } : TrialGrowthProps ){
 
         const [isMobile, setIsMobile] = useState(false);
     
@@ -20,10 +28,10 @@ export default function TrialGrowth(){
         }, []);
 
     const homeCertificatesAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
-		title_ltr_initial: { x: "-50px", opacity: 0, },
+		title_ltr_initial: { x: "0px", opacity: 1, },
 		title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
 
-		subTitle_ltr_initial: { x: "-50px", opacity: 0, },
+		subTitle_ltr_initial: { x: "0px", opacity: 1, },
 		subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1.5, duration: 0.6 } },
 
         img_rtl_initial: { x: "50px", opacity: 0, },
@@ -58,9 +66,9 @@ export default function TrialGrowth(){
                 <div className="container">
                     <div className="trial-grwth-wrapper">
                         <div className="trial-grwth-details">
-                            <motion.h2 initial={homeCertificatesAnimations.title_ltr_initial} whileInView={homeCertificatesAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Certifications Unlock Clinical Trials Growth</motion.h2>
+                            <motion.h2 initial={homeCertificatesAnimations.title_ltr_initial} whileInView={homeCertificatesAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>{certificationTitle}</motion.h2>
 
-                            <motion.p className="h6" initial={homeCertificatesAnimations.subTitle_ltr_initial} whileInView={homeCertificatesAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: isMobile ? 0.4 : 0.8 }}>DhatuAcademy certifications validate skills across our clinical trials products for pros trainers and learners. Programs blend structured modules practical projects and expert input for real world proficiency that aligns with industry standards. Earn industry recognized certificates and digital badges to highlight on profiles boosting your standing in clinical trials workflows. Access tailored paths from standard to premium levels for maximum impact.</motion.p>
+                            <motion.p className="h6" initial={homeCertificatesAnimations.subTitle_ltr_initial} whileInView={homeCertificatesAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: isMobile ? 0.4 : 0.8 }}>{certificationSubtitle}</motion.p>
                             
                             <p className="h6"></p>
 
@@ -84,7 +92,7 @@ export default function TrialGrowth(){
                                 </svg>
                             </span>
 
-                            <p className="h5 text-md">Proven for 2K+ Certified Learners</p>
+                            <p className="h5 text-md">{certificationUsp1}</p>
                         </motion.div>
 
                         <motion.div className="certifi-usp" initial={homeCertificatesAnimations.usp_list_initial} whileInView={homeCertificatesAnimations.usp_list_animate} viewport={{ once: true }} transition={{delay: isMobile ? 1 : 2.5, duration: 0.6 }}>
@@ -94,13 +102,13 @@ export default function TrialGrowth(){
                                 </svg>
                             </span>
 
-                            <p className="h5 text-md">Expert SOP Compliance Mastery</p>
+                            <p className="h5 text-md">{certificationUsp2}</p>
                         </motion.div>
 
                         <motion.div className="certifi-usp" initial={homeCertificatesAnimations.usp_list_initial} whileInView={homeCertificatesAnimations.usp_list_animate} viewport={{ once: true }} transition={{delay: isMobile ? 1 : 2.5, duration: 0.6 }}>
                             <Image src="/images/general/meter.png" alt="meter" width={40} height={40} priority={false}></Image>
 
-                            <p className="h5 text-md">Flexible Anytime Learning Access</p>
+                            <p className="h5 text-md">{certificationUsp3}</p>
                         </motion.div>
                     </div>
 
