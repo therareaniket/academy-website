@@ -2,14 +2,23 @@
 import Image from "next/image";
 import { useEffect } from "react";
 
-export default function SolutionTraningMatters() {
+type SoluTrainingMattersProps = {
+    whyTrainingMattersTitle: string;
+    whyTrainingMattersSubtitle: string;
+    whyTrainingMattersUsp1: string;
+    whyTrainingMattersUsp2: string;
+    whyTrainingMattersUsp3: string;
+    whyTrainingMattersUsp4: string;
+}
+
+export default function SolutionTraningMatters( { whyTrainingMattersTitle, whyTrainingMattersSubtitle, whyTrainingMattersUsp1, whyTrainingMattersUsp2, whyTrainingMattersUsp3, whyTrainingMattersUsp4 }:SoluTrainingMattersProps ) {
 
 useEffect(() => {
     const section = document.querySelector(".solution-training-wrapper");
     if (!section) return;
 
-    const h2 = section.querySelector("h2") as HTMLElement | null;
-    const p = section.querySelector("p") as HTMLElement | null;
+    // const h2 = section.querySelector("h2") as HTMLElement | null;
+    // const p = section.querySelector("p") as HTMLElement | null;
     const points = section.querySelectorAll<HTMLElement>(".solution-training-points");
     const image = section.querySelector(".solution-training-right") as HTMLElement | null;
 
@@ -20,10 +29,10 @@ useEffect(() => {
             section.classList.add("active");
 
             // h2
-            if (h2) h2.style.transitionDelay = "0s";
+            // if (h2) h2.style.transitionDelay = "0s";
 
             // p
-            if (p) p.style.transitionDelay = "0.3s";
+            // if (p) p.style.transitionDelay = "0.3s";
 
             // points stagger
             points.forEach((point, index) => {
@@ -49,33 +58,33 @@ useEffect(() => {
                 <div className="container">
                     <div className="solution-training-wrapper">
                         <div className="solution-tarining-left">
-                            <h2 className="text-sb">Why Training Matters</h2>
+                            <h2 className="text-sb">{whyTrainingMattersTitle}</h2>
 
-                            <p className="h6 text-rg solution-training-title">Effective training transforms clinical teams from reactive operators into proactive experts, ensuring seamless SOP adherence, and trial success across diverse environments.</p>
+                            <p className="h6 text-rg solution-training-title">{whyTrainingMattersSubtitle}</p>
 
                             <div className="solution-tarining-pointers">
                                 <div className="solution-covers-financial solution-training-points">
                                     <Image src="/images/solutionpage/solution-training-matters/solution-training-financial-sop.svg" alt="solution-covers-financial" width={50} height={50} priority={false} className=""></Image>
 
-                                    <p className="text-md h5">Accelerated Onboarding</p>
+                                    <p className="text-md h5">{whyTrainingMattersUsp1}</p>
                                 </div>
 
                                 <div className="solution-approval-governance solution-training-points">
                                     <Image src="/images/solutionpage/solution-training-matters/solution-training-approval-governance.svg" alt="solution-covers-financial" width={50} height={50} priority={false} className=""></Image>
 
-                                    <p className="text-md h5">Compliance Mastery</p>
+                                    <p className="text-md h5">{whyTrainingMattersUsp2}</p>
                                 </div>
 
                                 <div className="solution-reporting-requirements solution-training-points">
                                     <Image src="/images/solutionpage/solution-training-matters/solution-training-regualtory-requirement.svg" alt="solution-covers-financial" width={50} height={50} priority={false} className=""></Image>
 
-                                    <p className="text-md h5">Real-World Readiness</p>
+                                    <p className="text-md h5">{whyTrainingMattersUsp3}</p>
                                 </div>
 
                                 <div className="solution-segregation-duties solution-training-points">
                                     <Image src="/images/solutionpage/solution-training-matters/solution-training-segregation-duties.svg" alt="solution-covers-financial" width={50} height={50} priority={false} className=""></Image>
 
-                                    <p className="text-md h5">Scalable Performance</p>
+                                    <p className="text-md h5">{whyTrainingMattersUsp4}</p>
                                 </div>
                             </div>
                         </div>

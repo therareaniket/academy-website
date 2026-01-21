@@ -4,26 +4,28 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 
-export default function AboutTimeline() {
+type TimelineProps = {
+    lifecycleTitle: string;
+    lifecycleSubtitle: string;
+    lifecycleSteps: {
+        step1Title: string;
+        step1Subtitle: string;
+        step2Title: string;
+        step2Subtitle: string;
+        step3Title: string;
+        step3Subtitle: string;
+        step4Title: string;
+        step4Subtitle: string;
+        step5Title: string;
+        step5Subtitle: string;
+        step6Title: string;
+        step6Subtitle: string;
+    }
+}
 
-    useEffect(() => {
-        const heading = document.querySelector(".timeline-headings");
+export default function AboutTimeline( { lifecycleTitle, lifecycleSubtitle, lifecycleSteps } : TimelineProps ) {
 
-        if (!heading) return;
 
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
-            },
-            { threshold: 0.3 }
-        );
-
-        observer.observe(heading);
-
-        return () => observer.unobserve(heading);
-    }, []);
 
     useEffect(() => {
         const currentIndexRef = { value: 0 }; // Use const since we mutate the object, not the reference
@@ -78,9 +80,9 @@ export default function AboutTimeline() {
             <section className="section">
                 <div className="container">
                     <div className="timeline-headings">
-                        <h2>Training Lifecycle </h2>
+                        <h2>{lifecycleTitle}</h2>
 
-                        <p className="h6 text-rg">Structured pathway aligned with Dhatu products and global compliance standards.</p>
+                        <p className="h6 text-rg">{lifecycleSubtitle}</p>
                     </div>
 
                     <div className="timeline-steps-container">
@@ -88,13 +90,13 @@ export default function AboutTimeline() {
                             <div className="tl-step-wrapper left">
                                 <div className="tl-step step-1 site-radius-20">
                                     <div className="step-count site-radius-40">
-                                        <span className="h6 text-md vertical-text">1st Step</span>
+                                        <span className="h6 text-md vertical-text">Step 1</span>
                                     </div>
 
                                     <div className="step-details">
-                                        <h3 className="h4 text-md">Assess</h3>
+                                        <h3 className="h4 text-md">{lifecycleSteps.step1Title}</h3>
 
-                                        <p className="text-18">Evaluate role-specific skills and compliance gaps.</p>
+                                        <p className="text-18">{lifecycleSteps.step1Subtitle}</p>
                                     </div>
 
                                     <Image src="/images/aboutpage/timeline-arrow-right.svg" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
@@ -104,13 +106,13 @@ export default function AboutTimeline() {
                             <div className="tl-step-wrapper left">
                                 <div className="tl-step step-3 site-radius-20">
                                     <div className="step-count site-radius-40">
-                                        <span className="h6 text-md vertical-text">3rd Step</span>
+                                        <span className="h6 text-md vertical-text">Step 3</span>
                                     </div>
 
                                     <div className="step-details">
-                                        <h3 className="h4 text-md">Deliver</h3>
+                                        <h3 className="h4 text-md">{lifecycleSteps.step3Title}</h3>
 
-                                        <p className="text-18">Provide interactive modules and hands-on simulations.</p>
+                                        <p className="text-18">{lifecycleSteps.step3Subtitle}</p>
                                     </div>
 
                                     <Image src="/images/aboutpage/timeline-arrow-right.svg" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
@@ -120,13 +122,13 @@ export default function AboutTimeline() {
                             <div className="tl-step-wrapper left">
                                 <div className="tl-step step-5 site-radius-20">
                                     <div className="step-count site-radius-40">
-                                        <span className="h6 text-md vertical-text">5th Step</span>
+                                        <span className="h6 text-md vertical-text">Step 5</span>
                                     </div>
 
                                     <div className="step-details">
-                                        <h3 className="h4 text-md">Track</h3>
+                                        <h3 className="h4 text-md">{lifecycleSteps.step5Title}</h3>
 
-                                        <p className="text-18">Monitor progress with real-time dashboards and analytics.</p>
+                                        <p className="text-18">{lifecycleSteps.step5Subtitle}</p>
                                     </div>
 
                                     <Image src="/images/aboutpage/timeline-arrow-right.svg" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
@@ -138,13 +140,13 @@ export default function AboutTimeline() {
                             <div className="tl-step-wrapper right">
                                 <div className="tl-step step-2 site-radius-20">
                                     <div className="step-count site-radius-40">
-                                        <span className="h6 text-md vertical-text">2nd Step</span>
+                                        <span className="h6 text-md vertical-text">Step 2</span>
                                     </div>
 
                                     <div className="step-details">
-                                        <h3 className="h4 text-md">Plan</h3>
+                                        <h3 className="h4 text-md">{lifecycleSteps.step2Title}</h3>
 
-                                        <p className="text-18">Design personalized learning paths aligned with Dhatu workflows.</p>
+                                        <p className="text-18">{lifecycleSteps.step2Subtitle}</p>
                                     </div>
 
                                     <Image src="/images/aboutpage/timeline-arrow-left.svg" alt="timeline-arrow-left" width={471} height={75} priority={false} className="timeline-arrow-left"></Image>
@@ -154,13 +156,13 @@ export default function AboutTimeline() {
                             <div className="tl-step-wrapper right">
                                 <div className="tl-step step-4 site-radius-20">
                                     <div className="step-count site-radius-40">
-                                        <span className="h6 text-md vertical-text">4th Step</span>
+                                        <span className="h6 text-md vertical-text">Step 4</span>
                                     </div>
 
                                     <div className="step-details">
-                                        <h3 className="h4 text-md">Practice</h3>
+                                        <h3 className="h4 text-md">{lifecycleSteps.step4Title}</h3>
 
-                                        <p className="text-18">Apply knowledge through real-world portal projects.</p>
+                                        <p className="text-18">{lifecycleSteps.step4Subtitle}</p>
                                     </div>
 
                                     <Image src="/images/aboutpage/timeline-arrow-left.svg" alt="timeline-arrow-left" width={471} height={75} priority={false} className="timeline-arrow-left"></Image>
@@ -170,13 +172,13 @@ export default function AboutTimeline() {
                             <div className="tl-step-wrapper right">
                                 <div className="tl-step step-6 site-radius-20">
                                     <div className="step-count site-radius-40">
-                                        <span className="h6 text-md vertical-text">6th Step</span>
+                                        <span className="h6 text-md vertical-text">Step 6</span>
                                     </div>
 
                                     <div className="step-details">
-                                        <h3 className="h4 text-md">Certify</h3>
+                                        <h3 className="h4 text-md">{lifecycleSteps.step6Title}</h3>
 
-                                        <p className="text-18">Issue credentials for regulatory confidence and career growth.</p>
+                                        <p className="text-18">{lifecycleSteps.step6Subtitle}</p>
                                     </div>
                                 </div>
                             </div>
@@ -186,13 +188,13 @@ export default function AboutTimeline() {
                     <div className="timeline-steps-container mobile-timeline-steps">
                         <motion.div className="tl-step step-1 site-radius-20" initial={{ x: "-30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
-                                <span className="h6 text-md vertical-text">1st Step</span>
+                                <span className="h6 text-md vertical-text">Step 1</span>
                             </div>
 
                             <div className="step-details">
-                                <h3 className="h4 text-md">Assess</h3>
+                                <h3 className="h4 text-md">{lifecycleSteps.step1Title}</h3>
 
-                                <p className="text-18">Evaluate role-specific skills and compliance gaps.</p>
+                                <p className="text-18">{lifecycleSteps.step1Subtitle}</p>
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-right.png" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
@@ -200,13 +202,13 @@ export default function AboutTimeline() {
 
                         <motion.div className="tl-step step-2 site-radius-20" initial={{ x: "30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
-                                <span className="h6 text-md vertical-text">2nd Step</span>
+                                <span className="h6 text-md vertical-text">Step 2</span>
                             </div>
 
                             <div className="step-details">
-                                <h3 className="h4 text-md">Plan</h3>
+                                <h3 className="h4 text-md">{lifecycleSteps.step2Title}</h3>
 
-                                <p className="text-18">Design personalized learning paths aligned with Dhatu workflows.</p>
+                                <p className="text-18">{lifecycleSteps.step2Subtitle}</p>
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-left.png" alt="timeline-arrow-left" width={471} height={75} priority={false} className="timeline-arrow-left"></Image>
@@ -214,13 +216,13 @@ export default function AboutTimeline() {
 
                         <motion.div className="tl-step step-3 site-radius-20" initial={{ x: "-30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
-                                <span className="h6 text-md vertical-text">3rd Step</span>
+                                <span className="h6 text-md vertical-text">Step 3</span>
                             </div>
 
                             <div className="step-details">
-                                <h3 className="h4 text-md">Deliver</h3>
+                                <h3 className="h4 text-md">{lifecycleSteps.step3Title}</h3>
 
-                                <p className="text-18">Provide interactive modules and hands-on simulations.</p>
+                                <p className="text-18">{lifecycleSteps.step3Subtitle}</p>
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-right.png" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
@@ -228,13 +230,13 @@ export default function AboutTimeline() {
 
                         <motion.div className="tl-step step-4 site-radius-20" initial={{ x: "30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
-                                <span className="h6 text-md vertical-text">4th Step</span>
+                                <span className="h6 text-md vertical-text">Step 4</span>
                             </div>
 
                             <div className="step-details">
-                                <h3 className="h4 text-md">Practice</h3>
+                                <h3 className="h4 text-md">{lifecycleSteps.step4Title}</h3>
 
-                                <p className="text-18">Apply knowledge through real-world portal projects.</p>
+                                <p className="text-18">{lifecycleSteps.step4Subtitle}</p>
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-left.png" alt="timeline-arrow-left" width={471} height={75} priority={false} className="timeline-arrow-left"></Image>
@@ -242,13 +244,13 @@ export default function AboutTimeline() {
 
                         <motion.div className="tl-step step-5 site-radius-20" initial={{ x: "-30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
-                                <span className="h6 text-md vertical-text">5th Step</span>
+                                <span className="h6 text-md vertical-text">Step 5</span>
                             </div>
 
                             <div className="step-details">
-                                <h3 className="h4 text-md">Track</h3>
+                                <h3 className="h4 text-md">{lifecycleSteps.step5Title}</h3>
 
-                                <p className="text-18">Monitor progress with real-time dashboards and analytics.</p>
+                                <p className="text-18">{lifecycleSteps.step5Subtitle}</p>
                             </div>
 
                             <Image src="/images/aboutpage/timeline-arrow-right.png" alt="timeline-arrow-right" width={471} height={75} priority={false} className="timeline-arrow-right"></Image>
@@ -256,13 +258,13 @@ export default function AboutTimeline() {
 
                         <motion.div className="tl-step step-6 site-radius-20" initial={{ x: "30px", opacity: 0 }} whileInView={{ x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }} viewport={{ once: true, amount: 0.7 }}>
                             <div className="step-count site-radius-40">
-                                <span className="h6 text-md vertical-text">6th Step</span>
+                                <span className="h6 text-md vertical-text">Step 6</span>
                             </div>
 
                             <div className="step-details">
-                                <h3 className="h4 text-md">Certify</h3>
+                                <h3 className="h4 text-md">{lifecycleSteps.step6Title}</h3>
 
-                                <p className="text-18">Issue credentials for regulatory confidence and career growth.</p>
+                                <p className="text-18">{lifecycleSteps.step6Subtitle}</p>
                             </div>
                         </motion.div>
                     </div>

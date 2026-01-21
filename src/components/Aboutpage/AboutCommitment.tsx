@@ -3,11 +3,30 @@
 import Image from "next/image";
 import { useEffect } from "react";
 
-export default function AboutCommitment() {
+type CommintmentProps = {
+    vmSectionTitle: string;
+    vmSectionSubtitle: string;
+    vmInformations: {
+        missionTitle: string;
+        missionSubtitle: string;
+
+        visionTitle: string;
+        visionSubtitle: string;
+
+        statis1Number: string;
+        statis1Description: string;
+        statis2Number: string;
+        statis2Description: string;
+        statis3Number: string;
+        statis3Description: string;
+    }
+}
+
+export default function AboutCommitment( { vmSectionTitle, vmSectionSubtitle, vmInformations } : CommintmentProps ) {
 
  useEffect(() => {
     const cards = document.querySelectorAll(
-      ".cmtmnt-headings, .mission, .learner-satisfaction, .proff-trained, .vision, .full-stats"
+        ".mission, .learner-satisfaction, .proff-trained, .vision, .full-stats"
     );
 
     const observer = new IntersectionObserver(
@@ -31,9 +50,9 @@ export default function AboutCommitment() {
             <section className="section">
                 <div className="container">
                     <div className="cmtmnt-headings">
-                        <h2>Our Clinical Trials Commitments</h2>
+                        <h2>{vmSectionTitle}</h2>
 
-                        <p className="h6 text-rg">Practical training aligned with Dhatu products and global SOP standards.</p>
+                        <p className="h6 text-rg">{vmSectionSubtitle}</p>
                     </div>
 
                     <div className="cmtmnt-content">
@@ -41,9 +60,9 @@ export default function AboutCommitment() {
                             <Image src="/images/aboutpage/mission-icon.png" alt="mission-icon" width={42} height={42} priority={false} className="mission-icon"></Image>
 
                             <div className="mission-details">
-                                <h3 className="h4 text-md">Our Mission</h3>
+                                <h3 className="h4 text-md">{vmInformations.missionTitle}</h3>
 
-                                <p className="text-18 text-rg">Empower clinical trials teams with structured compliant training across Dhatu products and global standards for precise execution and regulatory mastery.</p>
+                                <p className="text-18 text-rg">{vmInformations.missionSubtitle}</p>
                             </div>
 
                             <Image src="/images/aboutpage/mission-laptop.png" alt="mission-laptop" width={108} height={125} priority={false} className="mission-laptop"></Image>
@@ -55,11 +74,11 @@ export default function AboutCommitment() {
                             <div className="stats-vision">
                                 <div className="small-stats">
                                     <div className="learner-satisfaction site-radius-20">
-                                        <h4 className="h3">95% <span className="h6 text-rg">Learner Satisfaction Score</span></h4>
+                                        <h4 className="h3">{vmInformations.statis1Number} <span className="h6 text-rg">{vmInformations.statis1Description}</span></h4>
                                     </div>
 
                                     <div className="proff-trained site-radius-20">
-                                        <h4 className="h1">12,000+ <span className="h6 text-rg">Professionals Trained</span></h4>
+                                        <h4 className="h1">{vmInformations.statis2Number} <span className="h6 text-rg">{vmInformations.statis2Description}</span></h4>
                                     </div>
                                 </div>
 
@@ -67,9 +86,9 @@ export default function AboutCommitment() {
                                     <Image src="/images/aboutpage/vision-icon.png" alt="vision-icon" width={46} height={32} priority={false} className="vision-icon"></Image>
 
                                     <div className="vision-details">
-                                        <h3 className="h4 text-md">Our Vision</h3>
+                                        <h3 className="h4 text-md">{vmInformations.visionTitle}</h3>
 
-                                        <p className="text-18 text-rg">Become the premier training partner for confident, compliant, future-ready clinical teams in the global clinical research landscape.</p>
+                                        <p className="text-18 text-rg">{vmInformations.visionSubtitle}</p>
                                     </div>
 
                                     <Image src="/images/homepage/stats-section-elements/step-2-blue-1-pencil.png" alt="abt-pencil" width={47} height={60} priority={false} className="abt-pencil"></Image>
@@ -80,7 +99,7 @@ export default function AboutCommitment() {
 
                             <div className="full-stats site-radius-20">
                                 <div className="training-modules-info">
-                                    <h4 className="h3 text-sb">60+ <span className="h6 text-md">Specialized Training Modules</span></h4>
+                                    <h4 className="h3 text-sb">{vmInformations.statis3Number} <span className="h6 text-md">{vmInformations.statis3Description}</span></h4>
                                 </div>
 
                                 <div className="modules-list">

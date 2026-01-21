@@ -4,7 +4,11 @@ import Image from "next/image";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef } from "react";
 
-export default function ResourceHero() {
+type ResourcesHeroProps = {
+    resourcesHeroTitle: string;
+}
+
+export default function ResourceHero( { resourcesHeroTitle } : ResourcesHeroProps ) {
 
     const heroRef = useRef<HTMLDivElement>(null);
 
@@ -63,7 +67,7 @@ export default function ResourceHero() {
 
                 <div className="container">
                     <div className="hero-content">
-                        <motion.h1 initial={{ y: '50px', opacity: 0 }} animate={{ y: '0px', opacity: 1, }} transition={{ delay: 0.5, duration: 1 }} >Master Clinical Trials with Guided Learning Resources</motion.h1>                        
+                        <motion.h1 initial={{ y: '50px', opacity: 0 }} animate={{ y: '0px', opacity: 1, }} transition={{ delay: 0.5, duration: 1 }} >{resourcesHeroTitle}</motion.h1>
                     </div>
                 </div>
 

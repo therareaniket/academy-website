@@ -599,7 +599,7 @@
     .academy-roles .steps-listing-mobile { display: flex; }
     
     .academy-roles .steps-listing-mobile .step-img { width: 100%; }
-    .academy-roles .steps-listing-mobile .step-img img { width: 60%; margin: 0 auto; margin-top: 30px; }
+     .steps-listing-mobile .step-img img { width: 60%; margin: 0 auto; margin-top: 30px; }
 
     .timeline-steps-container { width: 100%; }
     .tl-step { width: 370px; padding: 20px; }
@@ -616,6 +616,11 @@
     .slide-details { width: 330px; }
 
     .certifi-img-wrapper { width: 100%; }
+
+    .steps-listings { display: none; }
+    .step-img { width: 100% !important; }
+    .steps-listings.steps-listing-mobile { display: block; }
+    .steps-listings.steps-listing-mobile img { margin-top: 30px; }
 }
 
 @media screen and (max-width: 1023px) {}
@@ -1012,8 +1017,8 @@
     .step-img { width: 100%; }
     .step-lists { flex-wrap: wrap; }
     .step-list { width: 100%; }
-    .steps-listings { display: none; }
-    .steps-listings.steps-listing-mobile { display: block; }
+    /* .steps-listings { display: none; }
+    .steps-listings.steps-listing-mobile { display: block; } */
     .steps-listings.steps-listing-mobile img { margin-top: 30px; }
     .training-steps, .training-steps.academy-roles { height: auto; }
 
@@ -1073,6 +1078,7 @@
     .social-link-list ul { gap: 20px; }
     
     .coming-soon { height: 70vh; }
+    .steps-listing-mobile .step-img img { width: 100%; }
     
 }
 
@@ -1166,6 +1172,8 @@
 
     .slide-details { width: 100%; }
     .trial-grwth-wrapper img { height: 250px; }
+    
+    .step-img img { height: 200px; }
 }
 
 @media screen and (max-width: 400px) {

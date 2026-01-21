@@ -8,28 +8,39 @@ import "swiper/css";
 import "swiper/css/pagination";
 import type { Swiper as SwiperType } from "swiper";
 
+type ComplianceSliderProps = {
+    complianceAssuranceTitle: string;
+    complianceAssuranceSubtitle: string;
+    complianceAssuranceSliders: {
+        slider1Title: string;
+        slider1Subtitle: string;
+        slider2Title: string;
+        slider2Subtitle: string;
+        slider3Title: string;
+        slider3Subtitle: string;
+    }
+}
 
+export default function ComplianceSlider( {complianceAssuranceTitle, complianceAssuranceSubtitle, complianceAssuranceSliders} : ComplianceSliderProps ) {
 
-export default function ComplianceSlider() {
+    // useEffect(() => {
+    //     const heading = document.querySelector(".compli-slider-headings");
 
-    useEffect(() => {
-        const heading = document.querySelector(".compli-slider-headings");
+    //     if (!heading) return;
 
-        if (!heading) return;
+    //     const observer = new IntersectionObserver(
+    //         ([entry]) => {
+    //             if (entry.isIntersecting) {
+    //                 entry.target.classList.add("show");
+    //             }
+    //         },
+    //         { threshold: 0.3 }
+    //     );
 
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
-            },
-            { threshold: 0.3 }
-        );
+    //     observer.observe(heading);
 
-        observer.observe(heading);
-
-        return () => observer.unobserve(heading);
-    }, []);
+    //     return () => observer.unobserve(heading);
+    // }, []);
 
     const animateSlideImages = (swiper: SwiperType) => {
         // remove animation from all images
@@ -58,9 +69,9 @@ export default function ComplianceSlider() {
             <section className="section compliance-slider">
                 <div className="container">
                     <div className="compli-slider-headings">
-                        <h2> Engineered for Compliance Assurance</h2>
+                        <h2>{complianceAssuranceTitle}</h2>
 
-                        <p className="h6 text-rg">Comprehensive training with audit-ready records guarantees ongoing adherence across all roles, trials, and international regulations.</p>
+                        <p className="h6 text-rg">{complianceAssuranceSubtitle}</p>
                     </div>
 
                     <div className="abt-swiper-slider">
@@ -79,9 +90,9 @@ export default function ComplianceSlider() {
                             <SwiperSlide className="abt-slider-item">
                                 <div className="abt-slide-item-wrapper">
                                     <div className="slide-details">
-                                        <h3 className="h4 text-md">Compliance Embedded in Every Module</h3>
+                                        <h3 className="h4 text-md">{complianceAssuranceSliders.slider1Title}</h3>
 
-                                        <p className="text-18 text-rg">DhatuAcademy drives regulatory excellence with GxP-compliant training, SOP mastery, and worldwide standards for seamless operations.</p>
+                                        <p className="text-18 text-rg">{complianceAssuranceSliders.slider1Subtitle}</p>
                                     </div>
 
                                     <div className="masked-images">
@@ -103,9 +114,9 @@ export default function ComplianceSlider() {
                             <SwiperSlide className="abt-slider-item">
                                 <div className="abt-slide-item-wrapper">
                                     <div className="slide-details">
-                                        <h3 className="h4 text-md">Inspection-Proof Documentation</h3>
+                                        <h3 className="h4 text-md">{complianceAssuranceSliders.slider2Title}</h3>
 
-                                        <p className="text-18 text-rg">Automated certificates, digital badges, and immutable logs accelerate audits with zero compliance gaps.</p>
+                                        <p className="text-18 text-rg">{complianceAssuranceSliders.slider2Subtitle}</p>
                                     </div>
 
                                     <div className="masked-images">
@@ -127,9 +138,9 @@ export default function ComplianceSlider() {
                             <SwiperSlide className="abt-slider-item">
                                 <div className="abt-slide-item-wrapper">
                                     <div className="slide-details">
-                                        <h3 className="h4 text-md">Risk-Free Practice Labs</h3>
+                                        <h3 className="h4 text-md">{complianceAssuranceSliders.slider3Title}</h3>
 
-                                        <p className="text-18 text-rg">Isolated sandboxes replicate production environments for safe, compliant hands-on training without live data risks.</p>
+                                        <p className="text-18 text-rg">{complianceAssuranceSliders.slider3Subtitle}</p>
                                     </div>
 
                                     <div className="masked-images">

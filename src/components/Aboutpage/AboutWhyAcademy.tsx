@@ -4,15 +4,30 @@ import { motion, useScroll } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-export default function WhyChoose() {
+type WhyChooseProps = {
+    whatSetDhatuacademyTitle: string;
+    whatSetDhatuacademySubtitle: string;
+    whatSetDaList: {
+        item1Title: string;
+        item2Title: string;
+        item3Title: string;
+        item4Title: string;
+        item1Subtitle: string;
+        item2Subtitle: string;
+        item3Subtitle: string;
+        item4Subtitle: string;
+    };
+}
+
+export default function WhyChoose( { whatSetDhatuacademyTitle, whatSetDhatuacademySubtitle, whatSetDaList } : WhyChooseProps) {
     const sectionRef = useRef(null);
     const [activeWhyUs, setActiveWhyUs] = useState(0);
 
     const homeStatsAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
-        title_ltr_initial: { x: "-50px", opacity: 0, },
+        title_ltr_initial: { x: "0px", opacity: 1, },
         title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 0.5, duration: 0.6 } },
 
-        subTitle_ltr_initial: { x: "50px", opacity: 0, },
+        subTitle_ltr_initial: { x: "0px", opacity: 1, },
         subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
     } : {
 
@@ -43,9 +58,9 @@ export default function WhyChoose() {
             <section className="section why-academy-section" style={{ paddingTop: 0, }}>
                 <div className="container">
                     <div className="why-academy-headings">
-                        <motion.h2 initial={homeStatsAnimations.title_ltr_initial} whileInView={homeStatsAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>What Sets DhatuAcademy Apart?</motion.h2>
+                        <motion.h2 initial={homeStatsAnimations.title_ltr_initial} whileInView={homeStatsAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>{whatSetDhatuacademyTitle}</motion.h2>
 
-                        <motion.p initial={homeStatsAnimations.subTitle_ltr_initial} whileInView={homeStatsAnimations.subTitle_ltr_animate} className="h6" viewport={{ once: true, amount: 0.8 }}>Hands-on learning, industry-aligned skills, and access to top portals equip you for clinical success.</motion.p>
+                        <motion.p initial={homeStatsAnimations.subTitle_ltr_initial} whileInView={homeStatsAnimations.subTitle_ltr_animate} className="h6" viewport={{ once: true, amount: 0.8 }}>{whatSetDhatuacademySubtitle}</motion.p>
                     </div>
 
                     <div ref={sectionRef} className="why-us-scroll-space">
@@ -56,9 +71,9 @@ export default function WhyChoose() {
                                 <div className="item-list-details">
                                     <Image src="/images/aboutpage/hands-on-traing.svg" alt="hands-on-traing" width={34} height={34} priority={false}></Image>
 
-                                    <p className="h4 text-md">Hands-On Practical Training</p>
+                                    <p className="h4 text-md">{whatSetDaList.item1Title}</p>
 
-                                    <p className="text-18 ">Real-world simulations using Dhatu products for skill mastery. Build confidence through interactive clinical scenarios.</p>
+                                    <p className="text-18 ">{whatSetDaList.item1Subtitle}</p>
                                 </div>
                             </div>
 
@@ -68,9 +83,9 @@ export default function WhyChoose() {
                                 <div className="item-list-details">
                                     <Image src="/images/aboutpage/expert-led-modules.svg" alt="expert-led-modules" width={40} height={20} priority={false}></Image>
 
-                                    <p className="h4 text-md">Expert-Led Modules</p>
+                                    <p className="h4 text-md">{whatSetDaList.item2Title}</p>
 
-                                    <p className="text-18 ">Courses crafted by industry veterans aligned with global standards. Stay ahead with cutting-edge protocols and best practices.</p>
+                                    <p className="text-18 ">{whatSetDaList.item2Subtitle}</p>
                                 </div>
                             </div>
 
@@ -80,9 +95,9 @@ export default function WhyChoose() {
                                 <div className="item-list-details">
                                     <Image src="/images/aboutpage/real-world-projects.svg" alt="real-world-projects" width={37} height={27} priority={false}></Image>
 
-                                    <p className="h4 text-md">Real-World Projects</p>
+                                    <p className="h4 text-md">{whatSetDaList.item3Title}</p>
 
-                                    <p className="text-18 ">Access to leading portals for live, impactful clinical experience. Apply skills directly to drive meaningful research outcomes.</p>
+                                    <p className="text-18 ">{whatSetDaList.item3Subtitle}</p>
                                 </div>
                             </div>
 
@@ -92,9 +107,9 @@ export default function WhyChoose() {
                                 <div className="item-list-details">
                                     <Image src="/images/aboutpage/career-support.svg" alt="career-support" width={27} height={35} priority={false}></Image>
 
-                                    <p className="h4 text-md">Career Support</p>
+                                    <p className="h4 text-md">{whatSetDaList.item4Title}</p>
 
-                                    <p className="text-18 ">Personalized guidance, certifications, and job placement assistance. Launch your career with proven credentials and connections.</p>
+                                    <p className="text-18 ">{whatSetDaList.item4Subtitle}</p>
                                 </div>
                             </div>
                         </div>

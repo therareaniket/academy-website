@@ -3,13 +3,18 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function SoluComplianceList() {
+type SoluComplianaceProps = {
+    empoweringComplianceTitle: string;
+    empoweringComplianceSubtitle: string;
+}
+
+export default function SoluComplianceList( { empoweringComplianceTitle, empoweringComplianceSubtitle } : SoluComplianaceProps ) {
 
     const solutionListAnimations = (typeof window !== "undefined" && window.innerWidth >= 1200) ? {
-        title_ltr_initial: { x: "-50px", opacity: 0, },
+        title_ltr_initial: { x: "0px", opacity: 1, },
         title_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 1, duration: 0.6 } },
 
-        subTitle_ltr_initial: { x: "50px", opacity: 0, },
+        subTitle_ltr_initial: { x: "0px", opacity: 1, },
         subTitle_ltr_animate: { x: "0px", opacity: 1, transition: { delay: 2, duration: 0.6 } },
 
     } : {
@@ -25,9 +30,9 @@ export default function SoluComplianceList() {
             <section className="section">
                 <div className="container">
                     <div className="compliance-list-headings">
-                        <motion.h2 initial={solutionListAnimations.title_ltr_initial} whileInView={solutionListAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>Empowering Learning with Compliance Focus</motion.h2>
+                        <motion.h2 initial={solutionListAnimations.title_ltr_initial} whileInView={solutionListAnimations.title_ltr_animate} viewport={{ once: true, amount: 0.8 }}>{empoweringComplianceTitle}</motion.h2>
 
-                        <motion.p initial={solutionListAnimations.subTitle_ltr_initial} whileInView={solutionListAnimations.subTitle_ltr_animate} viewport={{ once: true }} className="h6 text-rg">Tailored programs build expertise in any clinical training alongside Dhatu products, SOP workflows, and real-trial confidence.</motion.p>
+                        <motion.p initial={solutionListAnimations.subTitle_ltr_initial} whileInView={solutionListAnimations.subTitle_ltr_animate} viewport={{ once: true }} className="h6 text-rg">{empoweringComplianceSubtitle}</motion.p>
                     </div>
 
                     <div className="compliance-lists">

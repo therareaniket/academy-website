@@ -3,7 +3,11 @@ import Image from "next/image";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef } from "react";
 
-export default function ContactHero() {
+type ContactHeroProps = {
+    contactHeroTitle: string
+}
+
+export default function ContactHero( {contactHeroTitle}:ContactHeroProps ) {
 
     const heroRef = useRef<HTMLDivElement>(null);
 
@@ -62,7 +66,7 @@ export default function ContactHero() {
 
                 <div className="container">
                     <div className="hero-content">
-                        <motion.h1 initial={{ y: '50px', opacity: 0 }} animate={{ y: '0px', opacity: 1, }} transition={{ delay: 0.5, duration: 1 }} >Talk Clinical Trials Training</motion.h1>
+                        <motion.h1 initial={{ y: '50px', opacity: 0 }} animate={{ y: '0px', opacity: 1, }} transition={{ delay: 0.5, duration: 1 }} >{contactHeroTitle}</motion.h1>
                     </div>
                 </div>
 

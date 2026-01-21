@@ -1,15 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 
+type AddProductProps = {
+    addProductTitle: string;
+}
 
-export default function SoluEasilyAddProducts() {
+export default function SoluEasilyAddProducts( { addProductTitle }:AddProductProps ) {
     return (
         <>
             <section className="soln-easily-added">
                 <div className="container">
                     <div className="sol-easily-added-text-wrapper">
                         <div className="solution-easily-added-text-left">
-                            <h2 className="text-white">Easily Add your custom product to DhatuAcademy for training</h2>
+                            <h2 className="text-white">{addProductTitle}</h2>
                         </div>
 
                         <div className="solution-easily-added-right">

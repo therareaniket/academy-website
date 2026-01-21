@@ -247,12 +247,7 @@
 /* custom animations */
 
 .cmtmnt-headings { overflow: hidden; }
-.cmtmnt-headings h2,
-.cmtmnt-headings p {
-  opacity: 0;
-  transform: translateX(-60px);
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-}
+
 .cmtmnt-headings.show h2 { opacity: 1; transform: translateX(0); transition-delay: 1.5s; }
 .cmtmnt-headings.show p { opacity: 1; transform: translateX(0); transition-delay: 1.7s; }
 .mission,
@@ -288,17 +283,10 @@ section.section.why-academy-section { overflow: visible !important; }
 .why-us-list-item { opacity: 0.4; transform: translateY(20px); transition: opacity 0.4s ease, transform 0.4s ease; }
 .active-why-us-list { opacity: 1; transform: translateY(0); }
 .compli-slider-headings { overflow: hidden; }
-.compli-slider-headings h2,
-.compli-slider-headings p { opacity: 0; transform: translateX(-60px); transition: transform 0.8s ease-out, opacity 0.8s ease-out; }
+
 .compli-slider-headings.show h2 { opacity: 1; transform: translateX(0); transition-delay: 0s; }
 .compli-slider-headings.show p { opacity: 1; transform: translateX(0); transition-delay: 0.25s; }
 .timeline-headings { overflow: hidden; }
-.timeline-headings h2,
-.timeline-headings p {
-  opacity: 0;
-  transform: translateX(-60px);
-  transition: transform 1s ease-out, opacity 1s ease-out;
-}
 
 .timeline-headings.show h2 { opacity: 1; transform: translateX(0); transition-delay: 0s; }
 .timeline-headings.show p { opacity: 1; transform: translateX(0); transition-delay: 1s; }
@@ -441,8 +429,6 @@ section.section.why-academy-section { overflow: visible !important; }
 
 
 /* ===== Initial state ===== */
-.solution-tarining-left h2,
-.solution-tarining-left p,
 .solution-training-points {
     opacity: 0;
     transform: translateX(-60px);
