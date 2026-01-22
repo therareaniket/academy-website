@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
+import FormSubmission from "./FormSubmission";
 
 type ContactFormProps = {
     contactFormTitle: string;
@@ -64,7 +65,7 @@ export default function ContactForm( {contactFormTitle, contactFormSubtitle, con
                                 <motion.p initial={contactTitleAnimations.subTitle_ltr_initial} whileInView={contactTitleAnimations.subTitle_ltr_animate} viewport={{ once: true, amount: 0.8 }} className="h6 text-rg">{contactFormSubtitle}</motion.p>
                             </div>
 
-                            <div className="contact-form-fields">
+                            {/* <div className="contact-form-fields">
                                 <div className="contact-form-label"><label htmlFor="" className="text-18 text-rg">Name</label> <span>*</span> </div>
                                 <input type="text" name="" id="" className="site-radius-10 text-18 text-rg" />
 
@@ -79,9 +80,9 @@ export default function ContactForm( {contactFormTitle, contactFormSubtitle, con
 
                                 <div className="contact-form-label"><label htmlFor="" className="text-18 text-rg">Message</label></div>
                                 <textarea name="" id="" className="site-radius-10 text-18 text-rg" ></textarea>
-                            </div>
+                            </div> */}
 
-                            <button className="link-padding site-radius-10 cnct-submit-btn text-18 text-rg" type="submit">Send message</button>
+                            <FormSubmission />
                         </div>
 
                         <div className="contact-form-right">
