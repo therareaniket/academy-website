@@ -20,11 +20,9 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     <html lang="en">
 		<body>
 			<Header />
-
         	{children}
-
 			<Footer />
-      	</body>
+    </body>
     </html>
   );
 }

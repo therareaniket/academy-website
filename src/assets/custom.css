@@ -157,8 +157,9 @@ section.section.training-steps { overflow: visible !important; }
 .steps-mob-accord { width: 100%; }
 .steps-mob-accord h3 { margin-bottom: 0; }
 .steps-mob-item { border-top: 1px solid rgba(242, 242, 242, 0.3); border-bottom: none; }
-.sticky-wrapper { position: sticky !important; top: 80px; background-color: black; }
+.sticky-wrapper { position: sticky !important; top: 60px; background-color: black; }
 .steps-listings.steps-listing-mobile { display: none; }
+.step-img img { height: 580px; object-fit: cover; }
 
 .usp-lists { margin-top: 60px; display: flex; gap: 40px; }
 .usp-list { width: 150px; height: 570px; background-color: var( --light-blue-tint); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 30px; position: relative; transition: var(--transition); cursor: pointer; }
